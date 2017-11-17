@@ -1,0 +1,131 @@
+@import "variables";
+@import "mixin";
+
+a, .as-link {
+    transition: all 0.3s ease;
+}
+
+.as-link {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+b, strong {
+    font-weight: normal;
+}
+
+h1, .h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: #303030;
+}
+
+h1, .h1 {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    @include font-size(30px);
+}
+
+h2 {
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    @include font-size(24px);
+}
+
+h3 {
+    @include font-size(21px);
+}
+
+h4 {
+    @include font-size(18px);
+}
+
+h5 {
+    @include font-size(16px);
+}
+
+h6 {
+    @include font-size(16px);
+}
+.text {
+    &-center {
+        text-align: center
+    }
+    &-left {
+        text-align: left
+    }
+    &-right {
+        text-align: right
+    }
+    &-justify {
+        text-align: justify
+    }
+    &-bold {
+        font-weight: bold;
+    }
+    &-nowrap {
+        white-space: nowrap;
+    }
+    &-lowercase {
+        text-transform: lowercase;
+    }
+    &-uppercase {
+        text-transform: uppercase;
+    }
+    &-capitalize {
+        text-transform: capitalize;
+    }
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.list {
+    &-double-arrow {
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 17px;
+        line-height: 24px;
+        list-style: none;
+        li:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        a::before {
+            margin-right: 13px;
+            top: -1px;
+            letter-spacing: -3px;
+            display: inline;
+            position: relative;
+            content: '››';
+        }
+    }
+    &-unstyled {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+button, input, select, textarea {
+    &:focus,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.hidden {
+    display: none;
+}

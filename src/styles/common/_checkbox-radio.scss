@@ -1,0 +1,93 @@
+@import "../common/variables";
+
+.radio-custom {
+    display: none;
+    &:checked + .radio-custom-view {
+        color: #303030;
+        &::before {
+            border-color: #303030;
+        }
+        &::after {
+            border-color: #303030;
+        }
+    }
+    &-view {
+        cursor: pointer;
+        position: relative;
+        color: #465a63;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: all 0.3s ease;
+        &::before {
+            width: 17px;
+            height: 17px;
+            margin-right: 14px;
+            background-color: #ffffff;
+            content: '';
+            line-height: 1;
+            border-radius: 50%;
+            border: 1px solid #465a63;
+            transition: all 0.3s ease;
+        }
+        &:after {
+            width: 8px;
+            height: 5px;
+            top: 7px;
+            left: 5px;
+            position: absolute;
+            border-bottom: 2px solid transparent;
+            border-left: 2px solid transparent;
+            transform: rotate(-43deg);
+            transition: all 0.3s ease;
+            content: '';
+        }
+        a, span {
+            padding-left: 5px;
+        }
+    }
+}
+
+/*
+<label class="label-block">
+    <input type="radio" name="" class="radio-custom">
+    <span class="radio-custom-view label">Самовывоз</span>
+</label>
+
+<label class="label-block">
+    <input type="checkbox" name="" class="checkbox-custom">
+    <span class="checkbox-custom-view label">Fabfoxx</span>
+</label>
+*/
+
+
+.checkbox-custom {
+    display: none;
+    &:checked + .checkbox-custom-view {
+        color: #111;
+        &::before {
+            border-color: #E6DDEE;
+        }
+    }
+    &-view {
+        cursor: pointer;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &::before {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            background-color: #ffffff;
+            content: '';
+            border-radius: 4px;
+            border: 1px solid #e3e3e3;
+            transition: all 0.3s ease;
+        }
+        a, span {
+            padding-left: 5px;
+        }
+    }
+}

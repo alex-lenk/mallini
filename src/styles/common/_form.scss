@@ -1,0 +1,62 @@
+@import "mixin";
+@import "variables";
+
+.ui-placeholder {
+    @include hidePlaceholder {
+        opacity: 1;
+        font-size: 14px;
+        color: #ccd5db;
+        transition: opacity 0.3s ease;
+    }
+    &:focus {
+        @include hidePlaceholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
+
+.ui-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ui-field:not(.ui-textarea) {
+    height: 40px;
+}
+
+.ui-field {
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    color: $mainColor;
+    display: block;
+    outline: none;
+    transition: all .3s ease;
+    &:focus {
+        border-color: $blueColor;
+    }
+}
+
+.ui-textarea {
+    min-height: 138px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    resize: vertical;
+}
+
+.control-label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #465a63;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.required-star {
+    color: #cc0000;
+}
