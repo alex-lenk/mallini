@@ -27,8 +27,8 @@ footer {
 }
 
 .footer-copyright-copy {
-    font-size: 15px;
     color: $colorWhite;
+    @include font-size(15px);
 }
 
 .footer-menu {
@@ -36,9 +36,9 @@ footer {
 }
 
 .footer-menu-item {
-    font-size: 17px;
     line-height: 1;
     color: #F3F0EE;
+    @include font-size(17px);
     &:not(:last-of-type) {
         margin-bottom: 30px;
     }
@@ -51,9 +51,9 @@ footer {
 
 .footer-contacts-title {
     margin-bottom: 25px;
-    font-size: 20px;
     font-weight: 600;
     color: inherit;
+    @include font-size(20px);
 }
 
 .footer-contacts-item:not(:last-of-type) {

@@ -4,8 +4,8 @@
 .ui-placeholder {
     @include hidePlaceholder {
         opacity: 1;
-        font-size: 14px;
-        color: #ccd5db;
+        font-size: 18px;
+        color: #5A5A5A;
         transition: opacity 0.3s ease;
     }
     &:focus {
@@ -33,12 +33,10 @@
     background-color: #fff;
     font-size: 14px;
     font-weight: normal;
-    color: $mainColor;
     display: block;
     outline: none;
     transition: all .3s ease;
     &:focus {
-        border-color: $blueColor;
     }
 }
 

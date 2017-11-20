@@ -2,18 +2,119 @@
 <html lang="en">
 <!-- include "template/head.html" -->
 <body class="home">
+<header class="header-home container-fluid">
+    <div class="header-home-panel">
+        <div class="header-home-logo">
+            <a href="#"><img src="img/logo-white.png" srcset="img/logo-white@2x.png 2x" alt="Mallini"></a>
+        </div>
 
+        <div class="header-nav">
+            <div class="header-nav-toggle">
+                <svg class="menu-options">
+                    <use xlink:href="img/sprite.svg#menu-options"></use>
+                </svg>
+            </div>
+            <div class="nav-wrap">
+                <nav class="nav-pages">
+                    <div class="nav-title">Pages</div>
+                    <ul class="menu list-unstyled">
+                        <li class="menu-item menu-active"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menu-item menu-catalog">
+                            <span class="menu-link">Catalog</span>
+                            <svg class="arrow-s">
+                                <use xlink:href="img/sprite.svg#arrow-s"></use>
+                            </svg>
+                        </li>
+                        <li class="menu-item"><a href="#" class="menu-link">Sale</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-products">
+                    <div class="nav-title">Products</div>
+                    <ul class="menu list-unstyled">
+                        <li class="menu-item"><a href="#" class="menu-link">Casual</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Evening</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Wedding</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Overdress</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-home-icons">
+            <div class="icon-search">
+                <svg class="search">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+            </div>
+            <div class="icon-hearth">
+                <svg class="hearth">
+                    <use xlink:href="img/sprite.svg#hearth"></use>
+                </svg>
+            </div>
+            <div class="icon-basket" data-count="2">
+                <svg class="basket">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-home-left">
+        <h1 class="header-home-title">Collection <br> Summer 2017</h1>
+        <div class="header-home-text">Brand new Dresses</div>
+        <a href="#" class="btn btn-white">Discover More</a>
+    </div>
+
+    <div class="header-media">
+        <div class="header-media-first"><img src="img/example/img-01.png" srcset="img/example/img-01@2x.png 2x"></div>
+        <div class="header-media-second"><img src="img/example/img-02.png" srcset="img/example/img-02@2x.png 2x"></div>
+    </div>
+
+    <div class="header-down arrow"></div>
+
+    <div class="header-search container-fluid">
+        <div class="header-search-logo"><a href="#"><img src="img/logo-black.png" alt="Mallini"></a></div>
+
+        <form action="#" class="header-search-area">
+            <input type="search" class="header-search-field ui-placeholder" placeholder="Search...">
+            <button class="header-search-btn">
+                <svg class="search">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+            </button>
+        </form>
+
+        <div class="header-cancel">
+            <svg class="cancel">
+                <use xlink:href="img/sprite.svg#cancel"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div class="header-modal">
+        <h2 class="header-modal-title">My Cart</h2>
+    </div>
+</header>
+
+<br>
+<br>
+<br>
 <button class="btn btn-black">button</button>
 <button class="btn btn-gray">button</button>
 <button class="btn btn-white" title="Disable" disabled>button</button>
 <button class="btn btn-disabled" title="Disable">button</button>
 
 <br>
+<br>
+<br>
 
 <footer>
     <div class="footer-wrap container-fluid">
         <div class="footer-copyright">
-            <div class="footer-copyright-logo"><a href="#"><img src="img/logo-white.png" alt="Mallini couture"></a></div>
+            <div class="footer-copyright-logo"><a href="#"><img src="img/logo-white.png" alt="Mallini couture"></a>
+            </div>
             <div class="footer-copyright-copy">© 2017 Mallini Fashion Dresses. All right Reserved.</div>
         </div>
 
@@ -35,8 +136,10 @@
         <div class="footer-contacts">
             <h6 class="footer-contacts-title">Contact US</h6>
             <ul class="list-unstyled">
-                <li class="footer-contacts-item"><a href="tel:‎+7 (925) 112-73-45" class="footer-link" rel="nofollow">‎+7 (925) 112-73-45</a></li>
-                <li class="footer-contacts-item"><a href="mailto:info@mallini.shop" class="footer-link" rel="nofollow">‎info@mallini.shop</a></li>
+                <li class="footer-contacts-item"><a href="tel:‎+7 (925) 112-73-45" class="footer-link" rel="nofollow">‎+7
+                    (925) 112-73-45</a></li>
+                <li class="footer-contacts-item"><a href="mailto:info@mallini.shop" class="footer-link" rel="nofollow">‎info@mallini.shop</a>
+                </li>
                 <li class="footer-contacts-item">Moscow, Markitskaja str. 38 TC “Crystal”</li>
             </ul>
         </div>
@@ -44,7 +147,7 @@
 </footer>
 
 
-<!-- 7include "template/scripts.html" -->
+<!-- include "template/scripts.html" -->
 
 </body>
 </html>
