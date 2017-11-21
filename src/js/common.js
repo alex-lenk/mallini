@@ -38,4 +38,34 @@ $(document).ready(function () {
             navWrap.removeClass(navWrapOpened);
             headerSearch.removeClass(headerSearchNav);
         });
+
+    const headerModalBag = $('.header-modal-bag'),
+        headerBagOpen = 'modal-bag-open';
+
+    $('.header-modal-bag-close').click(
+        function () {
+            headerModalBag.removeClass(headerBagOpen);
+        }
+    );
+
+    $('.header-basket').click(
+        function () {
+            headerModalBag.toggleClass(headerBagOpen);
+        }
+    );
+
+    const headerModalWishlist = $('.header-modal-wishlist'),
+        headerBagWishlist = 'modal-wishlist-open';
+
+    $('.header-modal-wishlist-close').click(
+        function () {
+            headerModalWishlist.removeClass(headerBagWishlist);
+        }
+    );
+
+    $('.header-wishlist').click(
+        function () {
+            headerModalWishlist.toggleClass(headerBagWishlist);
+        }
+    );
 });
