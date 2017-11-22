@@ -68,4 +68,16 @@ $(document).ready(function () {
             headerModalWishlist.toggleClass(headerBagWishlist);
         }
     );
+
+    $('.header-catalog-close').click(
+        function () {
+            $('.header-catalog').removeClass('header-catalog-open');
+        }
+    );
+
+    $('.menu-catalog').click(
+        function () {
+            $('.header-catalog').toggleClass('header-catalog-open');
+        }
+    );
 });

@@ -134,3 +134,56 @@ button, input, select, textarea {
 .hidden {
     display: none;
 }
+
+.arrow-down {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+    &::before {
+        width: 1px;
+        height: 51px;
+        display: block;
+        background-color: #1E201D;
+        content: '';
+        transition: all 0.3s ease;
+    }
+    &::after {
+        width: 9px;
+        height: 9px;
+        content: '';
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        bottom: 10px;
+        left: 6px;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+}
+
+.arrow-right {
+    width: 71px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+    &::before {
+        width: 51px;
+        height: 1px;
+        display: block;
+        background-color: #1E201D;
+        content: '';
+        transition: all 0.3s ease;
+    }
+    &::after {
+        right: 10px;
+        bottom: 6px;
+        width: 9px;
+        height: 9px;
+        content: '';
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+}
