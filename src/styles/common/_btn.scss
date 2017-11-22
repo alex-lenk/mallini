@@ -28,6 +28,15 @@
             color: $colorWhite;
         }
     }
+    &-black-full {
+        background-color: $colorDark;
+        color: $colorWhite;
+        border-color: $colorDark;
+        &:hover {
+            color: $colorDark;
+            background-color: $colorWhite;
+        }
+    }
     &-gray {
         color: $colorGray;
         border-color: $colorGray;

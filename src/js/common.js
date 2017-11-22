@@ -12,8 +12,10 @@ $(document).ready(function () {
         );
         document.head.appendChild(msViewportStyle)
     }
+    /* END */
 
 
+    /* BEGIN .header-search and .nav-wrap */
     const headerSearch = $('.header-search'),
         navWrap = $('.nav-wrap'),
         headerSearchNav = 'header-search-nav',
@@ -24,21 +26,26 @@ $(document).ready(function () {
         function () {
             navWrap.toggleClass(navWrapOpened);
             headerSearch.toggleClass(headerSearchOpened).toggleClass(headerSearchNav);
-        });
-
+        }
+    );
 
     $('.icon-search').click(
         function () {
             headerSearch.toggleClass(headerSearchOpened);
-        });
+        }
+    );
 
     $('.header-cancel').click(
         function () {
             headerSearch.removeClass(headerSearchOpened);
             navWrap.removeClass(navWrapOpened);
             headerSearch.removeClass(headerSearchNav);
-        });
+        }
+    );
+    /* END .header-search and .nav-wrap */
 
+
+    /* BEGIN header-modal-bag */
     const headerModalBag = $('.header-modal-bag'),
         headerBagOpen = 'modal-bag-open';
 
@@ -53,7 +60,10 @@ $(document).ready(function () {
             headerModalBag.toggleClass(headerBagOpen);
         }
     );
+    /* END header-modal-bag */
 
+
+    /* BEGIN header-modal-wishlist */
     const headerModalWishlist = $('.header-modal-wishlist'),
         headerBagWishlist = 'modal-wishlist-open';
 
@@ -68,16 +78,51 @@ $(document).ready(function () {
             headerModalWishlist.toggleClass(headerBagWishlist);
         }
     );
+    /* END header-modal-wishlist */
+
+
+    /* BEGIN header-catalog */
+    const headerCatalog = $('.header-catalog'),
+        headerCatalogOpen = 'header-catalog-open';
 
     $('.header-catalog-close').click(
         function () {
-            $('.header-catalog').removeClass('header-catalog-open');
+            headerCatalog.removeClass(headerCatalogOpen);
         }
     );
 
     $('.menu-catalog').click(
         function () {
-            $('.header-catalog').toggleClass('header-catalog-open');
+            headerCatalog.toggleClass(headerCatalogOpen);
         }
     );
+    /* END header-catalog */
+
+
+    /* BEGIN home-sales */
+    const salesControlLeft = $('.sales-control-left'),
+        salesLeft = $('.sales-left'),
+        salesRight = $('.sales-right'),
+        salesControlRight = $('.sales-control-right'),
+        salesActive = 'sales-active',
+        salesControlCurrent = 'sales-control-current';
+
+    salesControlLeft.click(
+        function () {
+            $(this).toggleClass(salesControlCurrent);
+            salesControlRight.toggleClass(salesControlCurrent);
+            salesLeft.addClass(salesActive);
+            salesRight.removeClass(salesActive);
+        }
+    );
+
+    salesControlRight.click(
+        function () {
+            $(this).toggleClass(salesControlCurrent);
+            $(salesControlLeft).toggleClass(salesControlCurrent);
+            salesRight.addClass(salesActive);
+            salesLeft.removeClass(salesActive);
+        }
+    );
+    /* END home-sales */
 });

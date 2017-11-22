@@ -10,7 +10,15 @@
 @import "blocks/footer";
 @import "blocks/header";
 @import "blocks/view-catalog";
+@import "blocks/home-sales";
 
 /*
 @import "common/checkbox-radio";
 */
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
