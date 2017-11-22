@@ -7,11 +7,6 @@
     display: flex;
 }
 
-.view-catalog-item {
-    max-width: 25%;
-    flex: 1 1 25%;
-}
-
 .view-catalog-media {
     height: 504px;
     margin-bottom: 21px;
@@ -20,6 +15,7 @@
     display: flex;
     align-items: flex-end;
     img {
+        max-height: 100%;
         position: relative;
         bottom: -8px;
         z-index: 5;
@@ -52,7 +48,7 @@
     }
 }
 
-.view-catalog-title {
+.view-catalog-text {
     margin-bottom: 7px;
     color: #2A2928;
     text-transform: uppercase;
@@ -62,5 +58,4 @@
 
 .view-catalog-arrow {
     display: block;
-    margin-left: -7px;
 }

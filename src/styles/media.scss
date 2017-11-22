@@ -171,6 +171,51 @@
         top: 74px;
     }
     
+    .view-catalog {
+        flex-wrap: wrap;
+    }
+    .view-catalog-item {
+        position: relative;
+        img {
+            margin-left: 12px;
+            margin-bottom: 0;
+        }
+        &:first-of-type img {
+            margin-left: 25px;
+        }
+    }
+    .view-catalog-media {
+        height: 175px;
+        margin-bottom: 0;
+        &::before {
+            background-position: -21px 10px;
+            background-size: 175px;
+        }
+    }
+    .catalog-final-title {
+        @include font-size(44px);
+    }
+    .view-catalog-title {
+        top: 68px;
+        left: 127px;
+        position: absolute;
+        margin-bottom: 0;
+        z-index: 5;
+        pointer-events: none;
+        @include font-size(22px)
+    }
+    .view-catalog-text {
+        margin-bottom: 13px;
+    }
+    .catalog-final .view-catalog {
+        margin-bottom: 24px;
+    }
+    .catalog-final-more {
+        padding: 30px 0 45px;
+        .title {
+            margin-bottom: 29px;
+        }
+    }
 }
 
 @media (max-width: 919px) {
@@ -358,6 +403,7 @@
     }
     
     .home-sales {
+        margin-bottom: 99px;
         padding-top: 377px;
     }
     .sales-all {
@@ -388,6 +434,24 @@
     }
     .sales-price-old {
         @include font-size(20px)
+    }
+    
+    .view-catalog {
+        flex-direction: column;
+    }
+    .view-catalog-item {
+        min-width: 0;
+        border-bottom: 2px solid #F3F0EE;
+        margin-bottom: 13px;
+    }
+    .catalog-final-title {
+        margin-bottom: 54px;
+    }
+    .catalog-final-more {
+        padding: 35px 10px 30px;
+        .title {
+            @include font-size(28px);
+        }
     }
 }
 
@@ -504,6 +568,11 @@
     .sales-left, .sales-right {
         width: calc(100% - 100px);
         left: 85px;
+    }
+    .view-catalog-item {
+        max-width: 50%;
+        flex: 1 1 50%;
+        margin-bottom: 57px;
     }
 }
 
@@ -677,8 +746,14 @@
     .catalog-panel {
         margin-bottom: 140px;
     }
+    
+    .view-catalog-item {
+        max-width: 25%;
+        flex: 1 1 25%;
+    }
     .view-catalog-media {
-        height: 320px;
+        height: 330px;
+        margin-bottom: 31px;
         img {
             max-height: 100%;
         }
@@ -686,13 +761,10 @@
             background-size: 107% 105%;
         }
     }
-    .view-catalog-title {
-        margin-bottom: 14px;
+    .view-catalog-text {
+        margin-bottom: 20px;
         line-height: 20px;
         @include font-size(21px);
-    }
-    .view-catalog-media {
-        margin-bottom: 31px;
     }
     
     .footer-menu-list:first-of-type {
@@ -725,6 +797,19 @@
     .sales-control-left,
     .sales-control-right {
         display: none;
+    }
+    
+    .catalog-final-title {
+        margin-bottom: 77px;
+    }
+    .catalog-final .view-catalog {
+        margin-bottom: 69px;
+    }
+    .catalog-final-more {
+        padding: 35px 0 42px;
+    }
+    .catalog-final-more .title {
+        margin-bottom: 27px;
     }
 }
 
@@ -772,12 +857,12 @@
         margin-bottom: 57px;
     }
     .view-catalog-media {
-        height: 392px;
+        height: 400px;
     }
     .catalog-panel {
         margin-bottom: 117px;
     }
-    .view-catalog-title {
+    .view-catalog-text {
         @include font-size(25px);
     }
     
@@ -802,6 +887,22 @@
         padding-right: 250px;
         background-size: 250px;
         background-position: 105% 0;
+    }
+    
+    .catalog-final-title {
+        margin-bottom: 80px;
+    }
+    .catalog-final .view-catalog {
+        margin-bottom: 72px;
+    }
+    .catalog-final .view-catalog {
+        margin-bottom: 99px;
+    }
+    .catalog-final-more {
+        padding: 55px 0;
+    }
+    .catalog-final-more .title {
+        margin-bottom: 34px;
     }
 }
 
@@ -849,9 +950,25 @@
         padding-right: 300px;
         background-position: 89% 0;
     }
+    
+    .view-catalog-arrow {
+        left: -7px;
+        top: 2px;
+    }
+    
+    .catalog-final-title {
+        text-align: center;
+        margin-bottom: 67px;
+    }
+    .catalog-final .view-catalog {
+        margin-bottom: 99px;
+    }
 }
 
 @media (min-width: 1920px) {
+    .header-home-logo {
+        margin-right: 293px;
+    }
     .header-home {
         height: 975px;
     }
