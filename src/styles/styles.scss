@@ -13,6 +13,8 @@
 @import "blocks/home-sales";
 @import "blocks/catalog-final";
 @import "blocks/about-shop";
+@import "blocks/news";
+@import "blocks/fashion-news";
 
 /*
 @import "common/checkbox-radio";
@@ -23,4 +25,27 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+}
+
+.title-all {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #939190;
+    font-size: 1.375rem;
+    align-self: flex-start;
+    .arrow-right {
+        right: -7px;
+        left: auto;
+        &::before {
+            width: 69px;
+            right: 10px;
+            top: 9px;
+            position: absolute;
+            background-color: #939190;
+        }
+        &::after {
+            border-right-color: #939190;
+            border-bottom-color: #939190;
+        }
+    }
 }
