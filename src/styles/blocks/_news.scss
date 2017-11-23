@@ -60,7 +60,7 @@
 
 .news-item-date {
     text-align: right;
-    color: #939190;
+    color: $colorGray;
     font-weight: 300;
     @include font-size(17px)
 }

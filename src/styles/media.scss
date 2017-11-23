@@ -9,10 +9,14 @@
     }
 }
 
-@media (max-width: 1349px) {
+@media (max-width: 1339px) {
     .product-list {
         height: 310px;
         overflow: hidden;
+    }
+    
+    .instagram-left .first, .instagram-right .third {
+        display: none;
     }
 }
 
@@ -290,6 +294,7 @@
         margin-left: auto;
     }
     .nav-wrap {
+        width: 100vw;
         padding-top: 130px;
         left: -15px;
     }
@@ -483,6 +488,9 @@
         margin-bottom: 42px;
     }
     
+    .fashion-news {
+        margin-bottom: 99px;
+    }
     .fashion-news-item:not(:first-of-type) {
         display: none;
     }
@@ -501,9 +509,31 @@
             position: absolute;
         }
     }
-    
     .fashion-news-item {
         margin: 0 auto;
+    }
+    
+    .instagram-left {
+        display: none;
+    }
+    .instagram-right {
+        max-width: 52%;
+        flex: 1 1 52%;
+        .second {
+            position: absolute;
+            left: 122px;
+        }
+    }
+    .instagram-center {
+        padding: 25px 7% 0;
+        line-height: 22px;
+    }
+    .instagram-followers {
+        margin: 3px 0 23px;
+    }
+    
+    .footer-menu-list {
+        margin-right: 25px;
     }
 }
 
@@ -672,9 +702,31 @@
         margin-bottom: 57px;
     }
     
+    .fashion-news {
+        margin-bottom: 135px;
+    }
     .fashion-news-item {
         flex: 1 1 calc(100% / 2 - 15px);
         max-width: calc(100% / 2 - 15px);
+    }
+    
+    .instagram-left {
+        max-width: 30%;
+        flex: 1 1 30%;
+        .second {
+            top: 0;
+            right: 53%;
+            position: absolute;
+        }
+    }
+    .instagram-right {
+        max-width: 30%;
+        flex: 1 1 30%;
+        .second {
+            top: 0;
+            left: 51%;
+            position: absolute;
+        }
     }
 }
 
@@ -752,6 +804,16 @@
     }
     .product-info {
         padding-right: 65px;
+    }
+    
+    .instagram-left {
+        max-width: 326px;
+        flex: 1 1 326px;
+    }
+    
+    .instagram-right {
+        max-width: 323px;
+        flex: 1 1 323px;
     }
 }
 
@@ -951,6 +1013,9 @@
         margin-bottom: 50px;
     }
     
+    .fashion-news {
+        margin-bottom: 173px;
+    }
     .fashion-news-title {
         margin-bottom: 90px;
         @include font-size(52px);

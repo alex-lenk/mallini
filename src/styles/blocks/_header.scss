@@ -503,7 +503,7 @@
 .catalog-panel-text {
     text-transform: uppercase;
     font-weight: 600;
-    color: #939190;
+    color: $colorGray;
     @include font-size(22px)
 }
 
@@ -511,11 +511,11 @@
     width: 89px;
     &::before {
         width: 69px;
-        background-color: #939190;
+        background-color: $colorGray;
     }
     &::after {
-        border-right-color: #939190;
-        border-bottom-color: #939190;
+        border-right-color: $colorGray;
+        border-bottom-color: $colorGray;
     }
 }
 
