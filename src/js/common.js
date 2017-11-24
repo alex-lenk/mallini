@@ -125,4 +125,16 @@ $(document).ready(function () {
         }
     );
     /* END home-sales */
+
+    var popularItems = new Swiper('.popular-items-slider', {
+        navigation: {
+            nextEl: '.popular-items-next',
+            prevEl: '.popular-items-prev'
+        },
+        effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
 });

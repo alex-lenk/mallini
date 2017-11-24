@@ -227,6 +227,68 @@
     .fashion-news-item:not(:first-of-type):not(:last-of-type) {
         display: none;
     }
+    
+    .popular-items-slider {
+        height: 330px;
+    }
+    .popular-items-slide::before {
+        height: 244px;
+        top: 52px;
+    }
+    .popular-items-media {
+        width: 258px;
+        margin-left: 40px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        flex: 1 0 258px;
+    }
+    .popular-items-img img {
+        width: 155px;
+        top: 19px;
+        left: 15%;
+    }
+    .popular-items-content {
+        padding-top: 70px;
+        padding-left: 45px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .popular-items-title {
+        @include font-size(44px);
+    }
+    .popular-items-desk {
+        width: 100%;
+        margin-bottom: 25px;
+        @include font-size(24px);
+    }
+    .popular-items-view {
+        margin-right: 20px;
+    }
+    .popular-items-price {
+        margin-right: 13%;
+        margin-bottom: 0;
+        position: relative;
+        top: -10px;
+    }
+    .swiper-pagination {
+        bottom: -54px;
+        left: 137px;
+    }
+    .swiper-pagination-bullet {
+        margin-right: 12px;
+    }
+    .popular-items {
+        margin-bottom: 112px;
+    }
+    .popular-items-prev, .popular-items-next {
+        top: 142px;
+    }
+    .popular-items-prev {
+        left: 31px;
+    }
+    .popular-items-next {
+        left: 316px;
+    }
 }
 
 @media (max-width: 919px) {
@@ -247,6 +309,77 @@
         position: absolute;
         right: 0;
         bottom: 0;
+    }
+    
+    .popular-items {
+        top: 0;
+    }
+    .popular-items-slider {
+        height: 650px;
+    }
+    .popular-items-slide {
+        padding-top: 144px;
+        flex-direction: column;
+        &::before {
+            height: 244px;
+            top: 196px;
+            left: 31px;
+        }
+    }
+    .popular-items-media {
+        height: 330px;
+        width: 100%;
+        max-width: 414px;
+        margin-left: 0;
+        padding: 0 32px 15px 67px;
+        flex: none;
+        &::after {
+            right: 20px;
+        }
+    }
+    .popular-items-title {
+        position: absolute;
+        top: 41px;
+        left: 0;
+        z-index: 6;
+    }
+    .popular-items-desk {
+        position: relative;
+        z-index: 6;
+        font-weight: 400;
+        @include font-size(19px);
+    }
+    .popular-items-content {
+        padding-top: 26px;
+        padding-left: 0;
+    }
+    .popular-items-price {
+        z-index: 6;
+        margin-right: 9%;
+        top: -2px;
+        @include font-size(32px)
+    }
+    .popular-items-view {
+        margin-right: 15px;
+    }
+    .popular-items-bottom {
+        z-index: 6;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .popular-items {
+        margin-bottom: 60px;
+    }
+    .popular-items-prev, .popular-items-next {
+        top: 290px;
+    }
+    .popular-items-prev {
+        left: 11px;
+    }
+    .popular-items-next {
+        right: 14px;
+        left: auto;
     }
 }
 
@@ -636,187 +769,6 @@
     }
 }
 
-@media (min-width: 414px) and (max-width: 1099px) {
-    .footer-menu-list:first-of-type {
-        margin-right: 60px;
-    }
-}
-
-@media (min-width: 568px) and (max-width: 1339px) {
-    .about-shop-media-second {
-        display: none;
-    }
-}
-
-@media (min-width: 568px) and (max-width: 1099px) {
-    .header-home {
-        height: 790px;
-        &::before {
-            width: 368px;
-        }
-    }
-    .header-home-logo {
-        margin-right: 127px;
-    }
-    .header-home-left {
-        flex: 0 0 348px;
-    }
-    .header-home-title {
-        margin-top: 20px;
-        margin-bottom: 40px;
-        line-height: 50px;
-        @include font-size(52px);
-    }
-    
-    .sales-all {
-        width: 70px;
-        height: 307px;
-        min-width: 0;
-        background-color: #F9F9F9;
-        color: #2A2928;
-        font-weight: 400;
-        padding: 0;
-        position: relative;
-        top: 0;
-        left: 0;
-        border-radius: 0;
-        border: 0;
-        transform: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        @include font-size(30px);
-    }
-    .sales-all-text {
-        display: none;
-    }
-    
-    .sales-left, .sales-right {
-        width: calc(100% - 100px);
-        left: 85px;
-    }
-    .view-catalog-item {
-        max-width: 50%;
-        flex: 1 1 50%;
-        margin-bottom: 57px;
-    }
-    
-    .fashion-news {
-        margin-bottom: 135px;
-    }
-    .fashion-news-item {
-        flex: 1 1 calc(100% / 2 - 15px);
-        max-width: calc(100% / 2 - 15px);
-    }
-    
-    .instagram-left {
-        max-width: 30%;
-        flex: 1 1 30%;
-        .second {
-            top: 0;
-            right: 53%;
-            position: absolute;
-        }
-    }
-    .instagram-right {
-        max-width: 30%;
-        flex: 1 1 30%;
-        .second {
-            top: 0;
-            left: 51%;
-            position: absolute;
-        }
-    }
-}
-
-@media (min-width: 1100px) and (max-width: 1339px) {
-    .container, .container-fluid {
-        padding-left: 70px;
-        padding-right: 70px;
-    }
-}
-
-@media (min-width: 1340px) and (max-width: 1599px) {
-    .header-home-logo {
-        margin-right: 135px;
-    }
-    .menu-item:not(:last-of-type) {
-        margin-right: 60px;
-    }
-}
-
-@media (min-width: 1100px) and (max-width: 1599px) {
-    .menu-item:nth-of-type(2) {
-        color: $colorWhite;
-        &:hover {
-            &::after,
-            &::before {
-                background-color: $colorWhite;
-            }
-        }
-    }
-    .menu-catalog .arrow-s {
-        fill: $colorWhite;
-    }
-    
-    .sales-all {
-        display: none;
-    }
-    
-    .catalog-final {
-        margin-bottom: 180px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1099px) {
-    .product-close {
-        top: -4px;
-        right: 5px;
-    }
-    .product-info {
-        padding-right: 55px;
-    }
-    .product-list {
-        margin-bottom: 27px;
-    }
-}
-
-@media (min-width: 1100px) and (max-width: 1339px) {
-    .header-home::before {
-        width: 534px;
-    }
-    .header-home-logo {
-        margin-right: 80px;
-    }
-    .menu-item:not(:last-of-type) {
-        margin-right: 35px;
-    }
-    .header-home-left {
-        width: 465px;
-        flex: 0 0 465px;
-    }
-    .header-home-title {
-        @include font-size(72px);
-    }
-    .product-list {
-        width: calc(100% + 60px);
-    }
-    .product-info {
-        padding-right: 65px;
-    }
-    
-    .instagram-left {
-        max-width: 326px;
-        flex: 1 1 326px;
-    }
-    
-    .instagram-right {
-        max-width: 323px;
-        flex: 1 1 323px;
-    }
-}
-
 @media (min-width: 668px) {
     .footer-menu-list {
         padding-top: 5px;
@@ -830,15 +782,10 @@
     .header-search-field {
         margin-right: 4%;
     }
-}
-
-@media (min-width: 920px) and (max-width: 1099px) {
-    .fashion-news .news-list {
-        justify-content: space-around;
-    }
-    .fashion-news-item {
-        flex: 1 1 420px;
-        max-width: 420px;
+    
+    .popular-items-content {
+        position: relative;
+        z-index: 6;
     }
 }
 
@@ -1038,6 +985,48 @@
     .title-all {
         margin-top: 27px;
     }
+    
+    .popular-items-media {
+        width: 336px;
+        margin-left: 46px;
+    }
+    .popular-items-slide::before {
+        height: 315px;
+        top: 67px;
+    }
+    .popular-items-slider {
+        height: 427px;
+    }
+    .popular-items-content {
+        padding-top: 89px;
+        padding-left: 32px;
+    }
+    .swiper-pagination {
+        right: 90px;
+    }
+    .popular-items-prev {
+        right: 110px;
+    }
+    .popular-items-next {
+        right: 70px;
+    }
+    
+    .popular-items-prev, .popular-items-next {
+        bottom: 82px;
+    }
+    .popular-items-slider {
+        width: 1150px;
+    }
+    .popular-items {
+        margin-bottom: 100px;
+    }
+    .swiper-pagination {
+        top: 125px;
+        flex-direction: column;
+    }
+    .swiper-pagination-bullet {
+        margin-bottom: 12px;
+    }
 }
 
 @media (min-width: 1340px) {
@@ -1152,6 +1141,24 @@
     .fashion-news-item:not(:first-of-type):not(:last-of-type) {
         padding: 0 50px;
     }
+    
+    .popular-items-media {
+        width: 358px;
+        margin-left: 50px;
+    }
+    .popular-items-slide::before {
+        height: 337px;
+        top: 73px;
+    }
+    .popular-items-slider {
+        height: 458px;
+    }
+    .popular-items-content {
+        padding-left: 96px;
+    }
+    .popular-items-prev, .popular-items-next {
+        bottom: 112px;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -1222,6 +1229,19 @@
     .about-shop-media-second {
         right: 24px;
     }
+    
+    .popular-items-slider {
+        margin-left: 37px;
+    }
+    .swiper-pagination {
+        right: 248px;
+    }
+    .popular-items-prev {
+        right: 270px;
+    }
+    .popular-items-next {
+        right: 225px;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -1256,5 +1276,207 @@
     
     .about-shop {
         margin-bottom: 195px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 1099px) {
+    .footer-menu-list:first-of-type {
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 1099px) {
+    .header-home {
+        height: 790px;
+        &::before {
+            width: 368px;
+        }
+    }
+    .header-home-logo {
+        margin-right: 127px;
+    }
+    .header-home-left {
+        flex: 0 0 348px;
+    }
+    .header-home-title {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        line-height: 50px;
+        @include font-size(52px);
+    }
+    
+    .sales-all {
+        width: 70px;
+        height: 307px;
+        min-width: 0;
+        background-color: #F9F9F9;
+        color: #2A2928;
+        font-weight: 400;
+        padding: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        border: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include font-size(30px);
+    }
+    .sales-all-text {
+        display: none;
+    }
+    
+    .sales-left, .sales-right {
+        width: calc(100% - 100px);
+        left: 85px;
+    }
+    .view-catalog-item {
+        max-width: 50%;
+        flex: 1 1 50%;
+        margin-bottom: 57px;
+    }
+    
+    .fashion-news {
+        margin-bottom: 135px;
+    }
+    .fashion-news-item {
+        flex: 1 1 calc(100% / 2 - 15px);
+        max-width: calc(100% / 2 - 15px);
+    }
+    
+    .instagram-left {
+        max-width: 30%;
+        flex: 1 1 30%;
+        .second {
+            top: 0;
+            right: 53%;
+            position: absolute;
+        }
+    }
+    .instagram-right {
+        max-width: 30%;
+        flex: 1 1 30%;
+        .second {
+            top: 0;
+            left: 51%;
+            position: absolute;
+        }
+    }
+}
+
+@media (min-width: 568px) and (max-width: 1339px) {
+    .about-shop-media-second {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+    .product-close {
+        top: -4px;
+        right: 5px;
+    }
+    .product-info {
+        padding-right: 55px;
+    }
+    .product-list {
+        margin-bottom: 27px;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1099px) {
+    .fashion-news .news-list {
+        justify-content: space-around;
+    }
+    .fashion-news-item {
+        flex: 1 1 420px;
+        max-width: 420px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1339px) {
+    .container, .container-fluid {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .header-home::before {
+        width: 534px;
+    }
+    .header-home-logo {
+        margin-right: 80px;
+    }
+    .menu-item:not(:last-of-type) {
+        margin-right: 35px;
+    }
+    .header-home-left {
+        width: 465px;
+        flex: 0 0 465px;
+    }
+    .header-home-title {
+        @include font-size(72px);
+    }
+    .product-list {
+        width: calc(100% + 60px);
+    }
+    .product-info {
+        padding-right: 65px;
+    }
+    
+    .instagram-left {
+        max-width: 326px;
+        flex: 1 1 326px;
+    }
+    
+    .instagram-right {
+        max-width: 323px;
+        flex: 1 1 323px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1599px) {
+    .menu-item:nth-of-type(2) {
+        color: $colorWhite;
+        &:hover {
+            &::after,
+            &::before {
+                background-color: $colorWhite;
+            }
+        }
+    }
+    .menu-catalog .arrow-s {
+        fill: $colorWhite;
+    }
+    
+    .sales-all {
+        display: none;
+    }
+    
+    .catalog-final {
+        margin-bottom: 180px;
+    }
+}
+
+@media (min-width: 1340px) and (max-width: 1599px) {
+    .header-home-logo {
+        margin-right: 135px;
+    }
+    .menu-item:not(:last-of-type) {
+        margin-right: 60px;
+    }
+    
+    .popular-items-content {
+        padding-left: 75px;
+    }
+    .swiper-pagination {
+        right: 118px;
+    }
+    .popular-items-next {
+        right: 96px;
+    }
+    .popular-items-prev {
+        right: 141px;
     }
 }
