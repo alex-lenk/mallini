@@ -17,6 +17,8 @@
 @import "blocks/fashion-news";
 @import "blocks/instagram-block";
 @import "blocks/popular-items";
+@import "blocks/header-page";
+@import "blocks/sales-list";
 
 /*
 @import "common/checkbox-radio";
@@ -49,4 +51,20 @@
             border-bottom-color: #939190;
         }
     }
+}
+
+.nav-pages .menu-item {
+    color: #2A2928;
+}
+
+.page-content {
+    margin-bottom: 180px;
+    position: relative;
+    z-index: 15;
+}
+
+.page-content-title {
+    margin-bottom: 62px;
+    font-weight: 400;
+    color: $colorDark;
 }

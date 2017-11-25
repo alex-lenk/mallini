@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
 <!-- include "template/head.html" -->
-<body class="home">
-<header class="header-home container-fluid">
-    <div class="header-home-panel">
-        <div class="header-home-logo">
-            <img src="img/logo-white.png" srcset="img/logo-white@2x.png 2x" alt="Mallini">
+<body class="page">
+
+<header class="header-page">
+    <div class="header-page-panel container">
+        <div class="header-page-logo">
+            <a href="index.html"><img src="img/logo-white.png" srcset="img/logo-white@2x.png 2x" alt="Mallini"></a>
         </div>
 
         <div class="header-nav">
@@ -61,18 +62,6 @@
         </div>
     </div>
 
-    <div class="header-home-left">
-        <h1 class="header-home-title">Collection <br> Summer 2017</h1>
-        <div class="header-home-text">Brand new Dresses</div>
-        <a href="#" class="btn btn-white">Discover More</a>
-    </div>
-
-    <div class="header-media">
-        <div class="header-media-first"><img src="img/example/img-01.png" srcset="img/example/img-01@2x.png 2x"></div>
-        <div class="header-media-second"><img src="img/example/img-02.png" srcset="img/example/img-02@2x.png 2x"></div>
-    </div>
-
-    <div class="header-down arrow-down"></div>
 
     <div class="header-search container-fluid">
         <div class="header-search-logo"><a href="#"><img src="img/logo-black.png" alt="Mallini"></a></div>
@@ -186,7 +175,7 @@
     <!-- END Bag Open -->
 
     <!-- Bag Empty -->
-    <div class="hidden header-modal header-modal-bag">
+    <div class="header-modal header-modal-bag">
         <h2 class="header-modal-title">My Bag</h2>
 
         <div class="header-modal-cancel header-modal-bag-close">
@@ -374,340 +363,119 @@
     </div>
 </header>
 
-<div class="popular-items container">
-    <!-- Swiper -->
-    <div class="popular-items-slider swiper-container">
-        <div class="swiper-wrapper">
-            <div class="popular-items-slide swiper-slide">
-                <div class="popular-items-media">
-                    <div class="popular-items-img">
-                        <img src="img/example/img-02.png">
+<article class="page-content container">
+    <h1 class="page-content-title">Shop Sales</h1>
 
-                        <div class="popular-items-hearth">
-                            <svg class="hearth">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hearth"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="popular-items-content">
-                    <h6 class="popular-items-title">Popular Items</h6>
-                    <div class="popular-items-desk">Light Blue base polka dot tea dress</div>
-                    <div class="popular-items-price">$620</div>
-                    <div class="popular-items-bottom">
-                        <a href="#" class="popular-items-view btn btn-gray">view item</a>
-                        <div class="popular-items-basket">
-                            <svg class="basket">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+    <ul class="sales-list">
+        <li class="sales-item">
+            <div class="sales-item-img">
+                <img src="img/example/img-23.png" srcset="img/example/img-23@2x.png 2x" alt="">
             </div>
 
-            <div class="popular-items-slide swiper-slide">
-                <div class="popular-items-media">
-                    <div class="popular-items-img">
-                        <img src="img/example/img-01.png" alt="">
+            <h3 class="sales-title"><a href="#">Shifting Dears Beige Floral Print Dress</a></h3>
 
-                        <div class="popular-items-hearth">
-                            <svg class="hearth">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hearth"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="popular-items-content">
-                    <h6 class="popular-items-title">Very Popular Items</h6>
-                    <div class="popular-items-desk">Light Orange base polka dot tea dress</div>
-                    <div class="popular-items-price">$690</div>
-                    <div class="popular-items-bottom">
-                        <a href="#" class="popular-items-view btn btn-gray">view item</a>
-                        <div class="popular-items-basket">
-                            <svg class="basket">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            <div class="sales-price">
+                <span class="sales-price-cost">$549</span>
+                <del class="sales-price-old">$680</del>
             </div>
 
-            <div class="popular-items-slide swiper-slide">
-                <div class="popular-items-media">
-                    <div class="popular-items-img">
-                        <img src="img/example/img-07.png" alt="">
-
-                        <div class="popular-items-hearth">
-                            <svg class="hearth">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hearth"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="popular-items-content">
-                    <h6 class="popular-items-title">Evening Dresses</h6>
-                    <div class="popular-items-desk">Darth base polka dot tea dress</div>
-                    <div class="popular-items-price">$535</div>
-                    <div class="popular-items-bottom">
-                        <a href="#" class="popular-items-view btn btn-gray">view item</a>
-                        <div class="popular-items-basket">
-                            <svg class="basket">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popular-items-slide swiper-slide">
-                <div class="popular-items-media">
-                    <div class="popular-items-img">
-                        <img src="img/example/img-06.png" alt="">
-
-                        <div class="popular-items-hearth">
-                            <svg class="hearth">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hearth"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="popular-items-content">
-                    <h6 class="popular-items-title">Casual Clothes</h6>
-                    <div class="popular-items-desk">Very red base polka dot tea dress</div>
-                    <div class="popular-items-price">$782</div>
-                    <div class="popular-items-bottom">
-                        <a href="#" class="popular-items-view btn btn-gray">view item</a>
-                        <div class="popular-items-basket">
-                            <svg class="basket">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#basket"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Arrows -->
-    <div class="popular-items-next">
-        <svg class="arrow-s">
-            <use xlink:href="img/sprite.svg#arrow-s"></use>
-        </svg>
-    </div>
-
-    <div class="popular-items-prev">
-        <svg class="arrow-s">
-            <use xlink:href="img/sprite.svg#arrow-s"></use>
-        </svg>
-    </div>
-
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-</div>
-
-<div class="home-sales container">
-    <a href="#" class="sales-all btn btn-black-full">
-        <span class="sales-all-text">All sales</span>
-        <span>s</span><span>a</span><span>l</span><span>e</span><span>s</span>
-    </a>
-
-    <div class="sales-left sales-active">
-        <h5 class="sales-title"><a href="#">Shifting Dears Beige Floral Print Dress</a></h5>
-        <div class="sales-price">
-            <span class="sales-price-cost">$549</span>
-            <del class="sales-price-old">$680</del>
-        </div>
-        <a href="#" class="sale-look" rel="nofollow">
-            <span class="sale-look-text">Look Closer</span>
-            <span class="sale-look-arrow arrow-right"></span>
-        </a>
-    </div>
-
-    <div class="sales-right">
-        <h5 class="sales-title"><a href="#">Count On It Black Sleeveless Bodycon</a></h5>
-        <div class="sales-price">
-            <span class="sales-price-cost">$580</span>
-            <del class="sales-price-old">$675</del>
-        </div>
-        <a href="#" class="sale-look" rel="nofollow">
-            <span class="sale-look-text">Look Closer</span>
-            <span class="sale-look-arrow arrow-right"></span>
-        </a>
-    </div>
-
-    <div class="sales-control-left sales-control-current"></div>
-    <div class="sales-control-right"></div>
-</div>
-
-<div class="catalog-final container">
-    <h2 class="catalog-final-title">Our Products</h2>
-
-    <ul class="view-catalog">
-        <li class="view-catalog-item">
-            <a href="#">
-                    <span class="view-catalog-media">
-                        <img src="img/example/img-06.png" srcset="img/example/img-06@2x.png 2x" alt="">
-                    </span>
-                <span class="view-catalog-title">
-                    <span class="view-catalog-text">Casual Clothes</span>
-                    <span class="view-catalog-arrow arrow-right"></span>
-                </span>
+            <a href="#" class="sale-look" rel="nofollow">
+                <span class="sale-look-text">Look Closer</span>
+                <span class="sale-look-arrow arrow-right"></span>
             </a>
         </li>
-        <li class="view-catalog-item">
-            <a href="#">
-                    <span class="view-catalog-media">
-                        <img src="img/example/img-07.png" srcset="img/example/img-07@2x.png 2x" alt="">
-                    </span>
-                <span class="view-catalog-title">
-                    <span class="view-catalog-text">Evening Dresses</span>
-                    <span class="view-catalog-arrow arrow-right"></span>
-                </span>
+
+        <li class="sales-item">
+            <div class="sales-item-img">
+                <img src="img/example/img-24.png" srcset="img/example/img-24@2x.png 2x" alt="">
+            </div>
+
+            <h3 class="sales-title"><a href="#">Count On It Black Sleeveless Bodycon</a></h3>
+
+            <div class="sales-price">
+                <span class="sales-price-cost">$580</span>
+                <del class="sales-price-old">$675</del>
+            </div>
+
+            <a href="#" class="sale-look" rel="nofollow">
+                <span class="sale-look-text">Look Closer</span>
+                <span class="sale-look-arrow arrow-right"></span>
             </a>
         </li>
-        <li class="view-catalog-item">
-            <a href="#">
-                    <span class="view-catalog-media">
-                        <img src="img/example/img-08.png" srcset="img/example/img-08@2x.png 2x" alt="">
-                    </span>
-                <span class="view-catalog-title">
-                    <span class="view-catalog-text">Wedding Dresses</span>
-                    <span class="view-catalog-arrow arrow-right"></span>
-                </span>
+
+        <li class="sales-item">
+            <div class="sales-item-img">
+                <img src="img/example/img-25.png" srcset="img/example/img-25@2x.png 2x" alt="">
+            </div>
+
+            <h3 class="sales-title"><a href="#">Shifting Dears Beige Floral Print Dress</a></h3>
+
+            <div class="sales-price">
+                <span class="sales-price-cost">$165</span>
+                <del class="sales-price-old">$220</del>
+            </div>
+
+            <a href="#" class="sale-look" rel="nofollow">
+                <span class="sale-look-text">Look Closer</span>
+                <span class="sale-look-arrow arrow-right"></span>
             </a>
         </li>
-        <li class="view-catalog-item">
-            <a href="#">
-                    <span class="view-catalog-media">
-                        <img src="img/example/img-09.png" srcset="img/example/img-09@2x.png 2x" alt="">
-                    </span>
-                <span class="view-catalog-title">
-                    <span class="view-catalog-text">Overdress</span>
-                    <span class="view-catalog-arrow arrow-right"></span>
-                </span>
+
+        <li class="sales-item">
+            <div class="sales-item-img">
+                <img src="img/example/img-26.png" srcset="img/example/img-26@2x.png 2x" alt="">
+            </div>
+
+            <h3 class="sales-title"><a href="#">Count On It Black Sleeveless Bodycon</a></h3>
+
+            <div class="sales-price">
+                <span class="sales-price-cost">$199</span>
+                <del class="sales-price-old">$270</del>
+            </div>
+
+            <a href="#" class="sale-look" rel="nofollow">
+                <span class="sale-look-text">Look Closer</span>
+                <span class="sale-look-arrow arrow-right"></span>
+            </a>
+        </li>
+
+        <li class="sales-item hidden-sx">
+            <div class="sales-item-img">
+                <img src="img/example/img-27.png" srcset="img/example/img-27@2x.png 2x" alt="">
+            </div>
+
+            <h3 class="sales-title"><a href="#">Shifting Dears Beige Floral Print Dress</a></h3>
+
+            <div class="sales-price">
+                <span class="sales-price-cost">$165</span>
+                <del class="sales-price-old">$220</del>
+            </div>
+
+            <a href="#" class="sale-look" rel="nofollow">
+                <span class="sale-look-text">Look Closer</span>
+                <span class="sale-look-arrow arrow-right"></span>
+            </a>
+        </li>
+
+        <li class="sales-item hidden-sx">
+            <div class="sales-item-img">
+                <img src="img/example/img-28.png" srcset="img/example/img-28@2x.png 2x" alt="">
+            </div>
+
+            <h3 class="sales-title"><a href="#">Count On It Black Sleeveless Bodycon</a></h3>
+
+            <div class="sales-price">
+                <span class="sales-price-cost">$199</span>
+                <del class="sales-price-old">$270</del>
+            </div>
+
+            <a href="#" class="sale-look" rel="nofollow">
+                <span class="sale-look-text">Look Closer</span>
+                <span class="sale-look-arrow arrow-right"></span>
             </a>
         </li>
     </ul>
-
-    <div class="catalog-final-more">
-        <h3 class="title">More than 300 dresses</h3>
-        <a href="#" class="btn btn-white">Have a Look</a>
-    </div>
-</div>
-
-<div class="about-shop container">
-    <div class="about-shop-content">
-        <h2 class="about-shop-title">We Create Fashion</h2>
-        <div class="about-shop-text">
-            <p>Squeeze the gel out and apply around the entire eye area. Apply other eye medications at least 10 minutes
-                before timolol gel solution</p>
-            <p>let the eye gel dry for a few minutes, then apply 4VOO dynamic lift treatment or maximum renewal
-                moisturizer. Do not apply calcium gluconate gel to eye.</p>
-        </div>
-        <a href="#" class="about-shop-link btn btn-black">Read more</a>
-    </div>
-
-    <div class="about-shop-media">
-        <div class="about-shop-media-first">
-            <img src="img/example/img-12.jpg" srcset="img/example/img-12@2x.jpg 2x" alt="">
-        </div>
-        <div class="about-shop-media-second">
-            <img src="img/example/img-13.jpg" srcset="img/example/img-13@2x.jpg 2x" alt="">
-        </div>
-    </div>
-</div>
-
-<div class="fashion-news container">
-    <div class="fashion-news-head">
-        <h2 class="fashion-news-title">Fashion News</h2>
-
-        <a href="#" class="title-all">
-            <span>All</span>
-            <span class="arrow-right"></span>
-        </a>
-    </div>
-
-    <ul class="news-list">
-        <li class="fashion-news-item news-item">
-            <div class="news-item-media">
-                <a href="#" rel="nofollow">
-                    <img src="img/example/img-14.jpg" srcset="img/example/img-14@2x.jpg 2x" alt="">
-
-                    <span class="sale-look">
-                        <span class="sale-look-text">Look Closer</span>
-                        <span class="sale-look-arrow arrow-right"></span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="news-item-title"><a href="#">Lovelulus Winner of the Week</a></div>
-
-            <div class="news-item-date">15 Jun 2017</div>
-        </li>
-
-        <li class="fashion-news-item news-item">
-            <div class="news-item-media">
-                <a href="#" rel="nofollow">
-                    <img src="img/example/img-15.jpg" srcset="img/example/img-15@2x.jpg 2x" alt="">
-
-                    <span class="sale-look">
-                        <span class="sale-look-text">Look Closer</span>
-                        <span class="sale-look-arrow arrow-right"></span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="news-item-title"><a href="#">Having Your Breasts Reduced With Breast Augmentation</a></div>
-
-            <div class="news-item-date">19 Jan 2017</div>
-        </li>
-
-        <li class="fashion-news-item news-item">
-            <div class="news-item-media">
-                <a href="#" rel="nofollow">
-                    <img src="img/example/img-16.jpg" srcset="img/example/img-16@2x.jpg 2x" alt="">
-
-                    <span class="sale-look">
-                        <span class="sale-look-text">Look Closer</span>
-                        <span class="sale-look-arrow arrow-right"></span>
-                    </span>
-                </a>
-            </div>
-
-            <div class="news-item-title"><a href="#">Lovelulus Winner of the Week</a></div>
-
-            <div class="news-item-date">15 Jun 2017</div>
-        </li>
-    </ul>
-</div>
-
-<div class="instagram-block">
-    <div class="instagram-left">
-        <div class="first"><img src="img/example/img-17.jpg" srcset="img/example/img-17@2x.jpg 2x" alt=""></div>
-        <div class="second"><img src="img/example/img-18.jpg" srcset="img/example/img-18@2x.jpg 2x" alt=""></div>
-        <div class="third"><img src="img/example/img-19.jpg" srcset="img/example/img-19@2x.jpg 2x" alt=""></div>
-    </div>
-
-    <div class="instagram-center">
-        <svg class="instagram">
-            <use xlink:href="img/sprite.svg#instagram"></use>
-        </svg>
-
-        <div class="instagram-followers">147,000 followers</div>
-
-        <a href="#" class="instagram-join-us">Join US!</a>
-    </div>
-
-    <div class="instagram-right">
-        <div class="first"><img src="img/example/img-20.jpg" srcset="img/example/img-20@2x.jpg 2x" alt=""></div>
-        <div class="second"><img src="img/example/img-21.jpg" srcset="img/example/img-21@2x.jpg 2x" alt=""></div>
-        <div class="third"><img src="img/example/img-22.jpg" srcset="img/example/img-22@2x.jpg 2x" alt=""></div>
-    </div>
-</div>
+</article>
 
 <!-- include "template/footer.html" -->
 
