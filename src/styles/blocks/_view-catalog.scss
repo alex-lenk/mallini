@@ -7,6 +7,10 @@
     display: flex;
 }
 
+.view-catalog-item a:hover .arrow-right {
+    width: 108px;
+}
+
 .view-catalog-media {
     height: 504px;
     margin-bottom: 21px;

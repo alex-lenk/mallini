@@ -137,4 +137,13 @@ $(document).ready(function () {
             clickable: true,
         }
     });
+
+    $(function(){
+
+        $('.header-down').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#home-popular').offset().top }, 1000);
+            e.preventDefault();
+        });
+
+    });
 });

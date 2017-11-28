@@ -71,11 +71,14 @@
 .instagram-join-us {
     color: $colorGray;
     text-decoration: underline;
-    @include font-size(28px)
+    @include font-size(28px);
+    &:hover {
+        color: $colorDark;
+    }
 }
 
 .instagram-right {
-    max-width: 522px;
+    max-width: 529px;
     height: 200px;
     position: relative;
     display: flex;

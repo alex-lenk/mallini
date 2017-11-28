@@ -23,6 +23,21 @@
 /*
 @import "common/checkbox-radio";
 */
+body::before {
+    width: 830px;
+    height: 730px;
+    content: '';
+    background: url(../img/bg/bg-pre-top.jpg) no-repeat 0 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 3;
+}
+
+.page::before {
+    top: 90px;
+}
+
 .container {
     max-width: 1600px;
     width: 100%;
@@ -33,7 +48,7 @@
 .title-all {
     text-transform: uppercase;
     font-weight: 600;
-    color: #939190;
+    color: $colorGray;
     font-size: 1.375rem;
     align-self: flex-start;
     .arrow-right {
@@ -44,17 +59,27 @@
             right: 10px;
             top: 9px;
             position: absolute;
-            background-color: #939190;
+            background-color: $colorGray;
         }
         &::after {
-            border-right-color: #939190;
-            border-bottom-color: #939190;
+            border-right-color: $colorGray;
+            border-bottom-color: $colorGray;
         }
     }
-}
-
-.nav-pages .menu-item {
-    color: #2A2928;
+    
+    &:hover {
+        margin-top: 37px;
+        color: $colorDark;
+        .arrow-right {
+            &::before {
+                background-color: $colorDark;
+            }
+            &::after {
+                border-right-color: $colorDark;
+                border-bottom-color: $colorDark;
+            }
+        }
+    }
 }
 
 .page-content {

@@ -108,7 +108,10 @@ gulp.task('styles:build', function () {
             includePaths: ['src/styles/'],
             errLogToConsole: true
         }))
-        .pipe(prefixer())
+        .pipe(prefixer({
+            browsers: ['last 5 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest(way.build.css))
         .pipe(reload({
             stream: true

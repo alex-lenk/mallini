@@ -1,6 +1,7 @@
 .home-sales {
     margin-bottom: 140px;
     position: relative;
+    z-index: 4;
 }
 
 .sales-left {
@@ -47,6 +48,18 @@
     text-transform: uppercase;
     font-weight: 600;
     @include font-size(17px);
+    &:hover {
+        color: $colorLight;
+        .arrow-right {
+            &::before {
+                background-color: $colorGray;
+            }
+            &::after {
+                border-right-color: $colorGray;
+                border-bottom-color: $colorGray;
+            }
+        }
+    }
 }
 
 .sale-look-text {
@@ -83,7 +96,7 @@
 }
 
 .sales-control-left {
-    right: 64px;
+    right: 74px;
 }
 
 .sales-control-right {
@@ -96,7 +109,4 @@
     background-color: #212121;
     pointer-events: none;
     cursor: default;
-    &.sales-control-left {
-        right: 63px;
-    }
 }

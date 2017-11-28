@@ -4,9 +4,10 @@
 .ui-placeholder {
     @include hidePlaceholder {
         opacity: 1;
-        font-size: 18px;
         color: #5A5A5A;
         transition: opacity 0.3s ease;
+        font-weight: 300;
+        @include font-size(18px);
     }
     &:focus {
         @include hidePlaceholder {
