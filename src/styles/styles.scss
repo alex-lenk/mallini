@@ -66,7 +66,7 @@ body::before {
             border-bottom-color: $colorGray;
         }
     }
-    
+
     &:hover {
         margin-top: 37px;
         color: $colorDark;
@@ -92,4 +92,22 @@ body::before {
     margin-bottom: 62px;
     font-weight: 400;
     color: $colorDark;
+}
+
+.wrapper {
+}
+
+.not-found {
+}
+
+.not-found-logo {
+}
+
+.not-found-error {
+}
+
+.not-found-title {
+}
+
+.not-found-text {
 }
