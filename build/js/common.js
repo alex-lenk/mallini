@@ -197,6 +197,33 @@ $(document).ready(function () {
         });
     }
 
-    /* END */
+    /* END catalog-sidebar-fixed */
+
+
+    /* BEGIN закрывает блок added-bag на странице с каталогом */
+
+    $('.added-bag-close').click(
+        function () {
+            $('.added-bag').fadeOut();
+        }
+    );
+
+    /* END added-bag */
+
+
+    /* BEGIN: открытие и закрытие панели catalog-sidebar */
+
+    $('.filter-icon-wrap').click(
+        function () {
+            $('.catalog').toggleClass('catalog-sidebar-opened');
+        }
+    );
+    $('.catalog-sidebar-close').click(
+        function () {
+            $('.catalog').toggleClass('catalog-sidebar-opened');
+        }
+    );
+
+    /* END catalog-sidebar */
 
 });
