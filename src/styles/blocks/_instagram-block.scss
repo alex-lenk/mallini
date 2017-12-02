@@ -1,8 +1,8 @@
 .instagram-block {
     padding-top: 32px;
     position: relative;
-    z-index: 4;
     overflow: hidden;
+    z-index: $instagram-block;
     display: flex;
     justify-content: space-between;
     &::before {

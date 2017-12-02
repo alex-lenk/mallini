@@ -279,7 +279,6 @@
 
 .header-modal {
     height: inherit;
-    background: $colorWhite url(../img/bg/bg.jpg) no-repeat center;
     position: absolute;
     top: 0;
     left: 0;
@@ -287,6 +286,10 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.10);
+}
+
+.header-modal-inner {
+    background: $colorWhite url(../img/bg/bg.jpg) no-repeat center;
 }
 
 .header-modal-title {

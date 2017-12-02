@@ -19,6 +19,7 @@
     justify-content: center;
     transition: all 0.3s ease;
     @include font-size(17px);
+    
     &-black {
         color: $colorDark;
         border-color: $colorDark;
@@ -28,6 +29,7 @@
             color: $colorWhite;
         }
     }
+    
     &-black-full {
         background-color: $colorDark;
         color: $colorWhite;
@@ -35,8 +37,10 @@
         &:hover {
             color: $colorDark;
             background-color: $colorWhite;
+            border-color: $colorWhite;
         }
     }
+    
     &-gray {
         color: $colorGray;
         border-color: $colorGray;
@@ -45,6 +49,7 @@
             color: $colorWhite;
         }
     }
+    
     &-white {
         padding: 0 32px;
         color: $colorWhite;
@@ -62,6 +67,7 @@
             cursor: default;
         }
     }
+    
     &-disabled {
         color: $colorLight;
         border-color: $colorLight;

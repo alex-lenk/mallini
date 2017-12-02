@@ -9,8 +9,8 @@
         background: #212121 url(../img/bg/bg-left-header@2x.jpg) no-repeat top center;
         background-size: 665px;
     }
-    body::before {
-        background: url(../img/bg/bg-pre-top@2x.jpg) no-repeat 0 0;
+    .wrapper {
+        background-image: url(../img/bg/bg-pre-top@2x.jpg), url(../img/bg/bg-pre-footer@2x.jpg);
     }
 }
 
@@ -554,7 +554,7 @@
     .header-search-nav {
         padding-top: 28px;
     }
-    .header-modal {
+    .header-modal-inner {
         padding: 28px 15px;
     }
     .header-modal-title {
@@ -822,13 +822,12 @@
     }
     .header-modal {
         width: 493px;
-        padding: 30px 25px 30px;
+    }
+    .header-modal-inner {
+        padding: 30px 25px 40px;
     }
     .header-modal-title {
         text-align: center;
-    }
-    .header-modal {
-        padding-bottom: 40px;
     }
     
     .about-shop {
@@ -936,7 +935,7 @@
         }
         &:not(.menu-active):hover::after {
             width: 100%;
-            opacity: 1; 
+            opacity: 1;
         }
     }
     .nav-products, .nav-title {
@@ -959,6 +958,8 @@
     }
     .header-modal {
         width: 534px;
+    }
+    .header-modal-inner {
         padding: 33px 45px 40px 50px;
     }
     .catalog-panel {
@@ -1166,6 +1167,8 @@
     .header-modal {
         width: 665px;
         height: 100%;
+    }
+    .header-modal-inner {
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -1377,7 +1380,7 @@
 }
 
 @media (min-width: 1920px) {
-    .header-modal {
+    .header-modal-inner {
         background-size: cover;
     }
     .header-home-logo {

@@ -2,3 +2,22 @@ $colorDark: #2A2928;
 $colorGray: #939190;
 $colorLight: #C5C5C5;
 $colorWhite: #FFFFFF;
+
+// Z-index master list
+$popular-items:        5 !default;
+$home-sales:           4 !default;
+$catalog-final:        4 !default;
+$fashion-news:         4 !default;
+$instagram-block:      4 !default;
+$header-page:         20 !default;
+$header-page-panel:   10 !default;
+
+
+
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
+$zindex-popover:                    1060 !default;
+$zindex-tooltip:                    1070 !default;

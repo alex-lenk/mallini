@@ -1,7 +1,7 @@
 .home-sales {
     margin-bottom: 140px;
     position: relative;
-    z-index: 4;
+    z-index: $home-sales;
 }
 
 .sales-left {
@@ -20,6 +20,9 @@
     @include font-size(21px);
     a {
         color: inherit;
+        &:hover {
+            color: $colorDark;
+        }
     }
 }
 

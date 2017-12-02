@@ -1,7 +1,7 @@
 .header-page {
     margin-bottom: 120px;
     position: relative;
-    z-index: 20;
+    z-index: $header-page;
     background-color: $colorDark;
     .menu-item {
         color: #fff;
@@ -25,7 +25,7 @@
 .header-page-panel {
     width: 100%;
     position: relative;
-    z-index: 10;
+    z-index: $header-page-panel;
     display: flex;
 }
 
