@@ -304,6 +304,7 @@
         left: 316px;
     }
     
+    .catalog-header,
     .header-page {
         margin-bottom: 90px;
     }
@@ -326,6 +327,7 @@
     .nav-pages .menu-item {
         color: #2A2928;
     }
+    .catalog-header,
     .header-page .nav-wrap {
         width: 100%;
         left: 0;
@@ -728,6 +730,7 @@
         margin-right: 25px;
     }
     
+    .catalog-header,
     .header-page {
         margin-bottom: 64px;
     }
@@ -757,8 +760,11 @@
         margin-bottom: 110px;
     }
     
-    .header-page .header-modal {
-        height: 100vh;
+    .catalog-header,
+    .header-page {
+        .header-modal {
+            height: 100vh;
+        }
     }
     .footer-contacts-title {
         @include font-size(23px);
@@ -914,29 +920,39 @@
 }
 
 @media (min-width: 1100px) {
+    .header-home .menu-item:first-of-type {
+        color: $colorWhite;
+        &:hover .menu-link::after {
+            background-color: $colorWhite;
+        }
+    }
     .menu-item {
         @include font-size(17px);
-        &:first-of-type {
-            color: $colorWhite;
-            &:hover::after {
-                background-color: $colorWhite;
+        &:not(.menu-active):hover {
+            color: $colorGray;
+            .menu-link::after {
+                width: 100%;
+                opacity: 1;
+                background-color: $colorGray;
+            }
+            svg {
+                fill: $colorGray;
             }
         }
-        &::after {
-            width: 0;
-            height: 1px;
-            background-color: $colorDark;
-            opacity: 0;
-            position: absolute;
-            content: '';
-            transition: all .3s ease;
-            left: 0;
-            bottom: -3px;
-        }
-        &:not(.menu-active):hover::after {
-            width: 100%;
-            opacity: 1;
-        }
+    }
+    .menu-link::after {
+        width: 0;
+        height: 1px;
+        background-color: $colorDark;
+        opacity: 0;
+        position: absolute;
+        content: '';
+        transition: all .3s ease;
+        left: 0;
+        bottom: -3px;
+    }
+    .page .menu-link::after {
+        background-color: $colorWhite;
     }
     .nav-products, .nav-title {
         display: none;
@@ -1636,7 +1652,7 @@
 @media (min-width: 1100px) and (max-width: 1599px) {
     .menu-item:nth-of-type(2) {
         color: $colorWhite;
-        &:hover {
+        &:hover .menu-link {
             &::after,
             &::before {
                 background-color: $colorWhite;
@@ -1706,8 +1722,11 @@
     .header-page-logo {
         margin-right: 71px;
     }
-    .header-page .menu-item:not(:last-child) {
-        margin-right: 6%;
+    .catalog-header,
+    .header-page {
+        .menu-item:not(:last-child) {
+            margin-right: 6%;
+        }
     }
     
     .sales-item {
@@ -1765,8 +1784,11 @@
     .header-page-logo {
         margin-right: 95px;
     }
-    .header-page .menu-item:not(:last-child) {
-        margin-right: 8%;
+    .catalog-header,
+    .header-page {
+        .menu-item:not(:last-child) {
+            margin-right: 8%;
+        }
     }
     
     .sales-item:nth-child(odd) {

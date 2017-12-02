@@ -3,7 +3,7 @@
     position: relative;
     z-index: $header-page;
     background-color: $colorDark;
-    .menu-item {
+    .menu-item:not(.menu-active) {
         color: #fff;
     }
     .menu-item:not(:last-child) {
@@ -20,7 +20,6 @@
         background-color: #ffffff;
     }
 }
-
 
 .header-page-panel {
     width: 100%;

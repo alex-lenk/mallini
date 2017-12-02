@@ -166,4 +166,11 @@ $(document).ready(function () {
 
     /* END animate scroll elements */
 
+
+    /* BEGIN находим определенный символ в строке и удаляем в фильтре на странице каталога */
+
+    $('.mfilter-price-inputs').html(function(_, oldHtml) { return oldHtml.replace(/\$/g, ''); });
+
+    /* END в фильтре на странице каталога */
+
 });
