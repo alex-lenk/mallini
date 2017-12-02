@@ -95,7 +95,6 @@ gulp.task('html:build', function () {
 gulp.task('js:build', function () {
     gulp.src(way.src.js)
         .pipe(rigger())
-        .pipe(uglify())
         .pipe(gulp.dest(way.build.js))
         .pipe(reload({
             stream: true
