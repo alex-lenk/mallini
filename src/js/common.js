@@ -173,4 +173,30 @@ $(document).ready(function () {
 
     /* END в фильтре на странице каталога */
 
+
+    /* BEGIN: Плавающий блок в сайдбаре */
+
+    const $window = $(window), //Основное окно
+        $catalogSidebarFixed = $(".catalog-sidebar-fixed"); // Блок, который нужно фиксировать при прокрутке
+
+    if ($catalogSidebarFixed.length) {
+        $h = $catalogSidebarFixed.offset().top; // Определяем координаты верха нужного блока (например, с навигацией или виджетом, который надо фиксировать)
+
+        $window.on('scroll', function () {
+            // Как далеко вниз прокрутили страницу
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Если прокрутили скролл ниже макушки нужного блока, включаем ему фиксацию
+            if (scrollTop > $h) {
+
+                $catalogSidebarFixed.addClass("fixed");
+                // Иначе возвращаем всё назад
+            } else {
+                $catalogSidebarFixed.removeClass("fixed");
+            }
+        });
+    }
+
+    /* END */
+
 });
