@@ -19,6 +19,7 @@
     line-height: 24px;
     @include font-size(21px);
     a {
+        text-decoration: none;
         color: inherit;
         &:hover {
             color: $colorDark;
@@ -50,6 +51,7 @@
     color: #2A2928;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration: none;
     @include font-size(17px);
     &:hover {
         color: $colorLight;

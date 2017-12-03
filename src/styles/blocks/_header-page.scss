@@ -3,9 +3,6 @@
     position: relative;
     z-index: $header-page;
     background-color: $colorDark;
-    .menu-item:not(.menu-active) {
-        color: #fff;
-    }
     .menu-item:not(:last-child) {
         margin-right: 7%;
     }
