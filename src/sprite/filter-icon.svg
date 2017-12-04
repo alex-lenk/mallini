@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>filter-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Catalog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Catalog-375" transform="translate(-15.000000, -233.000000)" fill="#2A2928">
+            <g id="Catalog-Dresses" transform="translate(-26.000000, 216.000000)">
+                <g id="Filter-icon">
+                    <g id="filter-icon" transform="translate(41.000000, 17.000000)">
+                        <path d="M0.856423174,3.71284635 L19.126801,3.71284635 C19.5978338,3.71284635 19.9832242,3.32745592 19.9832242,2.85642317 C19.9832242,2.38539043 19.5978338,2 19.126801,2 L0.856423174,2 C0.385390428,2 0,2.38539043 0,2.85642317 C0,3.32745592 0.385390428,3.71284635 0.856423174,3.71284635 Z" id="Shape" fill-rule="nonzero"></path>
+                        <path d="M0.856423174,10.2128463 L19.126801,10.2128463 C19.5978338,10.2128463 19.9832242,9.82745592 19.9832242,9.35642317 C19.9832242,8.88539043 19.5978338,8.5 19.126801,8.5 L0.856423174,8.5 C0.385390428,8.5 0,8.88539043 0,9.35642317 C0,9.82745592 0.385390428,10.2128463 0.856423174,10.2128463 Z" id="Shape-Copy" fill-rule="nonzero"></path>
+                        <path d="M0.856423174,16.6011587 L19.126801,16.6011587 C19.5978338,16.6011587 19.9832242,16.2157683 19.9832242,15.7447355 C19.9832242,15.2737028 19.5978338,14.8883123 19.126801,14.8883123 L0.856423174,14.8883123 C0.385390428,14.8883123 0,15.2737028 0,15.7447355 C0,16.2157683 0.385390428,16.6011587 0.856423174,16.6011587 Z" id="Shape" fill-rule="nonzero"></path>
+                        <circle id="Oval-2" cx="6" cy="2.79998779" r="2"></circle>
+                        <circle id="Oval-2-Copy" cx="6" cy="15.7000122" r="2"></circle>
+                        <circle id="Oval-2-Copy-2" cx="14" cy="9.29998779" r="2"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

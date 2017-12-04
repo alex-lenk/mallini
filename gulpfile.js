@@ -51,7 +51,7 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: false,
+    tunnel: true,
     host: 'localhost',
     port: 9000,
     logPrefix: "frontend"
@@ -59,7 +59,7 @@ var config = {
 
 gulp.task('svgstore', function () {
     return gulp
-        .src('./sources/sprite/*.svg')
+        .src('./src/sprite/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
