@@ -1992,6 +1992,31 @@ footer {
   .added-bag-close:hover {
     border-color: transparent; }
 
+.not-found {
+  padding-top: 77px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.not-found-logo {
+  max-width: 253px; }
+
+.not-found-wrap {
+  margin: auto 0;
+  text-align: center; }
+
+.not-found-error {
+  color: #939190;
+  font-weight: 400;
+  font-size: 1.5625rem; }
+
+.not-found-text {
+  font-weight: 400;
+  font-size: 1.5625rem; }
+
 /*
 @import "common/checkbox-radio";
 */
