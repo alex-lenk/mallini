@@ -4,12 +4,15 @@
     z-index: $home-sales;
 }
 
+.sales-left,.sales-right {
+    background-repeat: no-repeat;
+}
 .sales-left {
-    background: #F2F2F2 url(../img/example/img-10.png) no-repeat;
+    background-color: #F2F2F2;
 }
 
 .sales-right {
-    background: #E9E9E9 url(../img/example/img-11.png) no-repeat;
+    background-color: #E9E9E9;
 }
 
 .sales-title {
