@@ -39,7 +39,7 @@
         height: 310px;
         overflow: hidden;
     }
-    
+
     .instagram-left .first, .instagram-right .third {
         display: none;
     }
@@ -95,11 +95,11 @@
             transform: translateX(-5px);
         }
     }
-    
+
     .catalog-sidebar-logo {
         display: none;
     }
-    
+
     .catalog-sidebar, .box-heading, .mfilter-heading, .list-group-item, .list-group .active, .mfilter-tb-as-td {
         color: $colorDark;
     }
@@ -138,14 +138,14 @@
     .mfilter-price .mfilter-heading {
         margin-bottom: 33px;
     }
-    
+
     .catalog-header {
         margin-bottom: 74px;
         .header-nav-toggle .menu-options {
             fill: $colorDark;
         }
     }
-    
+
     .catalog-head {
         padding-left: 55px;
         position: relative;
@@ -153,7 +153,7 @@
             margin-top: 0;
             padding-left: 33px;
             padding-right: 33px;
-            
+
         }
     }
     .filter-icon-wrap {
@@ -175,7 +175,7 @@
             fill: $colorDark;
         }
     }
-    
+
     .catalog-content h1 {
         margin-bottom: 72px;
         @include font-size(44px);
@@ -191,12 +191,12 @@
         top: 11px;
         right: 13px;
     }
-    
+
     .catalog-item-container:hover .catalog-item-media {
         background-position-y: -44px;
         background-size: 247px 313px;
     }
-    
+
     .added-bag {
         height: 100px;
     }
@@ -217,23 +217,23 @@
     h1, .h1 {
         @include font-size(44px);
     }
-    
+
     .container, .container-fluid {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
     .header-home {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
-    
+
     .footer-wrap {
         flex-wrap: wrap;
     }
     .footer-contacts {
         margin-left: auto;
     }
-    
+
     .header-nav {
         display: flex;
     }
@@ -319,11 +319,11 @@
     .menu-catalog {
         display: none;
     }
-    
+
     .header-catalog {
         display: none;
     }
-    
+
     .home-sales {
         padding-top: 51px;
         &::before, &::after {
@@ -359,7 +359,7 @@
     .sales-left {
         background-size: 307px;
         background-position: 1% 0;
-        
+
     }
     .sales-right {
         background-size: 210px;
@@ -375,7 +375,7 @@
     .sales-control-left, .sales-control-right {
         top: 74px;
     }
-    
+
     .view-catalog {
         flex-wrap: wrap;
     }
@@ -421,14 +421,14 @@
             margin-bottom: 29px;
         }
     }
-    
+
     .fashion-news-title {
         @include font-size(44px);
     }
     .fashion-news-item:not(:first-of-type):not(:last-of-type) {
         display: none;
     }
-    
+
     .popular-items-slider {
         height: 330px;
     }
@@ -489,22 +489,22 @@
     .popular-items-next {
         left: 316px;
     }
-    
+
     .header-page {
         margin-bottom: 90px;
     }
     .header-page-logo {
         margin-right: 123px;
     }
-    
+
     .page-content {
         margin-bottom: 140px;
     }
-    
+
     .sales-item {
         height: 307px;
     }
-    
+
     .nav-pages .menu-item {
         color: #2A2928;
     }
@@ -513,7 +513,7 @@
         width: 100%;
         left: 0;
     }
-    
+
     .popular-items-bottom {
         margin-left: auto;
     }
@@ -542,13 +542,13 @@
     .catalog-head .btn {
         display: none;
     }
-    
+
     .header-media {
         position: absolute;
         right: 0;
         bottom: 0;
     }
-    
+
     .popular-items {
         top: 0;
     }
@@ -618,7 +618,7 @@
         right: 14px;
         left: auto;
     }
-    
+
     .sales-item {
         width: 100%;
     }
@@ -631,7 +631,7 @@
     .hidden-668 {
         display: none;
     }
-    
+
     .footer-contacts {
         width: calc(100% - 10px);
         margin-top: 40px;
@@ -691,7 +691,7 @@
     .catalog-item-title {
         padding-right: 65px;
     }
-    
+
     .catalog-sidebar {
         padding-top: 27px;
         padding-left: 15px;
@@ -743,11 +743,11 @@
         max-width: 100%;
         left: 0;
     }
-    
+
     .hidden-sx {
         display: none;
     }
-    
+
     .header-home {
         height: 558px;
         overflow: hidden;
@@ -897,7 +897,7 @@
         line-height: 21px;
         @include font-size(22px);
     }
-    
+
     .home-sales {
         margin-bottom: 99px;
         padding-top: 377px;
@@ -924,14 +924,14 @@
     .sales-control-current.sales-control-left {
         top: 92px;
     }
-    
+
     .sales-price-cost {
         @include font-size(32px)
     }
     .sales-price-old {
         @include font-size(20px)
     }
-    
+
     .view-catalog {
         flex-direction: column;
     }
@@ -952,7 +952,7 @@
             @include font-size(28px);
         }
     }
-    
+
     .about-shop {
         margin-bottom: 97px;
     }
@@ -971,7 +971,7 @@
     .about-shop-text {
         margin-bottom: 42px;
     }
-    
+
     .fashion-news {
         margin-bottom: 99px;
     }
@@ -996,7 +996,7 @@
     .fashion-news-item {
         margin: 0 auto;
     }
-    
+
     .instagram-left {
         display: none;
     }
@@ -1015,11 +1015,11 @@
     .instagram-followers {
         margin: 3px 0 23px;
     }
-    
+
     .footer-menu-list {
         margin-right: 25px;
     }
-    
+
     .catalog-header,
     .header-page {
         margin-bottom: 64px;
@@ -1032,11 +1032,11 @@
         max-width: 135px;
         margin-right: 0;
     }
-    
+
     .page-content-title {
         margin-bottom: 41px;
     }
-    
+
     .sales-item {
         padding-top: 67px;
         padding-left: 43%;
@@ -1045,11 +1045,11 @@
         width: 220px;
         left: -20%;
     }
-    
+
     .page-content {
         margin-bottom: 110px;
     }
-    
+
     .catalog-header,
     .header-page {
         .header-modal {
@@ -1107,7 +1107,7 @@
     .visible-667 {
         display: none;
     }
-    
+
     .header-media-first {
         width: 347px;
         &::before {
@@ -1129,7 +1129,7 @@
     .header-modal-title {
         text-align: center;
     }
-    
+
     .about-shop {
         margin-bottom: 125px;
     }
@@ -1154,7 +1154,7 @@
     .about-shop-media-first {
         text-align: right;
     }
-    
+
     .fashion-news .news-list {
         justify-content: space-between;
     }
@@ -1164,11 +1164,11 @@
     .news-item-media {
         margin-bottom: 18px;
     }
-    
+
     .title-all {
         margin: 20px 0 0 auto;
     }
-    
+
     .header-page-panel {
         height: 120px;
         padding-top: 48px;
@@ -1191,7 +1191,7 @@
     .header-search-field {
         margin-right: 4%;
     }
-    
+
     .popular-items-content {
         position: relative;
         z-index: 6;
@@ -1200,7 +1200,7 @@
         max-width: calc(100% / 2 - 15px);
         flex: 1 1 calc(100% / 2 - 15px);
     }
-    
+
     .catalog-item {
         margin-bottom: 53px;
         max-width: calc(100% / 3);
@@ -1224,13 +1224,20 @@
 
 @media (min-width: 1100px) {
     h1, .h1 {
+      margin-bottom: 98px;
         @include font-size(52px);
-    }
-    
-    .header-page .menu-item:not(.menu-active) {
+  }
+
+  .news-inner .pull-left {;
+      max-width: 290px;
+    margin-right: 35px;
+    margin-bottom: 15px;
+  }
+
+  .header-page .menu-item:not(.menu-active) {
         color: #fff;
     }
-    
+
     .header-home {
         height: 100vh;
     }
@@ -1278,7 +1285,7 @@
         margin-top: 12px;
         line-height: 68px;
     }
-    
+
     .header-search-area {
         padding-left: 8%;
         padding-right: 10%;
@@ -1295,7 +1302,7 @@
     .catalog-panel {
         margin-bottom: 140px;
     }
-    
+
     .view-catalog-item {
         max-width: 25%;
         flex: 1 1 25%;
@@ -1315,7 +1322,7 @@
         line-height: 20px;
         @include font-size(21px);
     }
-    
+
     .home-sales {
         height: 307px;
         padding-right: 70px;
@@ -1343,7 +1350,7 @@
     .sales-control-right {
         display: none;
     }
-    
+
     .catalog-final-title {
         margin-bottom: 77px;
     }
@@ -1356,7 +1363,7 @@
     .catalog-final-more .title {
         margin-bottom: 27px;
     }
-    
+
     .about-shop {
         margin-bottom: 167px;
     }
@@ -1379,7 +1386,7 @@
     .about-shop-text {
         margin-bottom: 50px;
     }
-    
+
     .fashion-news {
         margin-bottom: 173px;
     }
@@ -1397,15 +1404,15 @@
             flex: 1 1 calc(100% / 3);
         }
     }
-    
+
     .news-item-media {
         margin-bottom: 14px;
     }
-    
+
     .title-all {
         margin-top: 27px;
     }
-    
+
     .popular-items-media {
         width: 336px;
         margin-left: 46px;
@@ -1430,7 +1437,7 @@
     .popular-items-next {
         right: 70px;
     }
-    
+
     .popular-items-prev, .popular-items-next {
         bottom: 82px;
     }
@@ -1448,7 +1455,7 @@
     .swiper-pagination-bullet {
         margin-bottom: 12px;
     }
-    
+
     .footer-contacts {
         line-height: 24px;
         @include font-size(17px)
@@ -1459,20 +1466,20 @@
     .filter-icon-wrap {
         display: none;
     }
-    
-    .header-page-logo {
+
+    .catalog-header .header-page-logo {
         display: none;
     }
-    
+
     .catalog-sidebar-head {
         display: none;
     }
 }
 
 @media (min-width: 1340px) {
-    h1, .h1 {
-        margin-bottom: 71px;
-    }
+  .news-inner .pull-left {
+    max-width: 345px;
+  }
     .header-home-left {
         width: 565px;
         flex: 0 0 565px;
@@ -1521,12 +1528,12 @@
     .view-catalog-text {
         @include font-size(25px);
     }
-    
+
     .container, .container-fluid {
         padding-left: 100px;
         padding-right: 100px;
     }
-    
+
     .home-sales {
         height: 365px;
     }
@@ -1544,7 +1551,7 @@
         background-size: 250px;
         background-position: 105% 0;
     }
-    
+
     .catalog-final-title {
         margin-bottom: 80px;
     }
@@ -1557,7 +1564,7 @@
     .catalog-final-more .title {
         margin-bottom: 34px;
     }
-    
+
     .about-shop {
         margin-bottom: 178px;
     }
@@ -1570,15 +1577,15 @@
         padding-top: 0;
         padding-left: 0;
     }
-    
+
     .fashion-news-title {
         margin-bottom: 95px;
     }
-    
+
     .fashion-news-item:not(:first-of-type):not(:last-of-type) {
         padding: 0 50px;
     }
-    
+
     .popular-items-media {
         width: 358px;
         margin-left: 50px;
@@ -1596,31 +1603,35 @@
     .popular-items-prev, .popular-items-next {
         bottom: 112px;
     }
-    
+
     .footer-contacts {
         flex-basis: 309px;
         padding-left: 78px;
     }
-    
+
     .footer-menu-list:first-of-type {
         margin-right: 100px;
     }
 }
 
 @media (min-width: 1600px) {
-    h1, .h1 {
-        margin-bottom: 98px;
-    }
-    
+
+
     .news-inner {
         padding-left: 118px;
         padding-right: 100px;
     }
-    
+
+  .news-inner .pull-left {
+      max-width: 422px;
+      margin-right: 40px;
+      margin-bottom: 20px;
+  }
+
     .news-inner-head .link-back {
         left: -118px;
     }
-    
+
     .header-home-logo {
         margin-right: 312px;
     }
@@ -1649,7 +1660,7 @@
     .catalog-panel-arrow {
         right: -10px;
     }
-    
+
     .sales-all span:not(.sales-all-text) {
         display: none;
     }
@@ -1664,12 +1675,12 @@
         padding-right: 300px;
         background-position: 89% 0;
     }
-    
+
     .view-catalog-arrow {
         left: -7px;
         top: 2px;
     }
-    
+
     .catalog-final-title {
         text-align: center;
         margin-bottom: 67px;
@@ -1680,7 +1691,7 @@
     .catalog-final-more {
         padding: 55px 0;
     }
-    
+
     .about-shop-content {
         padding: 63px 60px 80px 82px;
         max-width: calc(50% - 19px);
@@ -1691,7 +1702,7 @@
     .about-shop-media-second {
         right: 24px;
     }
-    
+
     .popular-items-slider {
         margin-left: 89px;
     }
@@ -1704,7 +1715,7 @@
     .popular-items-next {
         right: 174px;
     }
-    
+
     .sales-item {
         &:nth-child(odd) {
             padding-left: 310px;
@@ -1712,7 +1723,7 @@
             .sales-item-img {
                 left: 7%;
             }
-            
+
         }
         &:nth-child(even) {
             padding-left: 124px;
@@ -1722,11 +1733,11 @@
             }
         }
     }
-    
+
     .footer-contacts {
         padding: 0 50px 0 39px;
     }
-    
+
 }
 
 @media (min-width: 1920px) {
@@ -1735,7 +1746,7 @@
         max-width: 25%;
         flex-basis: 25%;
     }
-    
+
     .header-modal-inner {
         background-size: cover;
     }
@@ -1749,7 +1760,7 @@
             width: 350px;
             top: 21%;
         }
-        
+
     }
     .header-home-title {
         margin-top: -20px;
@@ -1758,7 +1769,7 @@
         padding-left: 19%;
         padding-right: 90px;
     }
-    
+
     .catalog-panel {
         margin-bottom: 145px;
     }
@@ -1768,11 +1779,11 @@
     .catalog-panel-arrow {
         right: 0;
     }
-    
+
     .about-shop {
         margin-bottom: 178px;
     }
-    
+
     .view-catalog-media::before {
         background-size: 94% 104%;
     }
@@ -1806,7 +1817,7 @@
     h1, .h1 {
         margin-bottom: 50px;
     }
-    
+
     .header-home {
         height: 790px;
         overflow: hidden;
@@ -1826,7 +1837,7 @@
         line-height: 50px;
         @include font-size(52px);
     }
-    
+
     .sales-all {
         width: 70px;
         height: 307px;
@@ -1850,7 +1861,7 @@
     .sales-all-text {
         display: none;
     }
-    
+
     .sales-left, .sales-right {
         width: calc(100% - 100px);
         left: 85px;
@@ -1860,7 +1871,7 @@
         flex: 1 1 50%;
         margin-bottom: 57px;
     }
-    
+
     .fashion-news {
         margin-bottom: 135px;
     }
@@ -1868,7 +1879,7 @@
         flex: 1 1 calc(100% / 2 - 15px);
         max-width: calc(100% / 2 - 15px);
     }
-    
+
     .instagram-left {
         max-width: 30%;
         flex: 1 1 30%;
@@ -1887,11 +1898,11 @@
             position: absolute;
         }
     }
-    
+
     .sales-item {
         padding-right: 15px;
         padding-top: 70px;
-        
+
         .sales-title {
             @include font-size(18px);
         }
@@ -1908,14 +1919,14 @@
     .sales-item-img {
         width: 230px;
     }
-    
+
     .header-home-text {
         margin-bottom: 50px;
     }
     .header-down {
         left: 405px;
     }
-    
+
     .header-media-first {
         width: 100%;
         max-width: 357px;
@@ -1925,7 +1936,7 @@
     .sales-control-right {
         right: 48px;
     }
-    
+
     .catalog-final-title {
         margin-bottom: 50px;
     }
@@ -1982,7 +1993,7 @@
     .product-list {
         margin-bottom: 27px;
     }
-    
+
     .sales-item:nth-child(odd) {
         padding-left: 155px;
     }
@@ -2027,15 +2038,15 @@
             fill: $colorWhite;
         }
     }
-    
+
     .sales-all {
         display: none;
     }
-    
+
     .catalog-final {
         margin-bottom: 180px;
     }
-    
+
     .sales-item:nth-child(odd) .sales-item-img {
         left: -5%;
     }
@@ -2052,11 +2063,15 @@
 }
 
 @media (min-width: 1100px) and (max-width: 1339px) {
+  .news-inner-head {
+    padding-left: 165px;
+  }
+
     .container, .container-fluid {
         padding-left: 70px;
         padding-right: 70px;
     }
-    
+
     .header-home::before {
         width: 534px;
     }
@@ -2076,24 +2091,24 @@
     .header-down {
         left: 585px;
     }
-    
+
     .product-list {
         width: calc(100% + 60px);
     }
     .product-info {
         padding-right: 65px;
     }
-    
+
     .instagram-left {
         max-width: 326px;
         flex: 1 1 326px;
     }
-    
+
     .instagram-right {
         max-width: 323px;
         flex: 1 1 323px;
     }
-    
+
     .header-page-logo {
         margin-right: 71px;
     }
@@ -2102,7 +2117,7 @@
             margin-right: 6%;
         }
     }
-    
+
     .sales-item {
         padding-top: 69px;
     }
@@ -2120,7 +2135,7 @@
     .sales-item-img {
         width: 230px;
     }
-    
+
     .footer-menu-list:first-of-type {
         margin-right: 59px;
     }
@@ -2149,17 +2164,17 @@
 }
 
 @media (min-width: 1340px) and (max-width: 1599px) {
-    .news-inner-head {
-        padding-left: 195px;
-    }
-    
+  .news-inner-head {
+    padding-left: 195px;
+  }
+
     .header-home-logo {
         margin-right: 135px;
     }
     .menu-item:not(:last-of-type) {
         margin-right: 60px;
     }
-    
+
     .popular-items-content {
         padding-left: 75px;
     }
@@ -2172,7 +2187,7 @@
     .popular-items-prev {
         right: 141px;
     }
-    
+
     .header-page-logo {
         margin-right: 95px;
     }
@@ -2181,7 +2196,7 @@
             margin-right: 8%;
         }
     }
-    
+
     .sales-item:nth-child(odd) {
         padding-left: 260px;
     }
