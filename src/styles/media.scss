@@ -533,6 +533,10 @@
 }
 
 @media (max-width: 767px) {
+    .link-back {
+        display: none;
+    }
+
     .catalog-head {
         padding-left: 63px;
     }
@@ -1971,6 +1975,9 @@
     .sales-item {
         height: 307px;
     }
+    .news-inner-head {
+        padding-left: 165px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 919px) {
@@ -2063,10 +2070,6 @@
 }
 
 @media (min-width: 1100px) and (max-width: 1339px) {
-  .news-inner-head {
-    padding-left: 165px;
-  }
-
     .container, .container-fluid {
         padding-left: 70px;
         padding-right: 70px;
