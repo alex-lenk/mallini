@@ -169,7 +169,6 @@
 }
 
 .news-inner-data {
-    margin-top: 10px;
     text-align: right;
 }
 
@@ -232,5 +231,24 @@
         position: absolute;
         transform: rotate(135deg);
         transition: all 0.3s ease;
+    }
+}
+
+.img-hover {
+    position: relative;
+    cursor: pointer;
+    &::before {
+        width: calc(100% - 55px);
+        height: calc(100% - 55px);
+        top: 27px;
+        left: 27px;
+        position: absolute;
+        outline: 3px solid rgba(255, 255, 255, 0.7);
+        pointer-events: none;
+        transition: all 0.3s ease;
+        content: '';
+    }
+    &:hover::before {
+        background-color: rgba(255, 255, 255, 0.7);
     }
 }

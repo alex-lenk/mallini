@@ -14,3 +14,7 @@
 
 /* 3. swiper.min.js */
 //= ../../bower_components/swiper/dist/js/swiper.min.js
+
+
+/* 4. smoothscroll.js */
+//= lib/jquery.fancybox.min.js

@@ -158,6 +158,8 @@
     display: none; } }
 
 @media (max-width: 1099px) {
+  .link-back {
+    display: none; }
   h1, .h1 {
     font-size: 2.75rem; }
   .container, .container-fluid {
@@ -404,8 +406,6 @@
     margin-bottom: 67px; } }
 
 @media (max-width: 767px) {
-  .link-back {
-    display: none; }
   .catalog-head {
     padding-left: 63px; }
   .filter-icon-wrap {
@@ -514,6 +514,12 @@
       left: -18px; } }
 
 @media (max-width: 567px) {
+  h1, .h1 {
+    line-height: 42px; }
+  .news-inner .pull-left {
+    max-width: 100%;
+    margin-bottom: 25px;
+    float: none; }
   .catalog .icon-basket::before {
     background-color: #2A2928; }
   .catalog-item-media {
@@ -812,6 +818,10 @@
     background-position: -114px 0; } }
 
 @media (min-width: 568px) {
+  .news-inner .pull-left {
+    max-width: 350px;
+    margin-right: 30px;
+    margin-bottom: 15px; }
   .visible-667 {
     display: none; }
   .header-media-first {
@@ -904,8 +914,7 @@
     font-size: 3.25rem; }
   .news-inner .pull-left {
     max-width: 290px;
-    margin-right: 35px;
-    margin-bottom: 15px; }
+    margin-right: 35px; }
   .header-page .menu-item:not(.menu-active) {
     color: #fff; }
   .header-home {
@@ -1174,7 +1183,7 @@
 @media (min-width: 1600px) {
   .news-inner {
     padding-left: 118px;
-    padding-right: 100px; }
+    padding-right: 116px; }
   .news-inner .pull-left {
     max-width: 422px;
     margin-right: 40px;
@@ -1286,6 +1295,12 @@
     margin-bottom: 18px; }
   .fashion-news {
     margin-bottom: 174px; } }
+
+@media (min-width: 1921px) {
+  .catalog-item {
+    max-width: calc(100% / 5);
+    -ms-flex-preferred-size: calc(100% / 5);
+    flex-basis: calc(100% / 5); } }
 
 @media (min-width: 414px) and (max-width: 1099px) {
   .footer-menu-list:first-of-type {
@@ -1419,9 +1434,7 @@
 
 @media (min-width: 768px) and (max-width: 1339px) {
   .sales-item {
-    height: 307px; }
-  .news-inner-head {
-    padding-left: 165px; } }
+    height: 307px; } }
 
 @media (min-width: 768px) and (max-width: 919px) {
   .footer-menu {
@@ -1479,6 +1492,8 @@
     left: -100px; } }
 
 @media (min-width: 1100px) and (max-width: 1339px) {
+  .news-inner-head {
+    padding-left: 165px; }
   .container, .container-fluid {
     padding-left: 70px;
     padding-right: 70px; }
