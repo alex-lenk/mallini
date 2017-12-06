@@ -25,6 +25,7 @@
 @import "blocks/not-found";
 @import "blocks/about-company";
 @import "blocks/news-inner";
+@import "blocks/checkout";
 
 /*
 @import "common/checkbox-radio";
@@ -92,7 +93,17 @@
 .contact-wrap {
 }
 
+.contact-container {
+    display: flex;
+}
+
 .contact-block {
+    width: 100%;
+    max-width: 409px;
+    padding: 55px 55px;
+    margin: 0 40px 0 auto;
+    background-color: #F3F0EE;
+    box-shadow: 40px 40px 0 #F9F9F9;
     &::before {
     }
     a {
@@ -100,64 +111,30 @@
 }
 
 .contact-block-item {
-}
-
-.contact-block-small {
+    font-weight: 400;
+    line-height: 24px;
+    @include font-size(21px);
+    &:not(:last-of-type) {
+        margin-bottom: 45px;
+    }
 }
 
 .contact-block-order {
+    margin-top: 10px;
+    @include font-size(17px);
+}
+
+.contact-block-small {
+    @include font-size(18px);
 }
 
 .contact-block-email {
+    text-decoration: none;
 }
 
 .contact-map {
+    margin-top: 10px;
 }
 
 .back-arrow {
-}
-
-.checkout-head {
-}
-
-.checkout-head-info {
-}
-
-.checkout-head-cost {
-}
-
-.checkout-wrap {
-}
-
-.checkout-content {
-}
-
-.checkout-side {
-}
-
-.checkout-info {
-}
-
-.checkout-info-block {
-}
-
-.checkout-info-title {
-}
-
-.checkout-info-point {
-}
-
-.checkout-info-label {
-}
-
-.checkout-form {
-}
-
-.checkout-form-title {
-}
-
-.checkout-form-fields {
-}
-
-.checkout-form-total {
 }
