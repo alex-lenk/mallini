@@ -57,7 +57,6 @@
 
 .contacts-block-order {
     margin-top: 10px;
-    display: inline-block;
     @include font-size(17px);
 }
 
@@ -72,4 +71,38 @@
 
 .contacts-map {
     margin-top: 10px;
+}
+
+.contacts-form {
+    width: 100%;
+    height: calc(100% - 135px);
+    padding: 35px 25px;
+    text-align: center;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    box-shadow: 0 0 8px rgba(#000, .1);
+    transition: opacity .3s ease;
+    &::before {
+        border: 6px solid transparent;
+        border-bottom: 12px solid #fff;
+        top: -18px;
+        left: 107px;
+        position: absolute;
+        content: '';
+    }
+}
+
+.contacts-form-title {
+    padding: 0 10px;
+    margin-bottom: 45px;
+    font-weight: 400;
+    color: $colorDark;
+    @include font-size(20px);
+}
+
+.contacts-form-opened {
+    opacity: 1;
 }

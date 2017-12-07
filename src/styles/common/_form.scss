@@ -4,9 +4,9 @@
 .ui-placeholder {
     @include hidePlaceholder {
         opacity: 1;
-        color: #5A5A5A;
-        transition: opacity 0.3s ease;
+        color: $colorGray;
         font-weight: 300;
+        transition: opacity 0.3s ease;
         @include font-size(18px);
     }
     &:focus {
@@ -18,7 +18,7 @@
 }
 
 .ui-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -29,33 +29,34 @@
 .ui-field {
     width: 100%;
     padding: 0 20px;
-    border: 1px solid #f0f0f0;
-    border-radius: 4px;
-    background-color: #fff;
-    font-size: 14px;
-    font-weight: normal;
+    background: #F9F9F9;
+    color: $colorDark;
+    font-weight: 300;
     display: block;
     outline: none;
+    border: 0;
+    border-bottom: 1px solid #C5C5C5;
     transition: all .3s ease;
+    @include font-size(18px);
     &:focus {
+        border-bottom: 1px solid $colorDark;
     }
-}
-
-.ui-textarea {
-    min-height: 138px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    resize: vertical;
-}
-
-.control-label {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #465a63;
-    font-weight: normal;
-    display: inline-block;
 }
 
 .required-star {
     color: #cc0000;
+}
+
+.ui-error {
+    .ui-field {
+        border-bottom-color: #cc0000;
+    }
+}
+
+.ui-error-text {
+    padding-top: 5px;
+    color: #cc0000;
+    text-align: left;
+    line-height: 1;
+    @include font-size(16px)
 }

@@ -226,4 +226,15 @@ $(document).ready(function () {
 
     /* END catalog-sidebar */
 
+
+    /* BEGIN: всплывающая форма на странице контактов contacts-form */
+
+    $('.contacts-block-order').click(
+        function () {
+            $('.contacts-form').toggleClass('contacts-form-opened');
+        }
+    );
+
+    /* END catalog-sidebar */
+
 });

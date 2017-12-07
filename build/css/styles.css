@@ -90,30 +90,30 @@
 
 .ui-placeholder::-moz-placeholder {
   opacity: 1;
-  color: #5A5A5A;
-  transition: opacity 0.3s ease;
+  color: #939190;
   font-weight: 300;
+  transition: opacity 0.3s ease;
   font-size: 1.125rem; }
 
 .ui-placeholder:-ms-input-placeholder {
   opacity: 1;
-  color: #5A5A5A;
-  transition: opacity 0.3s ease;
+  color: #939190;
   font-weight: 300;
+  transition: opacity 0.3s ease;
   font-size: 1.125rem; }
 
 .ui-placeholder::-ms-input-placeholder {
   opacity: 1;
-  color: #5A5A5A;
-  transition: opacity 0.3s ease;
+  color: #939190;
   font-weight: 300;
+  transition: opacity 0.3s ease;
   font-size: 1.125rem; }
 
 .ui-placeholder::-webkit-input-placeholder {
   opacity: 1;
-  color: #5A5A5A;
-  transition: opacity 0.3s ease;
+  color: #939190;
   font-weight: 300;
+  transition: opacity 0.3s ease;
   font-size: 1.125rem; }
 
 .ui-placeholder:focus::-moz-placeholder {
@@ -133,7 +133,7 @@
   transition: opacity 0.3s ease; }
 
 .ui-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative; }
 
 .ui-field:not(.ui-textarea) {
@@ -142,30 +142,30 @@
 .ui-field {
   width: 100%;
   padding: 0 20px;
-  border: 1px solid #f0f0f0;
-  border-radius: 4px;
-  background-color: #fff;
-  font-size: 14px;
-  font-weight: normal;
+  background: #F9F9F9;
+  color: #2A2928;
+  font-weight: 300;
   display: block;
   outline: none;
-  transition: all .3s ease; }
-
-.ui-textarea {
-  min-height: 138px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  resize: vertical; }
-
-.control-label {
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: #465a63;
-  font-weight: normal;
-  display: inline-block; }
+  border: 0;
+  border-bottom: 1px solid #C5C5C5;
+  transition: all .3s ease;
+  font-size: 1.125rem; }
+  .ui-field:focus {
+    border-bottom: 1px solid #2A2928; }
 
 .required-star {
   color: #cc0000; }
+
+.ui-error .ui-field {
+  border-bottom-color: #cc0000; }
+
+.ui-error-text {
+  padding-top: 5px;
+  color: #cc0000;
+  text-align: left;
+  line-height: 1;
+  font-size: 1rem; }
 
 html,
 body {
@@ -2175,7 +2175,6 @@ footer {
 
 .contacts-block-order {
   margin-top: 10px;
-  display: inline-block;
   font-size: 1.0625rem; }
 
 .contacts-block-small {
@@ -2187,6 +2186,36 @@ footer {
 
 .contacts-map {
   margin-top: 10px; }
+
+.contacts-form {
+  width: 100%;
+  height: calc(100% - 135px);
+  padding: 35px 25px;
+  text-align: center;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: opacity .3s ease; }
+  .contacts-form::before {
+    border: 6px solid transparent;
+    border-bottom: 12px solid #fff;
+    top: -18px;
+    left: 107px;
+    position: absolute;
+    content: ''; }
+
+.contacts-form-title {
+  padding: 0 10px;
+  margin-bottom: 45px;
+  font-weight: 400;
+  color: #2A2928;
+  font-size: 1.25rem; }
+
+.contacts-form-opened {
+  opacity: 1; }
 
 /*
 @import "common/checkbox-radio";
