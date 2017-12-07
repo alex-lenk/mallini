@@ -2122,6 +2122,72 @@ footer {
   .img-hover:hover::before {
     background-color: rgba(255, 255, 255, 0.7); }
 
+.contacts-wrap {
+  background: url(../img/bg/bg-earth.jpg) no-repeat center; }
+
+.contacts-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts-map {
+  -ms-flex: 1;
+  flex: 1;
+  position: relative; }
+  .contacts-map .pin {
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute; }
+
+.contacts-block {
+  width: 100%;
+  max-width: 409px;
+  padding: 60px 55px 75px;
+  margin: 0 40px 0 auto;
+  position: relative;
+  background-color: #F3F0EE;
+  box-shadow: 40px 30px 0 #F9F9F9;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+  .contacts-block::before {
+    width: 155px;
+    height: 64px;
+    top: -17px;
+    left: -17px;
+    position: absolute;
+    border-left: 3px solid #2A2928;
+    border-top: 3px solid #2A2928;
+    content: ''; }
+
+.contacts-block-item {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 1.3125rem; }
+  .contacts-block-item:not(:last-of-type) {
+    margin-bottom: 45px; }
+  .contacts-block-item a {
+    color: inherit; }
+    .contacts-block-item a:not(.contacts-block-order) {
+      text-decoration: none; }
+
+.contacts-block-order {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 1.0625rem; }
+
+.contacts-block-small {
+  margin-top: 15px;
+  font-size: 1.125rem; }
+
+.contacts-block-email {
+  text-decoration: none; }
+
+.contacts-map {
+  margin-top: 10px; }
+
 /*
 @import "common/checkbox-radio";
 */
@@ -2170,35 +2236,3 @@ footer {
   margin-bottom: 180px;
   position: relative;
   z-index: 15; }
-
-.contact-container {
-  display: -ms-flexbox;
-  display: flex; }
-
-.contact-block {
-  width: 100%;
-  max-width: 409px;
-  padding: 55px 55px;
-  margin: 0 40px 0 auto;
-  background-color: #F3F0EE;
-  box-shadow: 40px 40px 0 #F9F9F9; }
-
-.contact-block-item {
-  font-weight: 400;
-  line-height: 24px;
-  font-size: 1.3125rem; }
-  .contact-block-item:not(:last-of-type) {
-    margin-bottom: 45px; }
-
-.contact-block-order {
-  margin-top: 10px;
-  font-size: 1.0625rem; }
-
-.contact-block-small {
-  font-size: 1.125rem; }
-
-.contact-block-email {
-  text-decoration: none; }
-
-.contact-map {
-  margin-top: 10px; }

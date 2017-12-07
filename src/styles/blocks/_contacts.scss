@@ -1,0 +1,75 @@
+.contacts-wrap {
+    background: url(../img/bg/bg-earth.jpg) no-repeat center;
+}
+
+.contacts-container {
+    display: flex;
+}
+
+.contacts-map {
+    flex: 1;
+    position: relative;
+    .pin {
+        width: 45px;
+        height: 45px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+}
+
+.contacts-block {
+    width: 100%;
+    max-width: 409px;
+    padding: 60px 55px 75px;
+    margin: 0 40px 0 auto;
+    position: relative;
+    background-color: #F3F0EE;
+    box-shadow: 40px 30px 0 #F9F9F9;
+    align-self: flex-start;
+    &::before {
+        width: 155px;
+        height: 64px;
+        top: -17px;
+        left: -17px;
+        position: absolute;
+        border-left: 3px solid $colorDark;
+        border-top: 3px solid $colorDark;
+        content: '';
+    }
+}
+
+.contacts-block-item {
+    font-weight: 400;
+    line-height: 24px;
+    @include font-size(21px);
+    &:not(:last-of-type) {
+        margin-bottom: 45px;
+    }
+    a {
+        color: inherit;
+        &:not(.contacts-block-order) {
+            text-decoration: none;
+        }
+    }
+}
+
+.contacts-block-order {
+    margin-top: 10px;
+    display: inline-block;
+    @include font-size(17px);
+}
+
+.contacts-block-small {
+    margin-top: 15px;
+    @include font-size(18px);
+}
+
+.contacts-block-email {
+    text-decoration: none;
+}
+
+.contacts-map {
+    margin-top: 10px;
+}
