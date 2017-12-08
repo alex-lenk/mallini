@@ -10,8 +10,6 @@
     flex: 1;
     position: relative;
     .pin {
-        width: 45px;
-        height: 45px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -21,18 +19,11 @@
 
 .contacts-block {
     width: 100%;
-    max-width: 409px;
     padding: 60px 55px 75px;
-    margin: 0 40px 0 auto;
     position: relative;
     background-color: #F3F0EE;
-    box-shadow: 40px 30px 0 #F9F9F9;
     align-self: flex-start;
     &::before {
-        width: 155px;
-        height: 64px;
-        top: -17px;
-        left: -17px;
         position: absolute;
         border-left: 3px solid $colorDark;
         border-top: 3px solid $colorDark;
