@@ -139,6 +139,25 @@ h6, .h6 {
         margin-bottom: 0;
         list-style: none;
     }
+    &-line {
+        padding-top: 15px;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            padding-left: 25px;
+            position: relative;
+            &::before {
+                top: -1px;
+                left: 0;
+                position: absolute;
+                content: '—';
+            }
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 .clearfix {
@@ -214,7 +233,6 @@ button, input, select, textarea {
         transition: all 0.3s ease;
     }
 }
-
 
 header {
     flex: 0 0 auto;
