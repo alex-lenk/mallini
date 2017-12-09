@@ -6,9 +6,6 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-}
-
-.news-item {
     .sale-look {
         width: 0;
         white-space: nowrap;
@@ -40,6 +37,9 @@
         .sale-look {
             width: 142px;
         }
+        img {
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -52,6 +52,7 @@
 .news-item-media {
     position: relative;
     display: block;
+    overflow: hidden;
     &::before {
         width: calc(100% - 55px);
         height: calc(100% - 55px);
@@ -62,6 +63,11 @@
         pointer-events: none;
         transition: all 0.3s ease;
         content: '';
+    }
+    img {
+        position: relative;
+        z-index: -1;
+        transition: all 0.3s ease;
     }
 }
 

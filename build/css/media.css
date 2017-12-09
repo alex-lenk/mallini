@@ -160,6 +160,10 @@
   .added-bag-close {
     display: none; } }
 
+@media (max-width: 839px) {
+  .fashion-news-item:not(:first-of-type):not(:last-of-type) {
+    display: none; } }
+
 @media (max-width: 1099px) {
   .contacts-container {
     -ms-flex-direction: column;
@@ -343,8 +347,6 @@
       margin-bottom: 29px; }
   .fashion-news-title {
     font-size: 2.75rem; }
-  .fashion-news-item:not(:first-of-type):not(:last-of-type) {
-    display: none; }
   .popular-items-slider {
     height: 330px; }
   .popular-items-slide::before {
@@ -687,7 +689,10 @@
   .header-modal-inner {
     padding: 28px 15px; }
   .header-modal-title {
+    margin-bottom: 0;
     font-size: 2.75rem; }
+  .header-product-content {
+    padding-bottom: 30px; }
   .header-modal-cancel {
     top: 48px;
     right: 16px; }
@@ -772,8 +777,6 @@
     margin-bottom: 42px; }
   .fashion-news {
     margin-bottom: 99px; }
-  .fashion-news-item:not(:first-of-type) {
-    display: none; }
   .fashion-news-title {
     margin-bottom: 60px; }
   .news-item-media {
@@ -1107,18 +1110,10 @@
   .fashion-news-title {
     margin-bottom: 90px;
     font-size: 3.25rem; }
-  .fashion-news-item:not(:first-of-type):not(:last-of-type) {
-    margin-top: -5px;
-    padding: 0 35px;
-    -ms-flex: 1 1 43%;
-    flex: 1 1 43%; }
-  .fashion-news-item:first-of-type, .fashion-news-item:last-of-type {
-    -ms-flex: 1 1 calc(100% / 3);
-    flex: 1 1 calc(100% / 3); }
   .news-item-media {
     margin-bottom: 14px; }
   .title-all {
-    margin-top: 27px; }
+    margin-top: 11px; }
   .popular-items-media {
     width: 336px;
     margin-left: 46px; }
@@ -1241,9 +1236,7 @@
     padding-top: 0;
     padding-left: 0; }
   .fashion-news-title {
-    margin-bottom: 95px; }
-  .fashion-news-item:not(:first-of-type):not(:last-of-type) {
-    padding: 0 50px; }
+    margin-bottom: 113px; }
   .popular-items-media {
     width: 358px;
     margin-left: 50px; }
@@ -1264,6 +1257,13 @@
     margin-right: 100px; } }
 
 @media (min-width: 1600px) {
+  .fashion-news-item:not(:first-of-type):not(:last-of-type) {
+    margin-top: -11px;
+    -ms-flex-preferred-size: 447px;
+    flex-basis: 447px; }
+  .fashion-news-item:first-of-type, .fashion-news-item:last-of-type {
+    -ms-flex-preferred-size: 424px;
+    flex-basis: 424px; }
   .contacts-map .pin {
     width: 40px;
     height: 40px; }
@@ -1431,6 +1431,16 @@
     padding-left: 20px;
     padding-right: 20px; } }
 
+@media (max-width: 439px) {
+  .fashion-news-item:not(:first-of-type) {
+    display: none; } }
+
+@media (min-width: 440px) and (max-width: 839px) {
+  .fashion-news-item {
+    -ms-flex: 1 1 calc(100% / 2 - 15px);
+    flex: 1 1 calc(100% / 2 - 15px);
+    max-width: calc(100% / 2 - 15px); } }
+
 @media (min-width: 568px) and (max-width: 1099px) {
   .contacts-block {
     display: -ms-flexbox;
@@ -1505,10 +1515,6 @@
     margin-bottom: 57px; }
   .fashion-news {
     margin-bottom: 135px; }
-  .fashion-news-item {
-    -ms-flex: 1 1 calc(100% / 2 - 15px);
-    flex: 1 1 calc(100% / 2 - 15px);
-    max-width: calc(100% / 2 - 15px); }
   .instagram-left {
     max-width: 30%;
     -ms-flex: 1 1 30%;
@@ -1600,14 +1606,20 @@
   .fashion-news .news-list {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-  .fashion-news-item {
-    -ms-flex: 1 1 420px;
-    flex: 1 1 420px;
-    max-width: 420px; }
   .sales-item:nth-child(even) .sales-item-img {
     left: -17%; }
   .sales-item:nth-child(odd) .sales-item-img {
     left: -15%; } }
+
+@media (min-width: 840px) and (max-width: 1599px) {
+  .fashion-news-item:not(:first-of-type):not(:last-of-type) {
+    -ms-flex-preferred-size: 32%;
+    flex-basis: 32%; }
+    .fashion-news-item:not(:first-of-type):not(:last-of-type) .news-item-media {
+      margin-top: -3%; }
+  .fashion-news-item:first-of-type, .fashion-news-item:last-of-type {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%; } }
 
 @media (min-width: 1100px) and (max-width: 1599px) {
   .about-company-media {

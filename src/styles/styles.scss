@@ -71,7 +71,6 @@
     }
     
     &:hover {
-        margin-top: 37px;
         color: $colorDark;
         .arrow-right {
             &::before {
@@ -361,4 +360,3 @@
     opacity: 1;
     pointer-events: auto;
 }
-
