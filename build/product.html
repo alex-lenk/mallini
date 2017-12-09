@@ -428,69 +428,109 @@
         <div class="row">
             <div class="col-lg-7">col-lg-7</div>
 
-            <div class="product-page-info col-lg-5">
-                <div class="product-page-top">
-                    <div class="product-page-price">
-                        <div class="product-page-cost">$549</div>
-                        <del class="product-page-old">$680</del>
-                    </div>
-                    <div class="product-page-status-stock">
-                        IN STOCK
-                    </div>
-                    <div class="hidden product-page-status-tailored">
-                        Tailored
-                    </div>
-                </div>
+            <div class="col-lg-5">
+                <div class="product-page-info">
+                    <!-- Добавляем этот класс product-page-tailored в div выше -->
 
-                <div class="product-page-desk">
-                    <p>
-                        It's time to slip into the Cocktail Hour Black Wrap Dress and order your favorite thing to sip
-                        on! Sleeveless bodice has a subtle surplice neckline and pleating above a fitted skirt with wrap
-                        detail, in a medium-weight knit fabric. Hidden back zipper.
-                    </p>
-
-                    <ul class="list-line">
-                        <li>Front of bodice is lined.</li>
-                        <li>62% Viscose, 33% Nylon, 5% Spandex.</li>
-                        <li>Hand Wash Cold.</li>
-                        <li>Made with Love in the U.S.A.</li>
-                    </ul>
-                </div>
-
-                <div id="product">
-                    <div class="form-group required">
-                        <label class="control-label">Choose Size:</label>
-                        <div id="input-option">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="option[227]" value="17">
-                                    xs
-                                </label>
+                    <div class="product-page-top">
+                        <div class="product-page-price">
+                            <div class="product-page-cost">$549</div>
+                            <del class="product-page-old">$680</del>
+                        </div>
+                        <div class="product-page-status">
+                            <div class="product-page-status-stock">
+                                IN STOCK
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="option[227]" value="19">
-                                    s
-                                </label>
+                            <!--
+                            <div class="product-page-status-tailored">
+                                <span class="icon-tailored-circle">
+                                    <svg class="icon-tailored">
+                                        <use xlink:href="img/sprite.svg#icon-tailored"></use>
+                                    </svg>
+                                </span>
+                                Tailored
                             </div>
-                            <div class="radio active">
-                                <label>
-                                    <input type="radio" name="option[227]" value="18">
-                                    m
-                                </label>
-                            </div>
+                            -->
                         </div>
                     </div>
 
-                    <a href="#" class="as-link">Size Chart</a>
+                    <div class="product-page-desk">
+                        <p>
+                            It's time to slip into the Cocktail Hour Black Wrap Dress and order your favorite thing to sip
+                            on! Sleeveless bodice has a subtle surplice neckline and pleating above a fitted skirt with wrap
+                            detail, in a medium-weight knit fabric. Hidden back zipper.
+                        </p>
 
-                    <div class="form-group">
-                        <button type="button" class="btn btn-gray">
-                            add to bag
-                        </button>
-                        <button type="button" class="btn btn-black-full">
-                            buy now
-                        </button>
+                        <ul class="list-line">
+                            <li>Front of bodice is lined.</li>
+                            <li>62% Viscose, 33% Nylon, 5% Spandex.</li>
+                            <li>Hand Wash Cold.</li>
+                            <li>Made with Love in the U.S.A.</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-page-char" id="product">
+                        <div class="form-group required">
+                            <label class="control-label">Choose Size:</label>
+                            <div id="input-option">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="option[227]" value="17">
+                                        xs
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="option[227]" value="19">
+                                        s
+                                    </label>
+                                </div>
+                                <div class="radio active">
+                                    <label>
+                                        <input type="radio" name="option[227]" value="18">
+                                        m
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="as-link">Size Chart</a>
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-gray">
+                                add to bag
+                            </button>
+                            <button type="button" class="btn btn-black-full">
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="tailored-btn btn-gray-full btn">
+                        Make an order
+                    </div>
+
+                    <div class="tailored-order">
+                        <h5 class="tailored-order-title">Our manager will contact you as soon as possible!</h5>
+
+                        <form action="#" class="tailored-form">
+                            <div class="ui-group">
+                                <input type="text" class="ui-field ui-placeholder" placeholder="*First and Last name">
+                            </div>
+                            <div class="ui-group">
+                                <input type="tel" class="ui-field ui-placeholder" placeholder="*Phone">
+                            </div>
+                            <div class="ui-group">
+                                <input type="email" class="ui-field ui-placeholder" placeholder="*Email">
+                            </div>
+                            <button class="btn btn-black">Send request</button>
+                        </form>
+
+                        <div class="close tailored-order-close">
+                            <svg class="cancel">
+                                <use xlink:href="img/sprite.svg#cancel"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>

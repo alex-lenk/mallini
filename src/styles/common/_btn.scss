@@ -78,4 +78,13 @@
             color: $colorWhite;
         }
     }
+    &-gray-full {
+        color: $colorWhite;
+        border-color: $colorLight;
+        background-color: $colorLight;
+        &:hover {
+            background-color: $colorWhite;
+            color: $colorLight;
+        }
+    }
 }

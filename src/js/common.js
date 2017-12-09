@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     /* BEGIN .header-search and .nav-wrap */
 
-    const headerSearch = $('.header-search'),
+    var headerSearch = $('.header-search'),
         navWrap = $('.nav-wrap'),
         headerSearchNav = 'header-search-nav',
         headerSearchOpened = 'header-search-opened',
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     /* BEGIN header-modal-bag */
 
-    const headerModalBag = $('.header-modal-bag'),
+    var headerModalBag = $('.header-modal-bag'),
         headerBagOpen = 'modal-bag-open';
 
     $('.header-modal-bag-close').click(
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     /* BEGIN header-modal-wishlist */
 
-    const headerModalWishlist = $('.header-modal-wishlist'),
+    var headerModalWishlist = $('.header-modal-wishlist'),
         headerBagWishlist = 'modal-wishlist-open';
 
     $('.header-modal-wishlist-close').click(
@@ -89,7 +89,7 @@ $(document).ready(function () {
 
     /* BEGIN header-catalog */
 
-    const headerCatalog = $('.header-catalog'),
+    var headerCatalog = $('.header-catalog'),
         headerCatalogOpen = 'header-catalog-open';
 
     $('.header-catalog-close').click(
@@ -109,7 +109,7 @@ $(document).ready(function () {
 
     /* BEGIN home-sales */
 
-    const salesControlLeft = $('.sales-control-left'),
+    var salesControlLeft = $('.sales-control-left'),
         salesLeft = $('.sales-left'),
         salesRight = $('.sales-right'),
         salesControlRight = $('.sales-control-right'),
@@ -154,12 +154,11 @@ $(document).ready(function () {
     /* END Swiper slider .popular-items-slider */
 
 
-
     /* Begin animate scroll elements */
 
-    $(function(){
-        $('.header-down').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#home-popular').offset().top }, 1000);
+    $(function () {
+        $('.header-down').on('click', function (e) {
+            $('html,body').stop().animate({scrollTop: $('#home-popular').offset().top}, 1000);
             e.preventDefault();
         });
     });
@@ -169,14 +168,16 @@ $(document).ready(function () {
 
     /* BEGIN находим определенный символ в строке и удаляем в фильтре на странице каталога */
 
-    $('.mfilter-price-inputs').html(function(_, oldHtml) { return oldHtml.replace(/\$/g, ''); });
+    $('.mfilter-price-inputs').html(function (_, oldHtml) {
+        return oldHtml.replace(/\$/g, '');
+    });
 
     /* END в фильтре на странице каталога */
 
 
     /* BEGIN: Плавающий блок в сайдбаре */
 
-    const $window = $(window), //Основное окно
+    var $window = $(window), //Основное окно
         $catalogSidebarFixed = $(".catalog-sidebar-fixed"); // Блок, который нужно фиксировать при прокрутке
 
     if ($catalogSidebarFixed.length) {
@@ -229,9 +230,38 @@ $(document).ready(function () {
 
     /* BEGIN: всплывающая форма на странице контактов contacts-form */
 
+    var contactsForm = $('.contacts-form'),
+        contactsFormOpened = 'contacts-form-opened';
+
     $('.contacts-block-order').click(
         function () {
-            $('.contacts-form').toggleClass('contacts-form-opened');
+            contactsForm.toggleClass(contactsFormOpened);
+        }
+    );
+
+    $('.contacts-form-close').click(
+        function () {
+            contactsForm.removeClass(contactsFormOpened);
+        }
+    );
+
+    /* END catalog-sidebar */
+
+
+    /* BEGIN: всплывающая форма на странице продукта */
+
+    var tailoredOrder = $('.tailored-order'),
+        tailoredOrderOpened = 'tailored-order-opened';
+
+    $('.tailored-btn').click(
+        function () {
+            tailoredOrder.toggleClass(tailoredOrderOpened);
+        }
+    );
+
+    $('.tailored-order-close').click(
+        function () {
+            tailoredOrder.removeClass(tailoredOrderOpened);
         }
     );
 
