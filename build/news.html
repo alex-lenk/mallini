@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Mallini</title>
+    <meta name="description" content="Оборудование для обработки металла">
+    <meta name="keywords" content="">
+
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="page">
+<header class="header-page">
+    <div class="header-page-panel container">
+        <div class="header-page-logo">
+            <a href="index.html"><img src="img/logo-white.png" srcset="img/logo-white@2x.png 2x" alt="Mallini"></a>
+        </div>
+
+        <div class="header-nav">
+            <div class="header-nav-toggle">
+                <svg class="menu-options">
+                    <use xlink:href="img/sprite.svg#menu-options"></use>
+                </svg>
+            </div>
+            <div class="nav-wrap">
+                <nav class="nav-pages">
+                    <div class="nav-title">Pages</div>
+                    <ul class="menu list-unstyled">
+                        <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                        <li class="menu-item menu-catalog">
+                            <span class="menu-link">Catalog</span>
+                            <svg class="arrow-s">
+                                <use xlink:href="img/sprite.svg#arrow-s"></use>
+                            </svg>
+                        </li>
+                        <li class="menu-item"><a href="sales.html" class="menu-link">Sale</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-products">
+                    <div class="nav-title">Products</div>
+                    <ul class="menu list-unstyled">
+                        <li class="menu-item"><a href="#" class="menu-link">Casual</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Evening</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Wedding</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Overdress</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-home-icons">
+            <div class="icon-search">
+                <svg class="search">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+            </div>
+            <div class="icon-hearth header-wishlist">
+                <svg class="hearth">
+                    <use xlink:href="img/sprite.svg#hearth"></use>
+                </svg>
+            </div>
+            <div class="icon-basket header-basket" data-count="2">
+                <svg class="basket">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-search container-fluid">
+        <div class="header-search-logo"><a href="#"><img src="img/logo-black.png" alt="Mallini"></a></div>
+
+        <form action="#" class="header-search-area">
+            <input type="search" class="header-search-field ui-placeholder" placeholder="Search...">
+            <button class="header-search-btn">
+                <svg class="search">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+            </button>
+        </form>
+
+        <div class="header-cancel">
+            <svg class="cancel">
+                <use xlink:href="img/sprite.svg#cancel"></use>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Begin Hidden modal -->
+    <div class="header-modal header-modal-bag">
+    <div class="header-modal-inner">
+        <div class="header-modal-cancel header-modal-bag-close">
+            <svg class="cancel">
+                <use xlink:href="img/sprite.svg#cancel"></use>
+            </svg>
+        </div>
+
+        <!-- Bag Open -->
+        <h2 class="header-modal-title">My Cart</h2>
+
+        <div class="header-product-content">
+            <div class="product-content-prev product-content-disable">
+                <svg class="arrow-s">
+                    <use xlink:href="img/sprite.svg#arrow-s"></use>
+                </svg>
+            </div>
+
+            <ul class="header-product-list">
+                <li class="header-product-item">
+                    <div class="header-product-media">
+                        <a href="#"><img src="img/example/img-03.png" srcset="img/example/img-03@2x.png 2x" alt=""></a>
+                    </div>
+                    <div class="header-product-info">
+                        <a href="#" class="header-product-title">Chiffon Cocktail Dress With Ruffle Appliques Lace</a>
+                        <div class="header-product-price">
+                            <svg class="hearth">
+                                <use xlink:href="img/sprite.svg#hearth"></use>
+                            </svg>
+                            <span class="header-product-price-cost">$599</span>
+                            <del class="header-product-price-old">$719</del>
+                        </div>
+                    </div>
+
+                    <div class="header-product-close">
+                        <svg class="cancel">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header-product-item">
+                    <div class="header-product-media">
+                        <a href="#"><img src="img/example/img-04.png" srcset="img/example/img-04@2x.png 2x" alt=""></a>
+                    </div>
+                    <div class="header-product-info">
+                        <a href="#" class="header-product-title">Backless Mini Slip Dress - Black</a>
+                        <div class="header-product-price">
+                            <svg class="hearth">
+                                <use xlink:href="img/sprite.svg#hearth"></use>
+                            </svg>
+                            <span class="header-product-price-cost">$675</span>
+                        </div>
+                    </div>
+
+                    <div class="header-product-close">
+                        <svg class="cancel">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header-product-item">
+                    <div class="header-product-media">
+                        <a href="#"><img src="img/example/img-05.png" srcset="img/example/img-05@2x.png 2x" alt=""></a>
+                    </div>
+                    <div class="header-product-info">
+                        <a href="#" class="header-product-title">Stealing Kisses Mauve Lace Maxi Dress</a>
+                        <div class="header-product-price">
+                            <svg class="hearth">
+                                <use xlink:href="img/sprite.svg#hearth"></use>
+                            </svg>
+                            <span class="header-product-price-cost">$549</span>
+                        </div>
+                    </div>
+
+                    <div class="header-product-close">
+                        <svg class="cancel">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="product-content-next">
+                <svg class="arrow-s">
+                    <use xlink:href="img/sprite.svg#arrow-s"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="header-modal-bottom">
+            <div class="header-modal-total">Total: $1,823</div>
+            <a href="#" class="btn btn-black">Checkout</a>
+        </div>
+
+        <!-- END Bag Open -->
+
+
+        <!-- Bag Empty -->
+        <!--
+                    <h2 class="header-modal-title">My Bag</h2>
+
+                    <div class="header-modal-cancel header-modal-bag-close">
+                        <svg class="cancel">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                        </svg>
+                    </div>
+
+                    <div class="modal-basket-empty">
+                        <div class="modal-basket-empty__text">You have not items in your bag yet.</div>
+                        <button class="btn btn-black">Go shopping</button>
+                    </div>
+        -->
+        <!-- END Bag Empty -->
+    </div>
+</div>
+
+<div class="header-modal header-modal-wishlist">
+    <div class="header-modal-inner">
+        <div class="header-modal-cancel header-modal-wishlist-close">
+            <svg class="cancel">
+                <use xlink:href="img/sprite.svg#cancel"></use>
+            </svg>
+        </div>
+
+        <!-- Wishlist Open -->
+        <h2 class="header-modal-title">My Wishlist</h2>
+
+        <div class="header-product-content">
+            <div class="product-content-prev product-content-disable">
+                <svg class="arrow-s">
+                    <use xlink:href="img/sprite.svg#arrow-s"></use>
+                </svg>
+            </div>
+
+            <ul class="header-product-list">
+                <li class="header-product-item">
+                    <div class="header-product-media">
+                        <a href="#"><img src="img/example/img-03.png" srcset="img/example/img-03@2x.png 2x" alt=""></a>
+                    </div>
+                    <div class="header-product-info">
+                        <a href="#" class="header-product-title">Chiffon Cocktail Dress With Ruffle Appliques Lace</a>
+                        <div class="header-product-price">
+                            <span class="header-product-price-cost">$599</span>
+                            <del class="header-product-price-old">$719</del>
+                            <div class="header-product-add">
+                                <span class="header-product-add-text">Add to</span>
+                                <svg class="basket">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-product-close">
+                        <svg class="cancel">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header-product-item">
+                    <div class="header-product-media">
+                        <a href="#"><img src="img/example/img-04.png" srcset="img/example/img-04@2x.png 2x" alt=""></a>
+                    </div>
+                    <div class="header-product-info">
+                        <a href="#" class="header-product-title">Backless Mini Slip Dress - Black</a>
+                        <div class="header-product-price">
+                            <span class="header-product-price-cost">$675</span>
+                            <div class="header-product-add">
+                                <span class="header-product-add-text">Add to</span>
+                                <svg class="basket">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-product-close">
+                        <svg class="cancel">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header-product-item">
+                    <div class="header-product-media">
+                        <a href="#"><img src="img/example/img-05.png" srcset="img/example/img-05@2x.png 2x" alt=""></a>
+                    </div>
+                    <div class="header-product-info">
+                        <a href="#" class="header-product-title">Stealing Kisses Mauve Lace Maxi Dress</a>
+                        <div class="header-product-price">
+                            <span class="header-product-price-cost">$549</span>
+                            <div class="header-product-add">
+                                <span class="header-product-add-text">Add to</span>
+                                <svg class="basket">
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-product-close">
+                        <svg class="cancel">
+                            <use xlink:href="img/sprite.svg#cancel"></use>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="product-content-next">
+                <svg class="arrow-s">
+                    <use xlink:href="img/sprite.svg#arrow-s"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="header-modal-bottom">
+            <a href="#" class="btn btn-black">Add to bag</a>
+        </div>
+        <!-- END Bag Open -->
+
+        <!-- Wishlist Empty -->
+        <!--
+                <h2 class="header-modal-title">My Wishlist</h2>
+
+                <div class="modal-basket-empty">
+                    <div class="modal-basket-empty__text">You have not items in your wishlist yet.</div>
+                    <button class="btn btn-black">Go shopping</button>
+                </div>
+        -->
+        <!-- END Wishlist Empty -->
+    </div>
+</div>
+
+<div class="header-catalog container-fluid">
+    <div class="catalog-panel">
+        <a href="#"><img src="img/logo-black.png" srcset="img/logo-black@2x.png 2x" alt=""></a>
+        <a href="catalog.html" class="catalog-panel-all">
+            <span class="catalog-panel-text">All</span>
+            <span class="catalog-panel-arrow arrow-right"></span>
+        </a>
+
+        <div class="header-catalog-close">
+            <svg class="cancel">
+                <use xlink:href="img/sprite.svg#cancel"></use>
+            </svg>
+        </div>
+    </div>
+
+    <ul class="view-catalog">
+        <li class="view-catalog-item">
+            <a href="#">
+                    <span class="view-catalog-media">
+                        <img src="img/example/img-06.png" srcset="img/example/img-06@2x.png 2x" alt="">
+                    </span>
+                <span class="view-catalog-title">
+                        <span class="view-catalog-text">Casual Clothes</span>
+                        <span class="view-catalog-arrow arrow-right"></span>
+                    </span>
+            </a>
+        </li>
+        <li class="view-catalog-item">
+            <a href="#">
+                    <span class="view-catalog-media">
+                        <img src="img/example/img-07.png" srcset="img/example/img-07@2x.png 2x" alt="">
+                    </span>
+                <span class="view-catalog-title">
+                        <span class="view-catalog-text">Evening Dresses</span>
+                        <span class="view-catalog-arrow arrow-right"></span>
+                    </span>
+            </a>
+        </li>
+        <li class="view-catalog-item">
+            <a href="#">
+                    <span class="view-catalog-media">
+                        <img src="img/example/img-08.png" srcset="img/example/img-08@2x.png 2x" alt="">
+                    </span>
+                <span class="view-catalog-title">
+                        <span class="view-catalog-text">Wedding Dresses</span>
+                        <span class="view-catalog-arrow arrow-right"></span>
+                    </span>
+            </a>
+        </li>
+        <li class="view-catalog-item">
+            <a href="#">
+                    <span class="view-catalog-media">
+                        <img src="img/example/img-09.png" srcset="img/example/img-09@2x.png 2x" alt="">
+                    </span>
+                <span class="view-catalog-title">
+                        <span class="view-catalog-text">Overdress</span>
+                        <span class="view-catalog-arrow arrow-right"></span>
+                    </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="header-search container-fluid">
+    <div class="header-search-logo"><a href="#"><img src="img/logo-black.png" alt="Mallini"></a></div>
+
+    <form action="#" class="header-search-area">
+        <input type="search" class="header-search-field ui-placeholder" placeholder="Search...">
+        <button class="header-search-btn">
+            <svg class="search">
+                <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+        </button>
+    </form>
+
+    <div class="header-cancel">
+        <svg class="cancel">
+            <use xlink:href="img/sprite.svg#cancel"></use>
+        </svg>
+    </div>
+</div>
+    <!-- END Hidden modal -->
+</header>
+
+<div class="wrapper">
+    <article class="page-content container">
+        <h1>Fashion News</h1>
+
+        <ul class="news-list news-list-row">
+            <li class="news-item">
+                <div class="news-item-wrap">
+                    <a href="#">
+                        <span class="news-item-media">
+                            <img src="img/example/img-14.jpg" srcset="img/example/img-14@2x.jpg 2x" alt="">
+
+                            <span class="sale-look">
+                            <span class="sale-look-text">Look Closer</span>
+                            <span class="sale-look-arrow arrow-right"></span>
+                        </span>
+                        </span>
+
+                        <span class="news-item-title">Lovelulus Winner of the Week</span>
+                    </a>
+                    <div class="news-item-text">
+                        Today, the hair accessory is not a part of everyday style and care should be taken as to when
+                        and
+                        how to use the hair accessory so that you will not look dated.
+                    </div>
+                    <div class="news-item-date">15 Jun 2017</div>
+                </div>
+            </li>
+
+            <li class="news-item">
+                <div class="news-item-wrap">
+                    <a href="#">
+                        <span class="news-item-media">
+                            <img src="img/example/img-15.jpg" srcset="img/example/img-15@2x.jpg 2x" alt="">
+
+                            <span class="sale-look">
+                            <span class="sale-look-text">Look Closer</span>
+                            <span class="sale-look-arrow arrow-right"></span>
+                        </span>
+                        </span>
+
+                        <span class="news-item-title">What Curling Irons Are The Best Ones</span>
+                    </a>
+                    <div class="news-item-text">
+                        Life is hectic; it’s true. There are so many things that demand your time and attention. Between
+                        work, kids, family and household chores, there is precious little time left over for you.
+                    </div>
+                    <div class="news-item-date">19 Jan 2017</div>
+                </div>
+            </li>
+
+            <li class="news-item">
+                <div class="news-item-wrap">
+                    <a href="#">
+                        <span class="news-item-media">
+                            <img src="img/example/img-16.jpg" srcset="img/example/img-16@2x.jpg 2x" alt="">
+
+                            <span class="sale-look">
+                            <span class="sale-look-text">Look Closer</span>
+                            <span class="sale-look-arrow arrow-right"></span>
+                        </span>
+                        </span>
+
+                        <span class="news-item-title">Lovelulus Winner of the Week</span>
+                    </a>
+                    <div class="news-item-text">
+                        You know you’re destined to be a fashion designer if you: a) spent most of your childhood making
+                        clothes for your Barbie dolls instead of playing with your friends.
+                    </div>
+                    <div class="news-item-date">15 Jun 2017</div>
+                </div>
+            </li>
+
+            <li class="news-item">
+                <div class="news-item-wrap">
+                    <a href="#">
+                        <span class="news-item-media">
+                            <img src="img/example/img-38.jpg" srcset="img/example/img-38@2x.jpg 2x" alt="">
+
+                            <span class="sale-look">
+                            <span class="sale-look-text">Look Closer</span>
+                            <span class="sale-look-arrow arrow-right"></span>
+                        </span>
+                        </span>
+
+                        <span class="news-item-title">10 Steps To Look Younger</span>
+                    </a>
+                    <div class="news-item-text">
+                        White Gold began gaining popularity in the early 1900’s as an alternative to platinum. Platinum
+                        was
+                        steadily becoming more fashionable, but because of its rarity many could not afford it.
+                    </div>
+                    <div class="news-item-date">9 Jun 2017</div>
+                </div>
+            </li>
+
+            <li class="news-item">
+                <div class="news-item-wrap">
+                    <a href="#">
+                        <span class="news-item-media">
+                            <img src="img/example/img-39.jpg" srcset="img/example/img-39@2x.jpg 2x" alt="">
+
+                            <span class="sale-look">
+                            <span class="sale-look-text">Look Closer</span>
+                            <span class="sale-look-arrow arrow-right"></span>
+                        </span>
+                        </span>
+
+                        <span class="news-item-title">What S The Right Look</span>
+                    </a>
+                    <div class="news-item-text">
+                        When it comes to looking your best, there are some standard tools of the trade. You will want to
+                        find the right makeup for your complexion. You’ll want to find the best clothes and the right
+                        hair
+                        stylist.
+                    </div>
+                    <div class="news-item-date">6 Jun 2017</div>
+                </div>
+            </li>
+
+            <li class="news-item">
+                <div class="news-item-wrap">
+                    <a href="#">
+                        <span class="news-item-media">
+                            <img src="img/example/img-40.jpg" srcset="img/example/img-40@2x.jpg 2x" alt="">
+
+                            <span class="sale-look">
+                            <span class="sale-look-text">Look Closer</span>
+                            <span class="sale-look-arrow arrow-right"></span>
+                        </span>
+                        </span>
+
+                        <span class="news-item-title">Breast Lifts Improvement Without Implants</span>
+                    </a>
+                    <div class="news-item-text">
+                        You know you’re destined to be a fashion designer if you: a) spent most of your childhood making
+                        clothes for your Barbie dolls instead of playing with your friends.
+                    </div>
+                    <div class="news-item-date">15 Jun 2017</div>
+                </div>
+            </li>
+        </ul>
+    </article>
+</div>
+
+<footer>
+    <div class="footer-wrap container-fluid">
+        <div class="footer-copyright">
+            <div class="footer-copyright-logo">
+                <a href="#"><img src="img/logo-white.png" srcset="img/logo-white@2x.png 2x" alt="Mallini couture"></a>
+            </div>
+            <div class="footer-copyright-copy">© 2017 Mallini Fashion Dresses. All right Reserved.</div>
+        </div>
+
+        <div class="footer-menu">
+            <ul class="footer-menu-list list-unstyled">
+                <li class="footer-menu-item"><a href="#" class="footer-link">Popular Items</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-link">Latest Items</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-link">Sales</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-link">News</a></li>
+            </ul>
+            <ul class="footer-menu-list list-unstyled">
+                <li class="footer-menu-item"><a href="#" class="footer-link">My Bag</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-link">Wish List</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-link">Pay & Deliver</a></li>
+                <li class="footer-menu-item"><a href="#" class="footer-link">Contacts</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contacts">
+            <h6 class="footer-contacts-title">Contact US</h6>
+
+            <ul class="list-unstyled">
+                <li class="footer-contacts-item">
+                    <a href="tel:+79251127345" class="footer-link" rel="nofollow">+7 (925) 112-73-45</a>
+                </li>
+                <li class="footer-contacts-item">
+                    <a href="mailto:info@mallini.shop" class="footer-link" rel="nofollow">‎info@mallini.shop</a>
+                </li>
+                <li class="footer-contacts-item">Moscow, Markitskaja str. 38 TC “Crystal”</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/lib.js"></script>
+
+<script src="js/common.js"></script>
+
+<!--<script src="//cdn.trackduck.com/toolbar/prod/td.js" async data-trackduck-id="5a1bdabfbb01984a4aefb9c2"></script>-->
+
+
+</body>
+</html>

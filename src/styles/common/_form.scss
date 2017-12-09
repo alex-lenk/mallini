@@ -47,10 +47,8 @@
     color: #cc0000;
 }
 
-.ui-error {
-    .ui-field {
-        border-bottom-color: #cc0000;
-    }
+.ui-error .ui-field {
+    border-bottom-color: #cc0000;
 }
 
 .ui-error-text {
