@@ -360,3 +360,46 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+.might-like {
+    margin-top: 160px;
+}
+
+.might-like-title {
+    margin-bottom: 65px;
+}
+
+.etalage_thumb {
+    width: 511px;
+    height: 645px;
+    background-color: #F2F2F2;
+}
+
+.product-page-head {
+    padding-left: 193px;
+    position: relative;
+    .link-back {
+        bottom: -23px;
+        top: auto;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 1600px) {
+    .product-page-head {
+        padding-left: 240px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1339px) {
+    .product-page-head {
+        padding-left: 160px;
+    }
+}
+
+@media (min-width: 1340px) {
+    .might-like .catalog-item {
+        max-width: calc(100% / 4);
+        flex-basis: calc(100% / 4);
+    }
+}

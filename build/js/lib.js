@@ -2,6 +2,8 @@
  * 1. smoothscroll.js
  * 2. svgxuse.min.js
  * 3. swiper.min.js
+ * 4. smoothscroll.js
+
 */
 
 /* 1. smoothscroll.js */

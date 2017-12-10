@@ -1387,12 +1387,6 @@
   .fashion-news {
     margin-bottom: 174px; } }
 
-@media (min-width: 1921px) {
-  .catalog-item {
-    max-width: calc(100% / 5);
-    -ms-flex-preferred-size: calc(100% / 5);
-    flex-basis: calc(100% / 5); } }
-
 @media (min-width: 461px) and (max-width: 667px) {
   .news-list-row {
     margin-bottom: -45px;

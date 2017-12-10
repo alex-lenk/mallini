@@ -153,9 +153,6 @@
         transition: all 0.3s ease;
         @include font-size(11px);
     }
-    &:hover::before {
-        box-shadow: 0 0 0 3px #2A2928;
-    }
 }
 
 .header-search {
