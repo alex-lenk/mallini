@@ -2344,6 +2344,8 @@ footer {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
+  top: 6px;
+  position: relative;
   font-size: 1.5625rem; }
   .product-page-status div {
     position: relative;
@@ -2355,7 +2357,7 @@ footer {
 .product-page-status-stock::before, .icon-tailored-circle {
   width: 31px;
   height: 31px;
-  margin-right: 12px;
+  margin-right: 15px;
   border-radius: 50%;
   content: ''; }
 
