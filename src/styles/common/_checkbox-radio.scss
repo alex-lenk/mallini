@@ -1,41 +1,41 @@
 @import "../common/variables";
 
+.label-block {
+    cursor: pointer;
+    position: relative;
+    color: #5A5A5A;
+    font-weight: 300;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+    @include font-size(18px);
+}
+
 .radio-custom {
     display: none;
-    &:checked + .radio-custom-view {
-        color: #303030;
-        &::before {
-            border-color: #303030;
-        }
+    &:checked + .radio-custom-decor {
+        border-color: #303030;
         &::after {
             border-color: #303030;
         }
     }
-    &-view {
-        cursor: pointer;
+    &-decor {
+        width: 22px;
+        height: 22px;
+        margin-right: 20px;
+        background-color: #ffffff;
+        line-height: 1;
+        border-radius: 50%;
         position: relative;
-        color: #465a63;
-        font-size: 14px;
-        display: inline-flex;
-        align-items: center;
-        flex-wrap: wrap;
+        border: 1px solid #465a63;
         transition: all 0.3s ease;
-        &::before {
-            width: 17px;
-            height: 17px;
-            margin-right: 14px;
-            background-color: #ffffff;
-            content: '';
-            line-height: 1;
-            border-radius: 50%;
-            border: 1px solid #465a63;
-            transition: all 0.3s ease;
-        }
+        content: '';
         &:after {
-            width: 8px;
-            height: 5px;
-            top: 7px;
-            left: 5px;
+            width: 19px;
+            height: 8px;
+            top: 1px;
+            left: 4px;
             position: absolute;
             border-bottom: 2px solid transparent;
             border-left: 2px solid transparent;
@@ -43,6 +43,8 @@
             transition: all 0.3s ease;
             content: '';
         }
+    }
+    &-view {
         a, span {
             padding-left: 5px;
         }
@@ -60,7 +62,6 @@
     <span class="checkbox-custom-view label">Fabfoxx</span>
 </label>
 */
-
 
 .checkbox-custom {
     display: none;

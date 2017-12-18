@@ -6,6 +6,7 @@
 @import "common/fonts";
 @import "common/btn";
 @import "common/form";
+@import "common/checkbox-radio";
 @import "common/common";
 @import "blocks/footer";
 @import "blocks/header";
@@ -27,10 +28,6 @@
 @import "blocks/news-inner";
 @import "blocks/checkout";
 @import "blocks/contacts";
-
-/*
-@import "common/checkbox-radio";
-*/
 
 .fixed {
     position: fixed;
@@ -91,48 +88,219 @@
 }
 
 .checkout-head {
+    padding-left: 234px;
+    position: relative;
+    .link-back {
+        top: 47px;
+    }
+    .link-back-text {
+        padding-left: 31px;
+    }
+    .arrow-left {
+        width: 133px;
+    }
 }
 
 .checkout-head-info {
+    margin-bottom: 90px;
+    color: $colorGray;
+    font-weight: 400;
+    @include font-size(25px);
 }
 
 .checkout-head-cost {
+    color: $colorDark;
 }
 
 .checkout-wrap {
 }
 
 .checkout-content {
+    padding-left: 50px;
+    padding-top: 70px;
+    position: relative;
+    &::before, &::after {
+        left: 0;
+        border-left: 4px solid $colorDark;
+        position: absolute;
+        content: '';
+    }
+    &::before {
+        width: 52px;
+        height: 252px;
+        top: 0;
+        border-top: 4px solid $colorDark;
+    }
+    &::after {
+        width: 226px;
+        height: 40px;
+        bottom: 0;
+        border-left-color: #F3F0EE;
+        border-bottom: 4px solid #F3F0EE;
+    }
 }
 
 .checkout-side {
 }
 
 .checkout-info {
+    margin-bottom: 55px;
+    display: flex;
 }
 
 .checkout-info-block {
+    width: 49%;
+    .radio {
+        line-height: 1;
+        &:not(:last-of-type) {
+            margin-bottom: 44px;
+        }
+    }
+    .label-block {
+        position: relative;
+    }
 }
 
 .checkout-info-title {
-}
-
-.checkout-info-point {
+    margin-bottom: 55px;
 }
 
 .checkout-info-label {
+    top: 100%;
+    left: 41px;
+    color: #939190;
+    position: absolute;
+    @include font-size(16px);
 }
 
 .checkout-form {
 }
 
 .checkout-form-title {
+    margin-bottom: 50px;
 }
 
 .checkout-form-fields {
+    padding-right: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .ui-group {
+        margin-bottom: 47px;
+        max-width: 46%;
+        flex-basis: 46%;
+    }
 }
 
 .checkout-form-total {
+}
+
+/* ===== Select Box ===== */
+.sel {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #C5C5C5;
+    position: relative;
+    cursor: pointer;
+}
+
+.sel::before {
+    position: absolute;
+    content: ">";
+    font-size: 2em;
+    color: #fff;
+    right: 20px;
+    top: calc(50% - 0.5em);
+}
+
+.sel.active::before {
+    transform: rotateX(-180deg);
+}
+
+.sel__placeholder {
+    padding: 13px 0 15px 20px;
+    color: #939190;
+    pointer-events: none;
+    display: block;
+    user-select: none;
+    visibility: visible;
+    @include font-size(18px);
+}
+
+.sel__box {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: -4px;
+    display: none;
+    list-style-type: none;
+    text-align: left;
+    font-size: 1em;
+    background-color: #fff;
+    width: calc(100% + 8px);
+    box-sizing: border-box;
+}
+
+.sel.active .sel__box {
+    display: block;
+    animation: fadeInUp 500ms;
+}
+
+.sel__box__options {
+    display: list-item;
+    font-size: 1.5em;
+    color: #838e95;
+    padding: 0.5em 1em;
+    user-select: none;
+}
+
+.sel__box__options::after {
+    content: ">";
+    font-size: 0.5em;
+    margin-left: 5px;
+    display: none;
+}
+
+.sel__box__options.selected::after {
+    display: inline;
+}
+
+.sel__box__options:hover {
+    background-color: #ebedef;
+}
+
+/* ----- Select Box Black Panther ----- */
+
+.sel--black-panther {
+    z-index: 3;
+}
+
+/* ----- Select Box Superman ----- */
+.sel--superman {
+    /*   display: none; */
+    z-index: 2;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+    }
 }
 
 //----------------------------------
