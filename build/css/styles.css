@@ -2430,11 +2430,22 @@ footer {
     top: 0;
     border-top: 4px solid #2A2928; }
   .checkout-content::after {
-    width: 226px;
+    width: 122px;
     height: 40px;
-    bottom: 0;
+    bottom: 30px;
+    left: 50px;
     border-left-color: #F3F0EE;
     border-bottom: 4px solid #F3F0EE; }
+
+.checkout-side-list .header-product-title {
+  text-transform: uppercase; }
+
+.checkout-side-list .header-product-close {
+  visibility: hidden;
+  transition: all 0.3s ease; }
+
+.checkout-side-list .header-product-item:hover .header-product-close {
+  visibility: visible; }
 
 .checkout-info {
   margin-bottom: 55px;
@@ -2464,6 +2475,7 @@ footer {
   margin-bottom: 50px; }
 
 .checkout-form-fields {
+  margin-bottom: 45px;
   padding-right: 90px;
   display: -ms-flexbox;
   display: flex;
@@ -2476,6 +2488,25 @@ footer {
     max-width: 46%;
     -ms-flex-preferred-size: 46%;
     flex-basis: 46%; }
+
+.checkout-form-total {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .checkout-form-total .total {
+    color: #939190;
+    font-weight: 400;
+    font-size: 1.375rem; }
+  .checkout-form-total .sub-total {
+    color: #2A2928;
+    font-size: 1.5625rem; }
+  .checkout-form-total .btn {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 60px; }
 
 /* ===== Select Box ===== */
 .sel {
