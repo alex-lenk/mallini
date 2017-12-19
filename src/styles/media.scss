@@ -224,6 +224,10 @@
 }
 
 @media (max-width: 1099px) {
+    .checkout-left-column {
+        order: 2;
+    }
+    
     .contacts-container {
         flex-direction: column;
     }
@@ -1136,6 +1140,104 @@
     .footer-contacts-title {
         @include font-size(23px);
     }
+    
+    .checkout-head {
+        padding-left: 140px;
+    }
+    .checkout-head .link-back {
+        display: block;
+        top: 40px;
+    }
+    .checkout-content::before {
+        display: none;
+    }
+    .checkout-side {
+        padding-top: 33px;
+        position: relative;
+        &::before {
+            width: 50px;
+            height: 251px;
+            top: 55px;
+            border-top: 3px solid #2A2928;
+            left: 17px;
+            border-left: 3px solid #2A2928;
+            position: absolute;
+            content: '';
+        }
+    }
+    .checkout-side-list {
+        padding-left: 31px;
+        height: auto;
+        .header-product-media {
+            width: 113px;
+            height: 141px;
+        }
+    }
+    .checkout-head-info {
+        margin-bottom: 40px;
+        text-align: right;
+    }
+    .checkout-head .link-back-text {
+        padding-left: 21px;
+    }
+    .checkout-info {
+        margin-bottom: 68px;
+        flex-direction: column;
+    }
+    .checkout-content {
+        padding-left: 0;
+        padding-top: 57px;
+        &::after {
+            width: 92px;
+            bottom: 126px;
+            left: 0;
+            border-bottom: 3px solid #F3F0EE;
+        }
+    }
+    .checkout-info-block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .radio {
+            min-width: 145px;
+            &:not(:last-of-type) {
+                margin-bottom: 45px;
+            }
+        }
+        &:first-of-type {
+            margin-bottom: 60px;
+            .radio {
+                width: 100%;
+                &:not(:last-of-type) {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+    .checkout-info-title {
+        margin-bottom: 43px;
+        width: 100%;
+    }
+    .checkout-form-fields {
+        margin-bottom: 38px;
+        padding-right: 0;
+    }
+    .checkout-form-fields .ui-group {
+        margin-bottom: 15px;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .checkout-form-total {
+        flex-direction: column;
+    }
+    .checkout-form-total .total {
+        padding-right: 30px;
+        align-self: flex-end;
+    }
+    .checkout-form-total .btn {
+        margin-left: 0;
+        margin-top: 48px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -1323,6 +1425,13 @@
 }
 
 @media (min-width: 1100px) {
+    .checkout-head-info {
+        @include font-size(25px);
+    }
+    .checkout-head-info {
+        margin-top: -130px;
+    }
+    
     .news-list-row {
         margin-bottom: -100px;
         margin-right: -32px;

@@ -334,12 +334,23 @@
     &:not(:last-of-type) {
         margin-bottom: 28px;
     }
-    .hearth {
-        width: 21px;
-        height: 21px;
+    .hearth-icon {
         margin-right: 19px;
         position: relative;
         top: 1px;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .hearth-full {
+        width: 42px;
+        height: 42px;
+    }
+    .hearth {
+        width: 21px;
+        height: 21px;
     }
 }
 

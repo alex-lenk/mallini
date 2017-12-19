@@ -105,14 +105,11 @@
     margin-bottom: 90px;
     color: $colorGray;
     font-weight: 400;
-    @include font-size(25px);
+    @include font-size(23px);
 }
 
 .checkout-head-cost {
     color: $colorDark;
-}
-
-.checkout-wrap {
 }
 
 .checkout-content {
@@ -147,6 +144,7 @@
 }
     .header-product-close {
         visibility: hidden;
+        
         transition: all 0.3s ease;
     }
     .header-product-item:hover .header-product-close {

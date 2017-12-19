@@ -165,6 +165,9 @@
     display: none; } }
 
 @media (max-width: 1099px) {
+  .checkout-left-column {
+    -ms-flex-order: 2;
+    order: 2; }
   .contacts-container {
     -ms-flex-direction: column;
     flex-direction: column; }
@@ -829,7 +832,86 @@
   .header-page .header-modal {
     height: 100vh; }
   .footer-contacts-title {
-    font-size: 1.4375rem; } }
+    font-size: 1.4375rem; }
+  .checkout-head {
+    padding-left: 140px; }
+  .checkout-head .link-back {
+    display: block;
+    top: 40px; }
+  .checkout-content::before {
+    display: none; }
+  .checkout-side {
+    padding-top: 33px;
+    position: relative; }
+    .checkout-side::before {
+      width: 50px;
+      height: 251px;
+      top: 55px;
+      border-top: 3px solid #2A2928;
+      left: 17px;
+      border-left: 3px solid #2A2928;
+      position: absolute;
+      content: ''; }
+  .checkout-side-list {
+    padding-left: 31px;
+    height: auto; }
+    .checkout-side-list .header-product-media {
+      width: 113px;
+      height: 141px; }
+  .checkout-head-info {
+    margin-bottom: 40px;
+    text-align: right; }
+  .checkout-head .link-back-text {
+    padding-left: 21px; }
+  .checkout-info {
+    margin-bottom: 68px;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .checkout-content {
+    padding-left: 0;
+    padding-top: 57px; }
+    .checkout-content::after {
+      width: 92px;
+      bottom: 126px;
+      left: 0;
+      border-bottom: 3px solid #F3F0EE; }
+  .checkout-info-block {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .checkout-info-block .radio {
+      min-width: 145px; }
+      .checkout-info-block .radio:not(:last-of-type) {
+        margin-bottom: 45px; }
+    .checkout-info-block:first-of-type {
+      margin-bottom: 60px; }
+      .checkout-info-block:first-of-type .radio {
+        width: 100%; }
+        .checkout-info-block:first-of-type .radio:not(:last-of-type) {
+          margin-bottom: 32px; }
+  .checkout-info-title {
+    margin-bottom: 43px;
+    width: 100%; }
+  .checkout-form-fields {
+    margin-bottom: 38px;
+    padding-right: 0; }
+  .checkout-form-fields .ui-group {
+    margin-bottom: 15px;
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  .checkout-form-total {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .checkout-form-total .total {
+    padding-right: 30px;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+  .checkout-form-total .btn {
+    margin-left: 0;
+    margin-top: 48px; } }
 
 @media (max-width: 460px) {
   .news-item:not(:last-of-type) {
@@ -967,6 +1049,10 @@
     flex: 1; } }
 
 @media (min-width: 1100px) {
+  .checkout-head-info {
+    font-size: 1.5625rem; }
+  .checkout-head-info {
+    margin-top: -130px; }
   .news-list-row {
     margin-bottom: -100px;
     margin-right: -32px;
