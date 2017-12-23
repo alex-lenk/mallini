@@ -141,7 +141,7 @@
 .checkout-side-list {
     .header-product-title {
         text-transform: uppercase;
-}
+    }
     .header-product-close {
         visibility: hidden;
         
@@ -183,19 +183,25 @@
 }
 
 .checkout-form {
+    .control-label {
+        display: none;
+    }
+    .col-sm-8 {
+        padding: 0;
+    }
 }
 
 .checkout-form-title {
     margin-bottom: 50px;
 }
 
-.checkout-form-fields {
+.checkout-form-fields, .form-horizontal {
     margin-bottom: 45px;
     padding-right: 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    .ui-group {
+    .form-group {
         margin-bottom: 47px;
         max-width: 46%;
         flex-basis: 46%;
@@ -219,114 +225,6 @@
         padding-left: 35px;
         padding-right: 35px;
         margin-left: 60px;
-    }
-}
-
-/* ===== Select Box ===== */
-.sel {
-    width: 100%;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #C5C5C5;
-    position: relative;
-    cursor: pointer;
-}
-
-.sel::before {
-    position: absolute;
-    content: ">";
-    font-size: 2em;
-    color: #fff;
-    right: 20px;
-    top: calc(50% - 0.5em);
-}
-
-.sel.active::before {
-    transform: rotateX(-180deg);
-}
-
-.sel__placeholder {
-    padding: 13px 0 15px 20px;
-    color: #939190;
-    pointer-events: none;
-    display: block;
-    user-select: none;
-    visibility: visible;
-    @include font-size(18px);
-}
-
-.sel__box {
-    position: absolute;
-    top: calc(100% + 4px);
-    left: -4px;
-    display: none;
-    list-style-type: none;
-    text-align: left;
-    font-size: 1em;
-    background-color: #fff;
-    width: calc(100% + 8px);
-    box-sizing: border-box;
-}
-
-.sel.active .sel__box {
-    display: block;
-    animation: fadeInUp 500ms;
-}
-
-.sel__box__options {
-    display: list-item;
-    font-size: 1.5em;
-    color: #838e95;
-    padding: 0.5em 1em;
-    user-select: none;
-}
-
-.sel__box__options::after {
-    content: ">";
-    font-size: 0.5em;
-    margin-left: 5px;
-    display: none;
-}
-
-.sel__box__options.selected::after {
-    display: inline;
-}
-
-.sel__box__options:hover {
-    background-color: #ebedef;
-}
-
-/* ----- Select Box Black Panther ----- */
-
-.sel--black-panther {
-    z-index: 3;
-}
-
-/* ----- Select Box Superman ----- */
-.sel--superman {
-    /*   display: none; */
-    z-index: 2;
-}
-
-/* ===== Keyframes ===== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 20px, 0);
-    }
-    
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    
-    to {
-        opacity: 0;
     }
 }
 

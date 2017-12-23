@@ -1,7 +1,7 @@
 @import "mixin";
 @import "variables";
 
-.ui-placeholder {
+.ui-placeholder, .form-control {
     @include hidePlaceholder {
         opacity: 1;
         color: $colorGray;
@@ -17,16 +17,16 @@
     }
 }
 
-.ui-group {
+.ui-group, .form-group {
     margin-bottom: 30px;
     position: relative;
 }
 
-.ui-field:not(.ui-textarea) {
+.ui-field:not(.ui-textarea), .form-control:not(.ui-textarea) {
     height: 53px;
 }
 
-.ui-field {
+.ui-field, .form-control {
     width: 100%;
     padding: 0 20px;
     background: #F9F9F9;

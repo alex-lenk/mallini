@@ -3,6 +3,7 @@
  * 2. svgxuse.min.js
  * 3. swiper.min.js
  * 4. smoothscroll.js
+ * 5. jquery.formstyler.min.js
 
 */
 
@@ -20,3 +21,7 @@
 
 /* 4. smoothscroll.js */
 //= lib/jquery.fancybox.min.js
+
+
+/* 5. jquery.formstyler.min.js */
+//= ../../bower_components/jquery.form-styler/dist/jquery.formstyler.min.js

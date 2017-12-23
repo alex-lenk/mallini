@@ -164,6 +164,73 @@
                         <h3 class="checkout-form-title">Billing Info:</h3>
 
 
+                        <fieldset class="form-horizontal">
+                            <div class="form-group required row-customer_firstname">
+                                <label class="control-label col-sm-4" for="customer_firstname">Имя</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="customer[firstname]"
+                                           id="customer_firstname" value="" placeholder=""
+                                           data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="customer_firstname">
+                                        <div style="display:none;" data-for="customer_firstname" data-rule="byLength"
+                                             class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                                             data-length-max="32" data-required="true">Имя должно быть от 1 до 32
+                                            символов!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group required row-customer_lastname">
+                                <label class="control-label col-sm-4" for="customer_lastname">Фамилия</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="customer[lastname]"
+                                           id="customer_lastname" value="" placeholder=""
+                                           data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="customer_lastname">
+                                        <div style="display:none;" data-for="customer_lastname" data-rule="byLength"
+                                             class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                                             data-length-max="32" data-required="true">Фамилия должна быть от 1 до 32
+                                            символов!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group required row-customer_email">
+                                <label class="control-label col-sm-4" for="customer_email">Email</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="email" name="customer[email]" id="customer_email"
+                                           value="" placeholder="" data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="customer_email">
+                                        <div style="display:none;" data-for="customer_email" data-rule="api"
+                                             class="simplecheckout-error-text simplecheckout-rule"
+                                             data-method="checkEmailForUniqueness" data-filter="customer_register"
+                                             data-filter-value="0" data-required="true">Адрес уже зарегистрирован!
+                                        </div>
+                                        <div style="display:none;" data-for="customer_email" data-rule="regexp"
+                                             class="simplecheckout-error-text simplecheckout-rule" data-regexp=".+@.+"
+                                             data-required="true">Некорректный адрес электронной почты!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group required row-customer_telephone">
+                                <label class="control-label col-sm-4" for="customer_telephone">Телефон</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="tel" name="customer[telephone]"
+                                           id="customer_telephone" value="" placeholder=""
+                                           data-reload-payment-form="true">
+                                    <div class="simplecheckout-rule-group" data-for="customer_telephone">
+                                        <div style="display:none;" data-for="customer_telephone" data-rule="byLength"
+                                             class="simplecheckout-error-text simplecheckout-rule" data-length-min="3"
+                                             data-length-max="32" data-required="true">Телефон должен быть от 3 до 32
+                                            символов!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+<!--
+
                         <div class="checkout-form-fields">
                             <div class="ui-group">
                                 <input class="ui-field ui-placeholder" type="text" name="customer[firstname]"
@@ -217,7 +284,7 @@
                                 </div>
                             </div>
                             <div class="ui-group">
-                                <div class="sel sel--black-panther">
+                                <div class="sel sel&#45;&#45;black-panther">
                                     <select class="ui-field ui-placeholder" name="shipping_address[country_id]"
                                             id="select-profession" data-theme="bootstrap" data-onchange="reloadAll">
                                         <option value="" disabled>*Country</option>
@@ -286,6 +353,7 @@
                                 </div>
                             </div>
                         </div>
+-->
 
                         <div class="checkout-form-total">
                             <div class="total">
@@ -376,68 +444,6 @@
 <!-- include "template/footer.html" -->
 
 <!-- include "template/scripts.html" -->
-
-<script>
-    /* ===== Logic for creating fake Select Boxes ===== */
-    $(".sel").each(function () {
-        $(this)
-            .children("select")
-            .css("display", "none");
-
-        var $current = $(this);
-
-        $(this)
-            .find("option")
-            .each(function (i) {
-                if (i == 0) {
-                    $current.prepend(
-                        $("<div>", {
-                            class: $current.attr("class").replace(/sel/g, "sel__box")
-                        })
-                    );
-
-                    var placeholder = $(this).text();
-                    $current.prepend(
-                        $("<span>", {
-                            class: $current.attr("class").replace(/sel/g, "sel__placeholder"),
-                            text: placeholder,
-                            "data-placeholder": placeholder
-                        })
-                    );
-
-                    return;
-                }
-
-                $current.children("div").append(
-                    $("<span>", {
-                        class: $current.attr("class").replace(/sel/g, "sel__box__options"),
-                        text: $(this).text()
-                    })
-                );
-            });
-    });
-
-    // Toggling the `.active` state on the `.sel`.
-    $(".sel").click(function () {
-        $(this).toggleClass("active");
-    });
-
-    // Toggling the `.selected` state on the options.
-    $(".sel__box__options").click(function () {
-        var txt = $(this).text();
-        var index = $(this).index();
-
-        $(this)
-            .siblings(".sel__box__options")
-            .removeClass("selected");
-        $(this).addClass("selected");
-
-        var $currentSel = $(this).closest(".sel");
-        $currentSel.children(".sel__placeholder").text(txt);
-        $currentSel.children("select").prop("selectedIndex", index + 1);
-    });
-
-</script>
 
 </body>
 </html>

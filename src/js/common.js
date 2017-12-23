@@ -266,5 +266,11 @@ $(document).ready(function () {
     );
 
     /* END catalog-sidebar */
+    (function($) {
+        $(function() {
 
+            $('select').styler();
+
+        });
+    })(jQuery);
 });
