@@ -29,6 +29,7 @@
     padding: 0 18px 18px 0;
     position: relative;
     z-index: 5;
+    flex: none;
     &::after {
         width: 155px;
         height: 64px;

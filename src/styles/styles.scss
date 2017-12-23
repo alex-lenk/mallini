@@ -153,6 +153,7 @@
 }
 
 .checkout-info {
+    width: 100%;
     margin-bottom: 55px;
     display: flex;
 }
@@ -182,29 +183,36 @@
     @include font-size(16px);
 }
 
-.checkout-form {
-    .control-label {
-        display: none;
-    }
-    .col-sm-8 {
-        padding: 0;
-    }
-}
-
 .checkout-form-title {
+    width: 100%;
     margin-bottom: 50px;
 }
 
-.checkout-form-fields, .form-horizontal {
+.customer-shipping-address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkout-form-fields {
+    max-width: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
+}
+
+.form-horizontal {
     margin-bottom: 45px;
-    padding-right: 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     .form-group {
         margin-bottom: 47px;
-        max-width: 46%;
-        flex-basis: 46%;
+    }
+    
+    .control-label {
+        display: none;
+    }
+    .col-sm-8 {
+        padding: 0;
     }
 }
 

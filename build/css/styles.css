@@ -1551,7 +1551,9 @@ footer {
   height: 100%;
   padding: 0 18px 18px 0;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  -ms-flex: none;
+  flex: none; }
   .popular-items-media::after {
     width: 155px;
     height: 64px;
@@ -2457,6 +2459,7 @@ footer {
   visibility: visible; }
 
 .checkout-info {
+  width: 100%;
   margin-bottom: 55px;
   display: -ms-flexbox;
   display: flex; }
@@ -2480,29 +2483,37 @@ footer {
   position: absolute;
   font-size: 1rem; }
 
-.checkout-form .control-label {
-  display: none; }
-
-.checkout-form .col-sm-8 {
-  padding: 0; }
-
 .checkout-form-title {
+  width: 100%;
   margin-bottom: 50px; }
 
-.checkout-form-fields, .form-horizontal {
-  margin-bottom: 45px;
-  padding-right: 90px;
+.customer-shipping-address {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .checkout-form-fields .form-group, .form-horizontal .form-group {
-    margin-bottom: 47px;
-    max-width: 46%;
-    -ms-flex-preferred-size: 46%;
-    flex-basis: 46%; }
+
+.checkout-form-fields {
+  max-width: calc(100% / 2 - 30px);
+  -ms-flex-preferred-size: calc(100% / 2 - 30px);
+  flex-basis: calc(100% / 2 - 30px); }
+
+.form-horizontal {
+  margin-bottom: 45px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .form-horizontal .form-group {
+    margin-bottom: 47px; }
+  .form-horizontal .control-label {
+    display: none; }
+  .form-horizontal .col-sm-8 {
+    padding: 0; }
 
 .checkout-form-total {
   display: -ms-flexbox;
