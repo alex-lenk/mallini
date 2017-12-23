@@ -266,6 +266,20 @@ $(document).ready(function () {
     );
 
     /* END catalog-sidebar */
+
+
+    /* BEGIN: всплывающий блок для вскрытия выбора размера */
+
+    $('.catalog-item-order-basket').click(
+        function () {
+            $('.catalog-item-option').toggleClass('catalog-item-option-opened');
+        }
+    );
+
+    /* END catalog-item-order-basket */
+
+
+
     (function($) {
         $(function() {
 

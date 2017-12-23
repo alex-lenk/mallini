@@ -42,6 +42,7 @@
 
 .catalog-item-container {
     padding: 0 15px;
+    position: relative;
     &:hover {
         .catalog-item-media {
             background-position-y: -89px;
@@ -58,6 +59,9 @@
         }
         .catalog-item-bottom::before {
             background-color: #C5C5C5;
+        }
+        .catalog-item-option-opened {
+            opacity: 1;
         }
     }
 }
@@ -162,7 +166,6 @@
 .catalog-item-bottom {
     padding-top: 4px;
     border-top: 1px solid #F3F0EE;
-    position: relative;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -170,7 +173,8 @@
     &::before {
         width: 89px;
         height: 3px;
-        top: -2px;
+        bottom: 38px;
+        z-index: -1;
         left: 50%;
         transform: translateX(-50%);
         position: absolute;
@@ -199,4 +203,72 @@
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.catalog-item-option {
+    padding: 13px 15px 11px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    bottom: -13px;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    &::before, &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        position: absolute;
+        top: -6px;
+        right: 43px;
+        transform: rotate(-121deg) skew(25deg);
+    }
+    &::before {
+        z-index: 4;
+    }
+    &::after {
+        box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+        z-index: -1;
+    }
+    br {
+        display: none;
+    }
+    label {
+        margin-bottom: 0;
+        &:not(.input) {
+            margin-right: auto;
+            line-height: 20px;
+            text-transform: uppercase;
+            @include font-size(18px);
+        }
+        &:not(:first-of-type):not(:last-of-type) {
+            margin-right: 15px;
+        }
+    }
+    .input {
+        line-height: 1;
+        cursor: pointer;
+        @include font-size(20px);
+        span {
+            color: #868583;
+            border: 5px solid transparent;
+            border-bottom: 1px solid;
+            display: block;
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        &:checked + span {
+            color: $colorDark;
+        }
+    }
+}
+
+.catalog-item-option-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

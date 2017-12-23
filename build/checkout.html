@@ -27,7 +27,7 @@
 
 <body class="page">
 <header class="header-page">
-    <div class="header-page-panel container">
+    <div class="header-page-panel container-fluid">
         <div class="header-page-logo">
             <a href="index.html"><img src="img/logo-white.png" srcset="img/logo-white@2x.png 2x" alt="Mallini"></a>
         </div>
@@ -438,7 +438,7 @@
 
                 <div class="checkout-content">
                     <div class="checkout-info">
-                        <div class="checkout-info-block">
+                        <div class="checkout-info-block checkout-payments-block">
                             <h3 class="checkout-info-title">Payment Method:</h3>
 
                             <div class="radio">
@@ -446,7 +446,9 @@
                                     <input type="radio" data-onchange="reloadAll" name="payment_method"
                                            value="pp_express" id="pp_express" class="radio-custom">
                                     <span class="radio-custom-decor"></span>
-                                    <span class="radio-custom-view"><img src="img/paypal.svg" alt=""></span>
+                                    <span class="radio-custom-view">
+                                        <img src="img/paypal.svg" alt="">
+                                    </span>
                                 </label>
                             </div>
 
@@ -456,8 +458,8 @@
                                            id="cod" class="radio-custom" checked>
                                     <span class="radio-custom-decor"></span>
                                     <span class="radio-custom-view">
-                                    <img src="img/sberbank.png" srcset="img/sberbank@2x.png 2x" alt="">
-                                </span>
+                                        <img src="img/sberbank.png" srcset="img/sberbank@2x.png 2x" alt="">
+                                    </span>
                                 </label>
                             </div>
                         </div>
