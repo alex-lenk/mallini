@@ -279,6 +279,17 @@ $(document).ready(function () {
     /* END catalog-item-order-basket */
 
 
+    /* BEGIN: всплывающий блок для вскрытия выбора размера */
+
+    $('.wishlist-active').click(
+        function () {
+            $(this).toggleClass('wishlist-active-added');
+        }
+    );
+
+    /* END wishlist-active */
+
+
 
     (function($) {
         $(function() {

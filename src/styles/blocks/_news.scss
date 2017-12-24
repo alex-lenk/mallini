@@ -38,7 +38,7 @@
             width: 142px;
         }
         img {
-            transform: scale(1.2);
+            transform: scale(1.14);
         }
     }
 }
@@ -67,7 +67,7 @@
     img {
         position: relative;
         z-index: -1;
-        transition: all 0.3s ease;
+        transition: all 3s linear;
     }
 }
 
@@ -76,6 +76,7 @@
     display: block;
     color: $colorDark;
     line-height: 24px;
+    font-weight: 400;
     @include font-size(18px);
     a {
         color: inherit;

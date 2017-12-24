@@ -7,8 +7,13 @@
     display: flex;
 }
 
-.view-catalog-item a:hover .arrow-right {
-    width: 108px;
+.view-catalog-item a:hover {
+    .arrow-right {
+        width: 108px;
+    }
+    .view-catalog-media::before {
+        background-size: 154% 128%;
+    }
 }
 
 .view-catalog-media {
@@ -34,9 +39,6 @@
         background-size: 366px 520px;
         content: '';
         transition: all 0.3s ease;
-    }
-    &:hover::before {
-        background-size: 154% 128%;
     }
 }
 

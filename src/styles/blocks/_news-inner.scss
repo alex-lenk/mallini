@@ -4,6 +4,10 @@
 
 .news-inner-head {
     position: relative;
+    .link-back {
+        top: 22px;
+        transform: translateY(0);
+    }
 }
 
 .news-inner-data {

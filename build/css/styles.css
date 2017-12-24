@@ -24,6 +24,12 @@
   font-weight: 300;
   font-style: normal; }
 
+@font-face {
+  font-family: 'sofia';
+  src: url("../fonts/sofiaproultralight.woff2") format("woff2"), url("../fonts/sofiaproultralight.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
 .btn {
   min-width: 135px;
   height: 52px;
@@ -35,7 +41,7 @@
   cursor: pointer;
   line-height: 1;
   border-radius: 100px;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
   font-family: 'sofia', sans-serif;
   display: -ms-inline-flexbox;
@@ -101,6 +107,7 @@
   color: #939190;
   font-weight: 300;
   transition: opacity 0.3s ease;
+  font-family: 'sofia', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.125rem; }
 
 .ui-placeholder:-ms-input-placeholder, .form-control:-ms-input-placeholder {
@@ -108,6 +115,7 @@
   color: #939190;
   font-weight: 300;
   transition: opacity 0.3s ease;
+  font-family: 'sofia', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.125rem; }
 
 .ui-placeholder::-ms-input-placeholder, .form-control::-ms-input-placeholder {
@@ -115,6 +123,7 @@
   color: #939190;
   font-weight: 300;
   transition: opacity 0.3s ease;
+  font-family: 'sofia', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.125rem; }
 
 .ui-placeholder::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
@@ -122,6 +131,7 @@
   color: #939190;
   font-weight: 300;
   transition: opacity 0.3s ease;
+  font-family: 'sofia', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.125rem; }
 
 .ui-placeholder:focus::-moz-placeholder, .form-control:focus::-moz-placeholder {
@@ -158,6 +168,7 @@
   border: 0;
   border-bottom: 1px solid #C5C5C5;
   transition: all .3s ease;
+  font-family: 'sofia', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.125rem; }
   .ui-field:focus, .form-control:focus {
     border-bottom: 1px solid #2A2928; }
@@ -312,7 +323,6 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0;
   margin-bottom: 1.0625rem;
   font-family: inherit;
-  font-weight: 500;
   line-height: 1.2;
   color: inherit; }
 
@@ -322,12 +332,10 @@ h1, .h1 {
   line-height: 50px; }
 
 h2, .h2 {
-  line-height: 29px;
-  font-size: 1.875rem; }
+  line-height: 29px; }
 
 h3, .h3 {
-  line-height: 24px;
-  font-size: 1.5625rem; }
+  line-height: 24px; }
 
 h4, .h4 {
   line-height: 20px;
@@ -468,10 +476,17 @@ header {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   background-color: #fff;
+  background-repeat: no-repeat; }
+
+.home .wrapper {
   background-image: url(../img/bg/bg-pre-top.jpg), url(../img/bg/bg-pre-footer.jpg);
-  background-position: 100% 0, 0 100%;
-  background-repeat: no-repeat;
+  background-position: top right, bottom left;
   background-size: 830px 730px, 830px 730px; }
+
+.page .wrapper {
+  background-image: url(../img/bg/bg-pre-top.jpg);
+  background-position: top right;
+  background-size: 830px 730px; }
 
 .close {
   padding: 10px;
@@ -488,7 +503,7 @@ header {
 
 footer {
   padding: 70px 0;
-  font-weight: 300;
+  font-weight: 100;
   position: relative;
   z-index: 30;
   -ms-flex: 0 0 auto;
@@ -537,7 +552,7 @@ footer {
 
 .footer-contacts-title {
   margin-bottom: 25px;
-  font-weight: 600;
+  font-weight: 300;
   color: inherit;
   font-size: 1.25rem; }
 
@@ -608,7 +623,7 @@ footer {
   flex: 1; }
 
 .menu {
-  font-weight: 400;
+  font-weight: 300;
   display: -ms-flexbox;
   display: flex; }
 
@@ -640,10 +655,10 @@ footer {
 
 .menu-active {
   cursor: default;
-  color: #939190;
+  color: #C5C5C5;
   pointer-events: none; }
   .menu-active .arrow-s {
-    fill: #939190; }
+    fill: #C5C5C5; }
 
 .header-home-icons, .header-catalog-icons {
   padding-top: 7px;
@@ -657,6 +672,9 @@ footer {
     height: 20px;
     fill: #2A2928;
     transition: all 0.3s ease; }
+  .header-home-icons .hearth, .header-catalog-icons .hearth {
+    width: 22px;
+    height: 22px; }
   .header-home-icons .search:hover, .header-catalog-icons .search:hover {
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
@@ -730,7 +748,7 @@ footer {
   margin-right: 8%;
   border-bottom: 1px solid #F3F0EE;
   color: #5A5A5A;
-  font-weight: 400;
+  font-weight: 300;
   background-color: transparent;
   font-size: 1.125rem; }
 
@@ -760,7 +778,7 @@ footer {
   .header-cancel .cancel {
     width: 18px;
     height: 18px;
-    fill: #5A5A5A;
+    fill: #939190;
     transition: all 0.3s ease; }
 
 .header-search-opened {
@@ -769,7 +787,8 @@ footer {
   transform: translateY(0); }
 
 .header-search-nav {
-  background-color: transparent; }
+  background-color: transparent;
+  box-shadow: none; }
   .header-search-nav .header-search-logo {
     display: none; }
   .header-search-nav .header-search-area {
@@ -817,19 +836,21 @@ footer {
     bottom: 20px; }
 
 .header-modal {
-  height: inherit;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 25;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); }
 
 .header-modal-inner {
-  background: #FFFFFF url(../img/bg/bg.jpg) no-repeat center; }
+  height: 100%;
+  background: #FFFFFF url(../img/bg/bg.jpg) no-repeat center;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .header-modal-title {
   color: #2A2928;
@@ -860,21 +881,37 @@ footer {
   display: flex; }
   .header-product-item:not(:last-of-type) {
     margin-bottom: 28px; }
-  .header-product-item .hearth-icon {
-    margin-right: 19px;
-    position: relative;
-    top: 1px;
-    cursor: pointer;
-    transition: all 0.3s linear; }
-    .header-product-item .hearth-icon:hover {
-      -ms-transform: scale(1.2);
-      transform: scale(1.2); }
-  .header-product-item .hearth-full {
-    width: 42px;
-    height: 42px; }
-  .header-product-item .hearth {
+
+.wishlist-active {
+  width: 42px;
+  height: 23px;
+  position: relative;
+  cursor: pointer; }
+  .wishlist-active .hearth-full {
+    width: 41px;
+    height: 41px;
+    top: -9px;
+    left: -8px;
+    opacity: 0; }
+  .wishlist-active .hearth {
     width: 21px;
-    height: 21px; }
+    height: 21px;
+    top: 2px;
+    left: 0; }
+  .wishlist-active:hover .icon-wishlist {
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+
+.icon-wishlist {
+  position: absolute;
+  fill: #2A2928;
+  transition: all 0.3s linear; }
+
+.wishlist-active-added .hearth-full {
+  opacity: 1; }
+
+.wishlist-active-added .hearth {
+  opacity: 0; }
 
 .header-product-media {
   width: 112px;
@@ -929,12 +966,12 @@ footer {
   align-items: center; }
 
 .header-product-price-cost {
-  margin-right: 13px;
   color: #2A2928;
   font-weight: 700;
   font-size: 1.5rem; }
 
 .header-product-price-old {
+  margin-left: 10px;
   color: #A6A6A6;
   font-weight: 600;
   font-size: 1.25rem; }
@@ -965,6 +1002,7 @@ footer {
   margin-right: 40px;
   color: #2A2928;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: 1.5625rem; }
 
 .header-product-content {
@@ -994,7 +1032,6 @@ footer {
 
 .modal-basket-empty {
   margin: auto;
-  padding-bottom: 170px;
   text-align: center; }
   .modal-basket-empty .btn-black {
     padding: 0 35px; }
@@ -1021,7 +1058,7 @@ footer {
   left: 0;
   z-index: 25;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   opacity: 0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   -ms-transform: translateY(-105%);
@@ -1117,6 +1154,9 @@ footer {
 .view-catalog-item a:hover .arrow-right {
   width: 108px; }
 
+.view-catalog-item a:hover .view-catalog-media::before {
+  background-size: 154% 128%; }
+
 .view-catalog-media {
   height: 504px;
   margin-bottom: 21px;
@@ -1141,8 +1181,6 @@ footer {
     background-size: 366px 520px;
     content: '';
     transition: all 0.3s ease; }
-  .view-catalog-media:hover::before {
-    background-size: 154% 128%; }
 
 .view-catalog-text {
   margin-bottom: 7px;
@@ -1193,7 +1231,7 @@ footer {
 
 .sales-price-old {
   color: #A6A6A6;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.5rem; }
 
 .sale-look {
@@ -1225,6 +1263,7 @@ footer {
   height: 60px;
   top: 150px;
   left: 50%;
+  border-width: 0;
   position: absolute;
   z-index: 5;
   -ms-transform: translateX(-50%);
@@ -1273,7 +1312,7 @@ footer {
   background: url(../img/bg/bg-more.jpg) no-repeat center; }
   .catalog-final-more .title {
     margin-bottom: 34px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2.3125rem; }
 
 .about-shop {
@@ -1366,8 +1405,8 @@ footer {
   .news-list a:hover .sale-look {
     width: 142px; }
   .news-list a:hover img {
-    -ms-transform: scale(1.2);
-    transform: scale(1.2); }
+    -ms-transform: scale(1.14);
+    transform: scale(1.14); }
 
 .news-item-text {
   padding: 5px 0;
@@ -1391,13 +1430,14 @@ footer {
   .news-item-media img {
     position: relative;
     z-index: -1;
-    transition: all 0.3s ease; }
+    transition: all 3s linear; }
 
 .news-item-title {
   margin-bottom: 10px;
   display: block;
   color: #2A2928;
   line-height: 24px;
+  font-weight: 400;
   font-size: 1.125rem; }
   .news-item-title a {
     color: inherit; }
@@ -1474,7 +1514,7 @@ footer {
   padding-top: 33px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   -ms-flex: 1;
   flex: 1; }
   .instagram-center .instagram {
@@ -1598,7 +1638,7 @@ footer {
 
 .popular-items-desk {
   color: #939190;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.5rem; }
 
 .popular-items-price {
@@ -1618,7 +1658,7 @@ footer {
   width: 59px;
   height: 52px;
   border: 2px solid #2A2928;
-  border-radius: 50%;
+  border-radius: 100px;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease; }
@@ -1737,6 +1777,9 @@ footer {
   top: 0;
   position: absolute; }
 
+.sales-all:hover {
+  border-color: transparent; }
+
 .catalog {
   height: 100%;
   display: -ms-flexbox;
@@ -1751,7 +1794,7 @@ footer {
 
 .catalog-wrap {
   position: relative;
-  z-index: 10;
+  z-index: 31;
   -ms-flex-order: 2;
   order: 2;
   -ms-flex: 1 1 auto;
@@ -2253,6 +2296,10 @@ footer {
 
 .news-inner-head {
   position: relative; }
+  .news-inner-head .link-back {
+    top: 22px;
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
 
 .news-inner-data {
   text-align: right; }
@@ -2325,8 +2372,12 @@ footer {
   .img-hover:hover::before {
     background-color: rgba(255, 255, 255, 0.7); }
 
-.contacts-wrap {
-  background: url(../img/bg/bg-earth.jpg) no-repeat center; }
+.contacts-wrap::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../img/bg/bg-earth.jpg) no-repeat center;
+  content: ''; }
 
 .contacts-container {
   display: -ms-flexbox;
@@ -2357,7 +2408,7 @@ footer {
     content: ''; }
 
 .contacts-block-item {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   font-size: 1.3125rem; }
   .contacts-block-item:not(:last-of-type) {
@@ -2391,6 +2442,7 @@ footer {
   left: 0;
   position: absolute;
   opacity: 0;
+  pointer-events: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   transition: opacity .3s ease; }
   .contacts-form::before {
@@ -2418,7 +2470,8 @@ footer {
   font-size: 1.25rem; }
 
 .contacts-form-opened {
-  opacity: 1; }
+  opacity: 1;
+  pointer-events: auto; }
 
 .contacts-form-close {
   top: 1px;
@@ -2438,7 +2491,7 @@ footer {
 
 .title-all {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   color: #939190;
   text-decoration: none;
   -ms-flex-item-align: start;
@@ -2506,7 +2559,6 @@ footer {
     width: 122px;
     height: 40px;
     bottom: 30px;
-    left: 50px;
     border-left-color: #F3F0EE;
     border-bottom: 4px solid #F3F0EE; }
 

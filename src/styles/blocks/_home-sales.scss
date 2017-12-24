@@ -45,7 +45,7 @@
 
 .sales-price-old {
     color: #A6A6A6;
-    font-weight: 600;
+    font-weight: 400;
     @include font-size(24px)
 }
 
@@ -87,6 +87,7 @@
     height: 60px;
     top: 150px;
     left: 50%;
+    border-width: 0;
     position: absolute;
     z-index: 5;
     transform: translateX(-50%);

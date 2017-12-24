@@ -9,8 +9,11 @@
         background: #212121 url(../img/bg/bg-left-header@2x.jpg) no-repeat top center;
         background-size: 665px;
     }
-    .wrapper {
+    .home .wrapper {
         background-image: url(../img/bg/bg-pre-top@2x.jpg), url(../img/bg/bg-pre-footer@2x.jpg);
+    }
+    .page .wrapper {
+        background-image: url(../img/bg/bg-pre-top@2x.jpg);
     }
 }
 
@@ -59,7 +62,8 @@
         top: 0;
         left: 0;
         overflow: hidden;
-        position: absolute;
+        position: fixed;
+        z-index: 35;
         box-shadow: 0 0 8px rgba(#000, .1);
         transition: all 0.7s ease;
         transition-delay: .3s;
@@ -256,6 +260,14 @@
         @include font-size(44px);
     }
     
+    h2, .h2 {
+        @include font-size(27px);
+    }
+    
+    h3, .h3 {
+        @include font-size(22px);
+    }
+    
     .container, .container-fluid {
         padding-left: 20px;
         padding-right: 20px;
@@ -276,12 +288,12 @@
         display: flex;
     }
     .nav-wrap {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         padding-top: 170px;
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: -20px;
+        left: 0;
         color: $colorWhite;
         background: $colorWhite url(../img/bg/bg-nav.jpg) no-repeat top center;
         background-size: cover;
@@ -305,7 +317,7 @@
     }
     .nav-products {
         width: 50%;
-        height: 520px;
+        height: 100%;
         padding-top: 50px;
         padding-left: 50px;
         background-color: $colorDark;
@@ -1131,12 +1143,6 @@
         margin-bottom: 110px;
     }
     
-    .catalog-header,
-    .header-page {
-        .header-modal {
-            height: 100vh;
-        }
-    }
     .footer-contacts-title {
         @include font-size(23px);
     }
@@ -1331,7 +1337,7 @@
         margin-bottom: 125px;
     }
     .about-shop-content {
-        padding: 9% 0 8% 7%;
+        padding: 9% 0 59px 7%;
         max-width: 56%;
         flex: 0 0 56%;
         &::after {
@@ -1472,6 +1478,14 @@
         @include font-size(52px);
     }
     
+    h2, .h2 {
+        @include font-size(30px);
+    }
+    
+    h2, .h2 {
+        @include font-size(25px);
+    }
+    
     .news-inner .pull-left {;
         max-width: 290px;
         margin-right: 35px;
@@ -1493,14 +1507,14 @@
     .menu-item {
         @include font-size(17px);
         &:not(.menu-active):hover {
-            color: $colorGray;
+            color: $colorLight;
             .menu-link::after {
                 width: 100%;
                 opacity: 1;
                 background-color: $colorGray;
             }
             svg {
-                fill: $colorGray;
+                fill: $colorLight;
             }
         }
     }
@@ -1756,7 +1770,6 @@
     }
     .header-modal {
         width: 665px;
-        height: 100%;
     }
     .header-modal-inner {
         padding-left: 100px;

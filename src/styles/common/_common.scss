@@ -61,7 +61,6 @@ h1, h2, h3, h4, h5, h6,
     margin-top: 0;
     margin-bottom: 1.0625rem;
     font-family: inherit;
-    font-weight: 500;
     line-height: 1.2;
     color: inherit;
 }
@@ -74,12 +73,10 @@ h1, .h1 {
 
 h2, .h2 {
     line-height: 29px;
-    @include font-size(30px);
 }
 
 h3, .h3 {
     line-height: 24px;
-    @include font-size(25px);
 }
 
 h4, .h4 {
@@ -242,10 +239,19 @@ header {
     width: 100%;
     flex: 1 0 auto;
     background-color: #fff;
-    background-image: url(../img/bg/bg-pre-top.jpg), url(../img/bg/bg-pre-footer.jpg);
-    background-position: 100% 0, 0 100%;
     background-repeat: no-repeat;
+}
+
+.home .wrapper {
+    background-image: url(../img/bg/bg-pre-top.jpg), url(../img/bg/bg-pre-footer.jpg);
+    background-position: top right, bottom left;
     background-size: 830px 730px, 830px 730px;
+}
+
+.page .wrapper {
+    background-image: url(../img/bg/bg-pre-top.jpg);
+    background-position: top right;
+    background-size: 830px 730px;
 }
 
 .close {
