@@ -1,5 +1,6 @@
 .catalog {
     height: 100%;
+    padding-top: 0;
     display: flex;
     .icon-basket::before {
         color: #fff;
@@ -78,21 +79,10 @@
     background-position: center 8px;
     background-size: 200px 254px;
     transition: all 0.3s ease;
-}
-
-.catalog-item-hearth {
-    top: 14px;
-    right: 22px;
-    position: absolute;
-    cursor: pointer;
-    .hearth {
-        width: 23px;
-        height: 23px;
-        fill: $colorGray;
-        transition: All 0.3s ease;
-    }
-    &:hover .hearth {
-        fill: $colorDark;
+    .wishlist-active {
+        top: 14px;
+        right: 22px;
+        position: absolute;
     }
 }
 

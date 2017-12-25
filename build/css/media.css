@@ -1104,7 +1104,7 @@
       .menu-item:not(.menu-active):hover .menu-link::after {
         width: 100%;
         opacity: 1;
-        background-color: #939190; }
+        background-color: #C5C5C5; }
       .menu-item:not(.menu-active):hover svg {
         fill: #C5C5C5; }
   .menu-link::after {
@@ -1123,6 +1123,22 @@
     display: none; }
   .header-nav-toggle {
     display: none; }
+  .catalog-header .menu-active {
+    color: #939190; }
+    .catalog-header .menu-active .menu-link {
+      border-bottom: 1px solid; }
+    .catalog-header .menu-active .arrow-s {
+      fill: #939190; }
+  .catalog-header .menu-item:not(.menu-active):hover {
+    color: #2A2928; }
+    .catalog-header .menu-item:not(.menu-active):hover .menu-link::after {
+      background-color: #2A2928; }
+  .header-home-panel .menu-item:not(.menu-active):hover {
+    color: #2A2928; }
+    .header-home-panel .menu-item:not(.menu-active):hover svg {
+      fill: #2A2928; }
+  .header-home-panel .menu-item:not(.menu-active):hover .menu-link::after {
+    background-color: #2A2928; }
   .header-home-title {
     margin-top: 12px;
     line-height: 68px; }

@@ -1511,7 +1511,7 @@
             .menu-link::after {
                 width: 100%;
                 opacity: 1;
-                background-color: $colorGray;
+                background-color: $colorLight;
             }
             svg {
                 fill: $colorLight;
@@ -1538,6 +1538,37 @@
     .header-nav-toggle {
         display: none;
     }
+    
+    .catalog-header {
+        .menu-active {
+            color: $colorGray;
+            .menu-link {
+                border-bottom: 1px solid;
+            }
+            .arrow-s {
+                fill: $colorGray;
+            }
+        }
+        .menu-item:not(.menu-active):hover {
+            color: $colorDark;
+            .menu-link::after {
+                background-color: $colorDark;
+            }
+        }
+    }
+    .header-home-panel .menu-item {
+        &:not(.menu-active):hover {
+            color: $colorDark;
+    
+            svg {
+                fill: $colorDark;
+            }
+        }
+        &:not(.menu-active):hover .menu-link::after {
+            background-color: $colorDark;
+        }
+    }
+    
     .header-home-title {
         margin-top: 12px;
         line-height: 68px;

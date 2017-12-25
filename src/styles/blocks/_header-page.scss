@@ -1,5 +1,4 @@
 .header-page {
-    margin-bottom: 120px;
     position: relative;
     z-index: $header-page;
     background-color: $colorDark;
@@ -16,7 +15,6 @@
         content: attr(data-count);
         background-color: #ffffff;
     }
-    .hearth {}
 }
 
 .header-page-panel {

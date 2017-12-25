@@ -40,6 +40,15 @@
         position: absolute;
         content: '';
     }
+    
+    
+    .wishlist-active {
+        width: 21px;
+        right: 30px;
+        top: 28px;
+        position: absolute;
+        z-index: 10;
+    }
 }
 
 .popular-items-img {
@@ -55,22 +64,6 @@
         position: absolute;
     }
     
-}
-
-.popular-items-hearth {
-    right: 30px;
-    top: 28px;
-    position: absolute;
-    z-index: 10;
-    cursor: pointer;
-    .hearth {
-        width: 24px;
-        height: 24px;
-        transition: all 0.3s ease;
-    }
-    &:hover .hearth {
-        transform: scale(1.1);
-    }
 }
 
 .popular-items-title {

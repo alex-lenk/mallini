@@ -472,6 +472,7 @@ header {
   flex: 0 0 auto; }
 
 .wrapper {
+  padding-top: 120px;
   width: 100%;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -479,6 +480,7 @@ header {
   background-repeat: no-repeat; }
 
 .home .wrapper {
+  padding-top: 0;
   background-image: url(../img/bg/bg-pre-top.jpg), url(../img/bg/bg-pre-footer.jpg);
   background-position: top right, bottom left;
   background-size: 830px 730px, 830px 730px; }
@@ -714,7 +716,7 @@ footer {
   padding-top: 48px;
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   z-index: 20;
   background-color: #FFFFFF;
   opacity: 0;
@@ -1603,6 +1605,12 @@ footer {
     border-bottom: 3px solid #212121;
     position: absolute;
     content: ''; }
+  .popular-items-media .wishlist-active {
+    width: 21px;
+    right: 30px;
+    top: 28px;
+    position: absolute;
+    z-index: 10; }
 
 .popular-items-img {
   width: 100%;
@@ -1615,20 +1623,6 @@ footer {
     top: 29px;
     left: 15%;
     position: absolute; }
-
-.popular-items-hearth {
-  right: 30px;
-  top: 28px;
-  position: absolute;
-  z-index: 10;
-  cursor: pointer; }
-  .popular-items-hearth .hearth {
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s ease; }
-  .popular-items-hearth:hover .hearth {
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
 
 .popular-items-title {
   margin-bottom: 33px;
@@ -1725,7 +1719,6 @@ footer {
   opacity: 0 !important; }
 
 .header-page {
-  margin-bottom: 120px;
   position: relative;
   z-index: 20;
   background-color: #2A2928; }
@@ -1782,6 +1775,7 @@ footer {
 
 .catalog {
   height: 100%;
+  padding-top: 0;
   display: -ms-flexbox;
   display: flex; }
   .catalog .icon-basket::before {
@@ -1851,19 +1845,10 @@ footer {
   background-position: center 8px;
   background-size: 200px 254px;
   transition: all 0.3s ease; }
-
-.catalog-item-hearth {
-  top: 14px;
-  right: 22px;
-  position: absolute;
-  cursor: pointer; }
-  .catalog-item-hearth .hearth {
-    width: 23px;
-    height: 23px;
-    fill: #939190;
-    transition: All 0.3s ease; }
-  .catalog-item-hearth:hover .hearth {
-    fill: #2A2928; }
+  .catalog-item-media .wishlist-active {
+    top: 14px;
+    right: 22px;
+    position: absolute; }
 
 .catalog-item-new {
   width: 50px;
@@ -2387,12 +2372,6 @@ footer {
   -ms-flex: 1;
   flex: 1;
   position: relative; }
-  .contacts-map .pin {
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    position: absolute; }
 
 .contacts-block {
   width: 100%;
@@ -2453,7 +2432,8 @@ footer {
     background-color: #fff;
     position: absolute;
     content: '';
-    box-shadow: 4px 3px 0 3px #ffffff, -1px -1px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: 4px 4px 0 4px #ffffff, -1px -1px 8px rgba(0, 0, 0, 0.1);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
   .contacts-form .btn-black {
