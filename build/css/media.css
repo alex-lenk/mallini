@@ -1283,7 +1283,7 @@
     line-height: 80px;
     font-size: 5.25rem; }
   .header-media-first {
-    width: 400px;
+    width: 350px;
     margin: 0 auto; }
     .header-media-first::before {
       width: 313px;
@@ -1366,6 +1366,8 @@
     margin-right: 100px; } }
 
 @media (min-width: 1600px) {
+  .header-media-first {
+    width: 400px; }
   .fashion-news-item:not(:first-of-type):not(:last-of-type) {
     margin-top: -11px;
     -ms-flex-preferred-size: 447px;
@@ -1469,11 +1471,13 @@
   .header-home-logo {
     margin-right: 293px; }
   .header-media-first {
-    width: 454px;
+    width: 400px;
     margin: 0 auto 0 241px; }
     .header-media-first::before {
       width: 350px;
       top: 21%; }
+  .header-media-second {
+    width: 330px; }
   .header-home-title {
     margin-top: -20px; }
   .header-search-area {
