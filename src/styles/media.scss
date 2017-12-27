@@ -24,11 +24,16 @@
 }
 
 @media (max-width: 1599px) {
+    .catalog-item-option::before,
+    .catalog-item-option::after {
+        right: 35px;
+    }
+    
     .contacts-map .pin {
         width: 30px;
         height: 30px;
     }
-
+    
     .catalog-item-order {
         height: 50px;
         display: flex;
@@ -47,13 +52,13 @@
         height: 310px;
         overflow: hidden;
     }
-
+    
     .instagram-left .first, .instagram-right .third {
         display: none;
     }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1270px) {
     .catalog-sidebar {
         width: 100%;
         height: 100%;
@@ -104,11 +109,11 @@
             transform: translateX(-5px);
         }
     }
-
+    
     .catalog-sidebar-logo {
         display: none;
     }
-
+    
     .catalog-sidebar, .box-heading, .mfilter-heading, .list-group-item, .list-group .active, .mfilter-tb-as-td {
         color: $colorDark;
     }
@@ -147,14 +152,14 @@
     .mfilter-price .mfilter-heading {
         margin-bottom: 33px;
     }
-
+    
     .catalog-header {
         margin-bottom: 74px;
         .header-nav-toggle .menu-options {
             fill: $colorDark;
         }
     }
-
+    
     .catalog-head {
         padding-left: 55px;
         position: relative;
@@ -183,7 +188,7 @@
             fill: $colorDark;
         }
     }
-
+    
     .catalog-content h1 {
         margin-bottom: 72px;
         @include font-size(44px);
@@ -199,12 +204,12 @@
         top: 11px;
         right: 13px;
     }
-
+    
     .catalog-item-container:hover .catalog-item-media {
         background-position-y: -44px;
         background-size: 247px 313px;
     }
-
+    
     .added-bag {
         height: 100px;
     }
@@ -221,69 +226,90 @@
     }
 }
 
-@media (max-width: 839px) {
+@media (max-width: 950px) {
     .fashion-news-item:not(:first-of-type):not(:last-of-type) {
         display: none;
     }
 }
 
 @media (max-width: 1099px) {
+    .catalog-item-option {
+        width: calc(100% - 30px);
+        right: 15px;
+    }
+    .catalog-item-option label:not(.input) {
+        @include font-size(16px);
+    }
+    .catalog-item-option .input {
+        @include font-size(16px);
+    }
+    .catalog-item-option label:not(:first-of-type):not(:last-of-type) {
+        margin-right: 10px;
+    }
+    .catalog-item-option .input span {
+        margin-bottom: 3px;
+    }
+    .catalog-item-option::before,
+    .catalog-item-option::after {
+        right: 20px;
+    }
+    
     .checkout-left-column {
         order: 2;
     }
-
+    
     .contacts-container {
         flex-direction: column;
     }
-
+    
     .about-company-statistic__count {
         @include font-size(27px);
     }
-
+    
     .about-company-statistic {
         margin-bottom: 35px;
     }
-
+    
     .about-company-title {
         margin-bottom: 42px;
     }
-
+    
     .hidden-sm {
         display: none;
     }
-
+    
     .link-back {
         display: none;
     }
-
+    
     h1, .h1 {
         @include font-size(44px);
     }
-
+    
     h2, .h2 {
         @include font-size(27px);
     }
-
+    
     h3, .h3 {
         @include font-size(22px);
     }
-
+    
     .container, .container-fluid {
         padding-left: 20px;
         padding-right: 20px;
     }
-
+    
     .header-home {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     }
-
+    
     .footer-wrap {
         flex-wrap: wrap;
     }
     .footer-contacts {
         margin-left: auto;
     }
-
+    
     .header-nav {
         display: flex;
     }
@@ -369,11 +395,11 @@
     .menu-catalog {
         display: none;
     }
-
+    
     .header-catalog {
         display: none;
     }
-
+    
     .home-sales {
         padding-top: 51px;
         &::before, &::after {
@@ -424,7 +450,7 @@
     .sales-control-left, .sales-control-right {
         top: 74px;
     }
-
+    
     .view-catalog {
         flex-wrap: wrap;
     }
@@ -464,17 +490,11 @@
     .catalog-final .view-catalog {
         margin-bottom: 24px;
     }
-    .catalog-final-more {
-        padding: 30px 0 45px;
-        .title {
-            margin-bottom: 29px;
-        }
-    }
-
+    
     .fashion-news-title {
         @include font-size(44px);
     }
-
+    
     .popular-items-slider {
         height: 330px;
     }
@@ -489,11 +509,7 @@
         padding-bottom: 12px;
         flex: 1 0 258px;
     }
-    .popular-items-img img {
-        width: 155px;
-        top: 19px;
-        left: 15%;
-    }
+    
     .popular-items-content {
         padding-top: 70px;
         padding-left: 45px;
@@ -504,7 +520,6 @@
         @include font-size(44px);
     }
     .popular-items-desk {
-        width: 100%;
         margin-bottom: 25px;
         @include font-size(24px);
     }
@@ -535,22 +550,22 @@
     .popular-items-next {
         left: 316px;
     }
-
+    
     .header-page {
         margin-bottom: 90px;
     }
     .header-page-logo {
         margin-right: 123px;
     }
-
+    
     .page-content {
         margin-bottom: 140px;
     }
-
+    
     .sales-item {
         height: 307px;
     }
-
+    
     .nav-pages .menu-item {
         color: #2A2928;
     }
@@ -559,7 +574,7 @@
         width: 100%;
         left: 0;
     }
-
+    
     .popular-items-bottom {
         margin-left: auto;
     }
@@ -588,13 +603,13 @@
     .catalog-head .btn {
         display: none;
     }
-
+    
     .header-media {
         position: absolute;
         right: 0;
         bottom: 0;
     }
-
+    
     .popular-items {
         top: 0;
     }
@@ -664,7 +679,7 @@
         right: 14px;
         left: auto;
     }
-
+    
     .sales-item {
         width: 100%;
     }
@@ -677,7 +692,7 @@
     .hidden-668 {
         display: none;
     }
-
+    
     .footer-contacts {
         width: calc(100% - 10px);
         margin-top: 40px;
@@ -722,6 +737,35 @@
 }
 
 @media (max-width: 567px) {
+    .contacts-form {
+        padding-top: 24px;
+        .ui-group {
+            margin-bottom: 18px;
+        }
+    }
+    .contacts-form-title {
+        margin-bottom: 40px;
+    }
+    .contacts-form::before {
+        left: 84px;
+    }
+    
+    .catalog-item-option {
+        display: none;
+    }
+    .catalog-item-bottom {
+        height: 67px;
+        padding-right: 15px;
+        position: absolute;
+        bottom: -8px;
+        right: 3px;
+        flex-direction: column;
+        justify-content: flex-start;
+        &::before {
+            display: none;
+        }
+    }
+    
     .contacts-map {
         min-height: 380px;
         margin-top: 10px;
@@ -742,7 +786,7 @@
     .contacts-block-item:not(:last-of-type) {
         margin-bottom: 38px;
     }
-
+    
     .about-company-statistic-item {
         max-width: 236px;
         width: 100%;
@@ -752,22 +796,22 @@
             border-bottom: 1px solid #E9E9E9;
         }
     }
-
+    
     .about-company-statistic {
         padding: 10px 0;
         flex-direction: column;
     }
-
+    
     h1, .h1 {
         line-height: 42px;
     }
-
+    
     .news-inner .pull-left {;
         max-width: 100%;
         margin-bottom: 25px;
         float: none;
     }
-
+    
     .catalog .icon-basket::before {
         background-color: $colorDark;
     }
@@ -775,15 +819,10 @@
         height: 307px;
         margin-bottom: 13px;
     }
-    .catalog-item-cost {
-        position: absolute;
-        top: -67px;
-        right: 3px;
-    }
     .catalog-item-title {
-        padding-right: 65px;
+        padding-right: 70px;
     }
-
+    
     .catalog-sidebar {
         padding-top: 27px;
         padding-left: 15px;
@@ -810,17 +849,6 @@
     .mfilter-option:not(:last-of-type):not(li) {
         margin-right: 28px;
     }
-    .catalog-item-container {
-        &:hover, &:focus {
-            .catalog-item-cost {
-                opacity: 0;
-            }
-            .catalog-item-media {
-                background-position-y: -310px;
-                background-size: 478px 608px;
-            }
-        }
-    }
     .catalog-item-order-basket {
         right: 22px;
     }
@@ -829,17 +857,18 @@
         right: 20px;
     }
     .catalog-item {
+        width: 100%;
         margin-bottom: 60px;
     }
     .catalog .nav-wrap {
         max-width: 100%;
         left: 0;
     }
-
+    
     .hidden-sx {
         display: none;
     }
-
+    
     .header-home {
         height: 558px;
         overflow: hidden;
@@ -993,7 +1022,7 @@
         line-height: 21px;
         @include font-size(22px);
     }
-
+    
     .home-sales {
         margin-bottom: 99px;
         padding-top: 377px;
@@ -1020,14 +1049,14 @@
     .sales-control-current.sales-control-left {
         top: 92px;
     }
-
+    
     .sales-price-cost {
         @include font-size(32px)
     }
     .sales-price-old {
         @include font-size(20px)
     }
-
+    
     .view-catalog {
         flex-direction: column;
     }
@@ -1043,12 +1072,12 @@
         margin-bottom: 54px;
     }
     .catalog-final-more {
-        padding: 35px 10px 30px;
+        padding: 39px 10px 30px;
         .title {
             @include font-size(28px);
         }
     }
-
+    
     .about-shop {
         margin-bottom: 97px;
     }
@@ -1067,7 +1096,7 @@
     .about-shop-text {
         margin-bottom: 42px;
     }
-
+    
     .fashion-news {
         margin-bottom: 99px;
     }
@@ -1089,7 +1118,7 @@
     .fashion-news-item {
         margin: 0 auto;
     }
-
+    
     .instagram-left {
         display: none;
     }
@@ -1108,11 +1137,11 @@
     .instagram-followers {
         margin: 3px 0 23px;
     }
-
+    
     .footer-menu-list {
         margin-right: 25px;
     }
-
+    
     .catalog-header,
     .header-page {
         margin-bottom: 64px;
@@ -1125,11 +1154,11 @@
         max-width: 135px;
         margin-right: 0;
     }
-
+    
     .page-content-title {
         margin-bottom: 41px;
     }
-
+    
     .sales-item {
         padding-top: 67px;
         padding-left: 43%;
@@ -1138,15 +1167,15 @@
         width: 220px;
         left: -20%;
     }
-
+    
     .page-content {
         margin-bottom: 110px;
     }
-
+    
     .footer-contacts-title {
         @include font-size(23px);
     }
-
+    
     .checkout-head {
         padding-left: 140px;
     }
@@ -1300,17 +1329,17 @@
         justify-content: space-around;
         align-items: center;
     }
-
+    
     .news-inner .pull-left {;
         max-width: 350px;
         margin-right: 30px;
         margin-bottom: 15px;
     }
-
+    
     .visible-667 {
         display: none;
     }
-
+    
     .header-media-first {
         width: 347px;
         &::before {
@@ -1332,7 +1361,7 @@
     .header-modal-title {
         text-align: center;
     }
-
+    
     .about-shop {
         margin-bottom: 125px;
     }
@@ -1357,7 +1386,7 @@
     .about-shop-media-first {
         text-align: right;
     }
-
+    
     .fashion-news .news-list {
         justify-content: space-between;
     }
@@ -1367,14 +1396,21 @@
     .news-item-media {
         margin-bottom: 18px;
     }
-
+    
     .title-all {
         margin: 20px 0 0 auto;
     }
-
+    
     .header-page-panel {
         height: 120px;
         padding-top: 48px;
+    }
+    
+    .catalog-final-more {
+        padding: 44px 0 42px;
+    }
+    .catalog-final-more .title {
+        margin-bottom: 38px;
     }
 }
 
@@ -1394,7 +1430,7 @@
     .header-search-field {
         margin-right: 4%;
     }
-
+    
     .popular-items-content {
         position: relative;
         z-index: 6;
@@ -1403,7 +1439,7 @@
         max-width: calc(100% / 2 - 15px);
         flex: 1 1 calc(100% / 2 - 15px);
     }
-
+    
     .catalog-item {
         margin-bottom: 53px;
         max-width: calc(100% / 3);
@@ -1416,7 +1452,7 @@
         max-width: calc(100% / 3);
         flex-basis: calc(100% / 3);
     }
-
+    
     footer {
         height: 335px;
         background: #222 url(../img/bg/bg-footer.jpg) no-repeat top center;
@@ -1431,13 +1467,43 @@
 }
 
 @media (min-width: 1100px) {
+    .header-page-panel .menu-active:not(.menu-catalog) {
+        border-bottom: 1px solid;
+    }
+    
+    .catalog-item-container:hover {
+        .catalog-item-media {
+            background-position-y: -89px;
+            background-size: 354px 449px;
+        }
+        .catalog-item-title {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        .catalog-item-order {
+            margin-top: -50px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .catalog-item-bottom::before {
+            background-color: #C5C5C5;
+        }
+        .catalog-item-option-opened {
+            opacity: 1;
+        }
+    }
+    
+    .catalog-item-title a {
+        pointer-events: none;
+    }
+    
     .checkout-head-info {
         @include font-size(25px);
     }
     .checkout-head-info {
         margin-top: -130px;
     }
-
+    
     .news-list-row {
         margin-bottom: -100px;
         margin-right: -32px;
@@ -1450,7 +1516,7 @@
         padding-left: 32px;
         padding-right: 32px;
     }
-
+    
     .contacts-block {
         margin-left: auto;
         &::before {
@@ -1460,41 +1526,41 @@
             left: -17px;
         }
     }
-
+    
     .about-company-statistic__count {
         @include font-size(30px);
     }
-
+    
     .about-company-title {
         margin-bottom: 62px;
     }
-
+    
     .visible-to-sm {
         display: none;
     }
-
+    
     h1, .h1 {
         margin-bottom: 98px;
         @include font-size(52px);
     }
-
+    
     h2, .h2 {
         @include font-size(30px);
     }
-
+    
     h2, .h2 {
         @include font-size(25px);
     }
-
+    
     .news-inner .pull-left {;
         max-width: 290px;
         margin-right: 35px;
     }
-
+    
     .header-page .menu-item:not(.menu-active) {
         color: #fff;
     }
-
+    
     .header-home {
         height: 100vh;
     }
@@ -1538,7 +1604,7 @@
     .header-nav-toggle {
         display: none;
     }
-
+    
     .catalog-header {
         .menu-active {
             color: $colorGray;
@@ -1559,7 +1625,7 @@
     .header-home-panel .menu-item {
         &:not(.menu-active):hover {
             color: $colorDark;
-
+            
             svg {
                 fill: $colorDark;
             }
@@ -1568,12 +1634,12 @@
             background-color: $colorDark;
         }
     }
-
+    
     .header-home-title {
         margin-top: 12px;
         line-height: 68px;
     }
-
+    
     .header-search-area {
         padding-left: 8%;
         padding-right: 10%;
@@ -1590,7 +1656,7 @@
     .catalog-panel {
         margin-bottom: 140px;
     }
-
+    
     .view-catalog-item {
         max-width: 25%;
         flex: 1 1 25%;
@@ -1610,7 +1676,7 @@
         line-height: 20px;
         @include font-size(21px);
     }
-
+    
     .home-sales {
         height: 307px;
         padding-right: 70px;
@@ -1638,20 +1704,14 @@
     .sales-control-right {
         display: none;
     }
-
+    
     .catalog-final-title {
         margin-bottom: 77px;
     }
     .catalog-final .view-catalog {
         margin-bottom: 69px;
     }
-    .catalog-final-more {
-        padding: 35px 0 42px;
-    }
-    .catalog-final-more .title {
-        margin-bottom: 27px;
-    }
-
+    
     .about-shop {
         margin-bottom: 167px;
     }
@@ -1674,7 +1734,7 @@
     .about-shop-text {
         margin-bottom: 50px;
     }
-
+    
     .fashion-news {
         margin-bottom: 173px;
     }
@@ -1682,15 +1742,15 @@
         margin-bottom: 90px;
         @include font-size(52px);
     }
-
+    
     .news-item-media {
         margin-bottom: 14px;
     }
-
+    
     .title-all {
         margin-top: 11px;
     }
-
+    
     .popular-items-media {
         width: 336px;
         margin-left: 46px;
@@ -1715,7 +1775,7 @@
     .popular-items-next {
         right: 70px;
     }
-
+    
     .popular-items-prev, .popular-items-next {
         bottom: 82px;
     }
@@ -1733,22 +1793,22 @@
     .swiper-pagination-bullet {
         margin-bottom: 12px;
     }
-
+    
     .footer-contacts {
         line-height: 24px;
         @include font-size(17px)
     }
 }
 
-@media (min-width: 1231px) {
+@media (min-width: 1271px) {
     .filter-icon-wrap {
         display: none;
     }
-
+    
     .catalog-header .header-page-logo {
         display: none;
     }
-
+    
     .catalog-sidebar-head {
         display: none;
     }
@@ -1760,11 +1820,11 @@
         margin-right: 40px;
         box-shadow: 40px 30px 0 #F9F9F9;
     }
-
+    
     .about-company-statistic {
         margin-bottom: 55px;
     }
-
+    
     .news-inner .pull-left {
         max-width: 345px;
     }
@@ -1815,12 +1875,12 @@
     .view-catalog-text {
         @include font-size(25px);
     }
-
+    
     .container, .container-fluid {
         padding-left: 100px;
         padding-right: 100px;
     }
-
+    
     .home-sales {
         height: 365px;
     }
@@ -1838,7 +1898,7 @@
         background-size: 250px;
         background-position: 105% 0;
     }
-
+    
     .catalog-final-title {
         margin-bottom: 80px;
     }
@@ -1846,12 +1906,12 @@
         margin-bottom: 75px;
     }
     .catalog-final-more {
-        padding: 52px 0;
+        padding: 67px 0 60px;
     }
     .catalog-final-more .title {
-        margin-bottom: 34px;
+        margin-bottom: 45px;
     }
-
+    
     .about-shop {
         margin-bottom: 178px;
     }
@@ -1864,11 +1924,11 @@
         padding-top: 0;
         padding-left: 0;
     }
-
+    
     .fashion-news-title {
         margin-bottom: 113px;
     }
-
+    
     .popular-items-media {
         width: 358px;
         margin-left: 50px;
@@ -1886,12 +1946,12 @@
     .popular-items-prev, .popular-items-next {
         bottom: 112px;
     }
-
+    
     .footer-contacts {
         flex-basis: 309px;
         padding-left: 78px;
     }
-
+    
     .footer-menu-list:first-of-type {
         margin-right: 100px;
     }
@@ -1901,21 +1961,21 @@
     .header-media-first {
         width: 400px;
     }
-
+    
     .fashion-news-item:not(:first-of-type):not(:last-of-type) {
         margin-top: -11px;
         flex-basis: 447px;
     }
-
+    
     .fashion-news-item:first-of-type, .fashion-news-item:last-of-type {
         flex-basis: 424px;
     }
-
+    
     .contacts-map .pin {
         width: 40px;
         height: 40px;
     }
-
+    
     .about-company-media {
         margin: 0 102px 0 30px;
     }
@@ -1923,22 +1983,22 @@
         padding-left: 476px;
         padding-top: 13px;
     }
-
+    
     .news-inner {
         padding-left: 118px;
         padding-right: 116px;
     }
-
+    
     .news-inner .pull-left {
         max-width: 422px;
         margin-right: 40px;
         margin-bottom: 20px;
     }
-
+    
     .news-inner-head .link-back {
         left: -118px;
     }
-
+    
     .header-home-logo {
         margin-right: 312px;
     }
@@ -1967,7 +2027,7 @@
     .catalog-panel-arrow {
         right: -10px;
     }
-
+    
     .sales-all span:not(.sales-all-text) {
         display: none;
     }
@@ -1982,12 +2042,12 @@
         padding-right: 300px;
         background-position: 89% 0;
     }
-
+    
     .view-catalog-arrow {
         left: -7px;
         top: 2px;
     }
-
+    
     .catalog-final-title {
         text-align: center;
         margin-bottom: 67px;
@@ -1995,10 +2055,7 @@
     .catalog-final .view-catalog {
         margin-bottom: 94px;
     }
-    .catalog-final-more {
-        padding: 55px 0;
-    }
-
+    
     .about-shop-content {
         padding: 63px 60px 80px 82px;
         max-width: calc(50% - 19px);
@@ -2009,7 +2066,7 @@
     .about-shop-media-second {
         right: 24px;
     }
-
+    
     .popular-items-slider {
         margin-left: 89px;
     }
@@ -2022,7 +2079,7 @@
     .popular-items-next {
         right: 174px;
     }
-
+    
     .sales-item {
         &:nth-child(odd) {
             padding-left: 310px;
@@ -2030,7 +2087,7 @@
             .sales-item-img {
                 left: 7%;
             }
-
+            
         }
         &:nth-child(even) {
             padding-left: 124px;
@@ -2040,11 +2097,11 @@
             }
         }
     }
-
+    
     .footer-contacts {
         padding: 0 50px 0 39px;
     }
-
+    
 }
 
 @media (min-width: 1920px) {
@@ -2053,7 +2110,7 @@
         max-width: 25%;
         flex-basis: 25%;
     }
-
+    
     .header-modal-inner {
         background-size: cover;
     }
@@ -2078,7 +2135,7 @@
         padding-left: 19%;
         padding-right: 90px;
     }
-
+    
     .catalog-panel {
         margin-bottom: 145px;
     }
@@ -2088,11 +2145,11 @@
     .catalog-panel-arrow {
         right: 0;
     }
-
+    
     .about-shop {
         margin-bottom: 178px;
     }
-
+    
     .view-catalog-media::before {
         background-size: 94% 104%;
     }
@@ -2144,6 +2201,20 @@
     }
 }
 
+@media (min-width: 568px) and (max-width: 949px) {
+    .catalog-item-option {
+        bottom: -38px;
+    }
+    .catalog-item-option-wrap {
+        flex-wrap: wrap;
+    }
+    .catalog-item-option label:not(.input) {
+        white-space: nowrap;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
 @media (min-width: 668px) and (max-width: 1099px) {
     .news-list-row {
         margin-bottom: -60px;
@@ -2173,6 +2244,25 @@
 }
 
 @media (min-width: 568px) and (max-width: 1099px) {
+    .contacts-form {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .ui-group {
+            margin-bottom: 12px;
+            max-width: 46%;
+            flex-basis: 46%;
+        }
+        .btn-black {
+            margin: 0 auto;
+        }
+    }
+    .contacts-form-title {
+        width: 100%;
+        margin-bottom: 71px;
+    }
+    
     .contacts-block {
         display: flex;
         flex-wrap: wrap;
@@ -2193,11 +2283,11 @@
             order: 3;
         }
     }
-
+    
     h1, .h1 {
         margin-bottom: 50px;
     }
-
+    
     .header-home {
         height: 790px;
         overflow: hidden;
@@ -2217,7 +2307,7 @@
         line-height: 50px;
         @include font-size(52px);
     }
-
+    
     .sales-all {
         width: 70px;
         height: 307px;
@@ -2241,7 +2331,7 @@
     .sales-all-text {
         display: none;
     }
-
+    
     .sales-left, .sales-right {
         width: calc(100% - 100px);
         left: 85px;
@@ -2251,11 +2341,11 @@
         flex: 1 1 50%;
         margin-bottom: 57px;
     }
-
+    
     .fashion-news {
         margin-bottom: 135px;
     }
-
+    
     .instagram-left {
         max-width: 30%;
         flex: 1 1 30%;
@@ -2274,11 +2364,11 @@
             position: absolute;
         }
     }
-
+    
     .sales-item {
         padding-right: 15px;
         padding-top: 70px;
-
+        
         .sales-title {
             @include font-size(18px);
         }
@@ -2295,14 +2385,14 @@
     .sales-item-img {
         width: 230px;
     }
-
+    
     .header-home-text {
         margin-bottom: 50px;
     }
     .header-down {
         left: 405px;
     }
-
+    
     .header-media-first {
         width: 100%;
         max-width: 357px;
@@ -2312,7 +2402,7 @@
     .sales-control-right {
         right: 48px;
     }
-
+    
     .catalog-final-title {
         margin-bottom: 65px;
     }
@@ -2327,7 +2417,7 @@
     }
 }
 
-@media (min-width: 568px) and (max-width: 1599px) {
+@media (min-width: 568px) and (max-width: 1270px) {
     .catalog-item-view {
         min-width: 0;
         height: auto;
@@ -2349,12 +2439,12 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 919px) {
+@media (min-width: 668px) and (max-width: 919px) {
     .footer-menu {
-        margin-left: 64px;
+        margin-left: 7%;
     }
     .footer-contacts {
-        margin-right: 83px;
+        margin-right: 7%;
     }
 }
 
@@ -2369,7 +2459,7 @@
     .product-list {
         margin-bottom: 27px;
     }
-
+    
     .sales-item:nth-child(odd) {
         padding-left: 155px;
     }
@@ -2414,10 +2504,10 @@
     .about-company-media {
         margin-right: 45px;
     }
-
+    
     .home {
         .menu-item:nth-of-type(2) {
-            color: $colorWhite;
+            color: $colorWhite !important;
             &:hover .menu-link {
                 &::after,
                 &::before {
@@ -2426,24 +2516,24 @@
             }
         }
         .menu-catalog .arrow-s {
-            fill: $colorWhite;
+            fill: $colorWhite !important;
         }
     }
-
+    
     .sales-all {
         display: none;
     }
-
+    
     .catalog-final {
         margin-bottom: 180px;
     }
-
+    
     .sales-item:nth-child(odd) .sales-item-img {
         left: -5%;
     }
 }
 
-@media (min-width: 1100px) and (max-width: 1230px) {
+@media (min-width: 1100px) and (max-width: 1270px) {
     .catalog-head {
         padding-left: 51px;
     }
@@ -2457,7 +2547,7 @@
     .contacts-block {
         max-width: 383px;
     }
-
+    
     .about-company-media {
         max-width: 289px;
     }
@@ -2467,16 +2557,16 @@
     .about-company-statistic {
         margin-bottom: 40px;
     }
-
+    
     .news-inner-head {
         padding-left: 165px;
     }
-
+    
     .container, .container-fluid {
         padding-left: 70px;
         padding-right: 70px;
     }
-
+    
     .header-home::before {
         width: 534px;
     }
@@ -2496,24 +2586,24 @@
     .header-down {
         left: 585px;
     }
-
+    
     .product-list {
         width: calc(100% + 60px);
     }
     .product-info {
         padding-right: 65px;
     }
-
+    
     .instagram-left {
         max-width: 326px;
         flex: 1 1 326px;
     }
-
+    
     .instagram-right {
         max-width: 323px;
         flex: 1 1 323px;
     }
-
+    
     .header-page-logo {
         margin-right: 71px;
     }
@@ -2522,7 +2612,7 @@
             margin-right: 6%;
         }
     }
-
+    
     .sales-item {
         padding-top: 69px;
     }
@@ -2540,7 +2630,7 @@
     .sales-item-img {
         width: 230px;
     }
-
+    
     .footer-menu-list:first-of-type {
         margin-right: 59px;
     }
@@ -2554,7 +2644,13 @@
     }
 }
 
-@media (min-width: 1231px) and (max-width: 1599px) {
+@media (min-width: 1100px) and (max-width: 1499px) {
+    .catalog-item-option {
+        width: 320px;
+    }
+}
+
+@media (min-width: 1271px) and (max-width: 1599px) {
     .catalog-sidebar {
         padding-left: 70px;
         max-width: 371px;
@@ -2572,18 +2668,18 @@
     .about-company-content {
         padding-left: 389px;
     }
-
+    
     .news-inner-head {
         padding-left: 195px;
     }
-
+    
     .header-home-logo {
         margin-right: 135px;
     }
     .menu-item:not(:last-of-type) {
         margin-right: 60px;
     }
-
+    
     .popular-items-content {
         padding-left: 75px;
     }
@@ -2596,7 +2692,7 @@
     .popular-items-prev {
         right: 141px;
     }
-
+    
     .header-page-logo {
         margin-right: 95px;
     }
@@ -2605,7 +2701,7 @@
             margin-right: 8%;
         }
     }
-
+    
     .sales-item:nth-child(odd) {
         padding-left: 260px;
     }

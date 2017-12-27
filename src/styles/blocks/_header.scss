@@ -98,9 +98,7 @@
 }
 
 .menu-active {
-    cursor: default;
     color: $colorLight;
-    pointer-events: none;
     .arrow-s {
         fill: $colorLight;
     }

@@ -54,16 +54,10 @@
 .popular-items-img {
     width: 100%;
     height: 100%;
+    padding: 0 15px;
     background: #F2F2F2;
     overflow: hidden;
     position: relative;
-    img {
-        width: 215px;
-        top: 29px;
-        left: 15%;
-        position: absolute;
-    }
-    
 }
 
 .popular-items-title {
@@ -74,6 +68,7 @@
 }
 
 .popular-items-desk {
+    max-width: 85%;
     color: #939190;
     font-weight: 400;
     @include font-size(24px);

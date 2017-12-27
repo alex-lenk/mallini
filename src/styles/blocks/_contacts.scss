@@ -1,9 +1,12 @@
-.contacts-wrap::before {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url(../img/bg/bg-earth.jpg) no-repeat center;
-    content: '';
+.contacts-wrap {
+    background-image: none !important;
+    &::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url(../img/bg/bg-earth.jpg) no-repeat center;
+        content: '';
+    }
 }
 
 .contacts-container {

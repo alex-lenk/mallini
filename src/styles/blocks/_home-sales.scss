@@ -57,7 +57,7 @@
     text-decoration: none;
     @include font-size(17px);
     &:hover {
-        color: $colorLight;
+        color: #868583;
         .arrow-right {
             &::before {
                 background-color: $colorGray;

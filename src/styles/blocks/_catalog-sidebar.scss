@@ -135,6 +135,10 @@
     border-bottom: 1px solid transparent;
     cursor: pointer;
     @include font-size(18px);
+    transition: all 0.3s ease;
+    &:hover {
+        color: #939190;
+    }
 }
 
 .mfilter-input-active label.mfilter-tb-as-td {
