@@ -24,4 +24,4 @@
 
 
 /* 5. jquery.formstyler.min.js */
-//= ../../bower_components/jquery.form-styler/dist/jquery.formstyler.min.js
+//= lib/jquery.formstyler.min.js

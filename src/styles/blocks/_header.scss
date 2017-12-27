@@ -217,6 +217,9 @@
         fill: #2A2928;
         transition: all 0.3s ease;
     }
+    &.inactive {
+        color: $colorGray;
+    }
 }
 
 .header-cancel {
