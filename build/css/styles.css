@@ -908,8 +908,8 @@ footer {
     opacity: 0;
     fill: #2A2928; }
   .wishlist-active .hearth {
-    width: 21px;
-    height: 21px;
+    width: 23px;
+    height: 23px;
     top: 2px;
     left: 0; }
   .wishlist-active:hover .icon-wishlist {
@@ -2556,9 +2556,6 @@ footer {
 .contacts-block-email {
   text-decoration: none; }
 
-.contacts-map {
-  margin-top: 10px; }
-
 .contacts-form {
   width: 100%;
   height: calc(100% - 94px);
@@ -2880,3 +2877,10 @@ footer {
   margin-bottom: 180px;
   position: relative;
   z-index: 15; }
+
+.not-more-block {
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 400;
+  color: #939190;
+  font-size: 1.5625rem; }

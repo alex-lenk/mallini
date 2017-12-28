@@ -87,3 +87,11 @@
     position: relative;
     z-index: 15;
 }
+
+.not-more-block {
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: 400;
+    color: $colorGray;
+    @include font-size(25px)
+}
