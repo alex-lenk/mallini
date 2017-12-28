@@ -59,6 +59,7 @@
     background-size: 200px 254px;
     transition: all 0.3s ease;
     .wishlist-active {
+        width: 21px;
         top: 14px;
         right: 22px;
         position: absolute;
@@ -76,7 +77,7 @@
     text-align: left;
     color: #F3F0EE;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     background: url(../img/bg/bg-new.png) no-repeat 100% 100%;
     background-size: 138px 174px;
     @include font-size(15px);
@@ -139,7 +140,7 @@
 .catalog-item-bottom {
     padding-top: 4px;
     border-top: 1px solid #F3F0EE;
-    font-weight: 700;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;

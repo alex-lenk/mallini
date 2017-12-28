@@ -1,11 +1,14 @@
 @charset "UTF-8";
 /* common */
+/*
 @font-face {
-  font-family: 'sofia';
-  src: url("../fonts/sofiapro-bold.woff2") format("woff2"), url("../fonts/sofiapro-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal; }
-
+    font-family: 'sofia';
+    src: url('../fonts/sofiapro-bold.woff2') format('woff2'),
+    url('../fonts/sofiapro-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+*/
 @font-face {
   font-family: 'sofia';
   src: url("../fonts/sofiapromedium.woff2") format("woff2"), url("../fonts/sofiapromedium.woff") format("woff");
@@ -969,7 +972,7 @@ footer {
 
 .header-product-price-cost {
   color: #2A2928;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5rem; }
 
 .header-product-price-old {
@@ -979,11 +982,17 @@ footer {
   font-size: 1.25rem; }
 
 .header-product-close {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
   top: -1px;
   right: 20px;
   position: absolute;
   cursor: pointer; }
   .header-product-close .cancel {
+    position: absolute;
+    top: 2px;
+    left: 2px;
     width: 15px;
     height: 15px;
     fill: #5A5A5A;
@@ -1206,7 +1215,20 @@ footer {
   background-color: #F2F2F2; }
 
 .sales-right {
-  background-color: #E9E9E9; }
+  background-color: #E9E9E9;
+  position: relative;
+  background-size: 0 !important; }
+  .sales-right::before {
+    width: 38%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-image: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    content: ''; }
 
 .sales-title {
   margin-bottom: 25px;
@@ -1228,7 +1250,7 @@ footer {
   margin-right: 10px;
   display: inline-block;
   color: #2A2928;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.5rem; }
 
 .sales-price-old {
@@ -1634,7 +1656,7 @@ footer {
 
 .popular-items-price {
   margin-bottom: 29px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.5rem; }
 
 .popular-items-bottom {
@@ -1829,6 +1851,7 @@ footer {
   background-size: 200px 254px;
   transition: all 0.3s ease; }
   .catalog-item-media .wishlist-active {
+    width: 21px;
     top: 14px;
     right: 22px;
     position: absolute; }
@@ -1844,7 +1867,7 @@ footer {
   text-align: left;
   color: #F3F0EE;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   background: url(../img/bg/bg-new.png) no-repeat 100% 100%;
   background-size: 138px 174px;
   font-size: 0.9375rem; }
@@ -1901,7 +1924,7 @@ footer {
 .catalog-item-bottom {
   padding-top: 4px;
   border-top: 1px solid #F3F0EE;
-  font-weight: 700;
+  font-weight: 600;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -2632,7 +2655,7 @@ footer {
   align-items: flex-end; }
 
 .product-page-cost {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2.5rem; }
 
 .product-page-old {
