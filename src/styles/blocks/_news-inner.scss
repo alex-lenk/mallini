@@ -78,7 +78,6 @@
 
 .img-hover {
     position: relative;
-    cursor: pointer;
     &::before {
         width: calc(100% - 55px);
         height: calc(100% - 55px);

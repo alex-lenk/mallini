@@ -2,6 +2,7 @@
     color: $colorWhite;
     background-color: #F2F2F2;
     position: relative;
+    z-index: 33;
     display: flex;
     flex-wrap: wrap;
     &::before {
@@ -125,6 +126,9 @@
     .hearth:hover {
         transform: scale(1.1);
     }
+  .icon-hearth {
+    margin-top: -1px;
+  }
 }
 
 .icon-search {
@@ -207,12 +211,12 @@
     border: 0;
     background-color: transparent;
     &:hover .search {
-        transform: scale(1.1);
+        fill: $colorDark;
     }
     .search {
         width: 20px;
         height: 20px;
-        fill: #2A2928;
+        fill: $colorGray;
         transition: all 0.3s ease;
     }
     &.inactive {
@@ -224,14 +228,14 @@
     padding-top: 7px;
     cursor: pointer;
     align-self: flex-start;
-    &:hover .cancel {
-        transform: scale(1.1);
-    }
     .cancel {
         width: 18px;
         height: 18px;
         fill: $colorGray;
         transition: all 0.3s ease;
+    }
+    &:hover .cancel {
+        fill: $colorDark;
     }
 }
 
@@ -325,8 +329,11 @@
     .cancel {
         width: 18px;
         height: 18px;
-        fill: #5A5A5A;
+        fill: $colorGray;
         transition: all 0.3s ease;
+    }
+    &:hover .cancel {
+        fill: $colorDark;
     }
 }
 
@@ -355,6 +362,7 @@
         top: -9px;
         left: -8px;
         opacity: 0;
+      fill: $colorDark;
     }
     .hearth {
         width: 21px;
@@ -363,14 +371,17 @@
         left: 0;
     }
     &:hover .icon-wishlist {
-        transform: scale(1.2);
+      fill: $colorDark;
     }
 }
 
 .icon-wishlist {
     position: absolute;
-    fill: $colorDark;
+    fill: $colorGray;
     transition: all 0.3s linear;
+    &:focus {
+        outline: none;
+    }
 }
 
 .wishlist-active-added {
@@ -465,9 +476,12 @@
         left: 2px;
         width: 15px;
         height: 15px;
-        fill: #5A5A5A;
+        fill: $colorGray;
         transition: all 0.3s ease;
     }
+  &:hover .cancel {
+    fill: $colorDark;
+  }
 }
 
 .header-modal-bottom {
