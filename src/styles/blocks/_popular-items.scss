@@ -4,6 +4,10 @@
     z-index: $popular-items;
 }
 
+.open-window .popular-items {
+    z-index: 5;
+}
+
 .popular-items-slider {
     position: relative;
 }
@@ -40,7 +44,6 @@
         position: absolute;
         content: '';
     }
-    
     
     .wishlist-active {
         width: 21px;

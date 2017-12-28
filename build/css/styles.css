@@ -1597,6 +1597,9 @@ footer {
 .popular-items {
   top: -28px;
   position: relative;
+  z-index: 35; }
+
+.open-window .popular-items {
   z-index: 5; }
 
 .popular-items-slider {
@@ -2297,7 +2300,8 @@ footer {
   font-size: 1.25rem; }
 
 .news-inner {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .news-inner-head {
   position: relative; }

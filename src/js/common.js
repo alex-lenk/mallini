@@ -21,11 +21,14 @@ $(document).ready(function () {
         navWrap = $('.nav-wrap'),
         headerSearchNav = 'header-search-nav',
         headerSearchOpened = 'header-search-opened',
-        navWrapOpened = 'nav-wrap-opened';
+        navWrapOpened = 'nav-wrap-opened',
+        domBody = $('body'),
+        openWindow = 'open-window';
 
     $('.header-nav-toggle').click(
         function () {
             navWrap.toggleClass(navWrapOpened);
+            domBody.toggleClass(openWindow);
             headerSearch.toggleClass(headerSearchOpened).toggleClass(headerSearchNav);
         }
     );
@@ -33,6 +36,7 @@ $(document).ready(function () {
     $('.icon-search').click(
         function () {
             headerSearch.toggleClass(headerSearchOpened);
+            domBody.toggleClass(openWindow);
         }
     );
 
@@ -41,6 +45,7 @@ $(document).ready(function () {
             headerSearch.removeClass(headerSearchOpened);
             navWrap.removeClass(navWrapOpened);
             headerSearch.removeClass(headerSearchNav);
+            domBody.toggleClass(openWindow);
         }
     );
 
@@ -55,12 +60,14 @@ $(document).ready(function () {
     $('.header-modal-bag-close').click(
         function () {
             headerModalBag.removeClass(headerBagOpen);
+            domBody.toggleClass(openWindow);
         }
     );
 
     $('.header-basket').click(
         function () {
             headerModalBag.toggleClass(headerBagOpen);
+            domBody.toggleClass(openWindow);
         }
     );
 
@@ -75,12 +82,14 @@ $(document).ready(function () {
     $('.header-modal-wishlist-close').click(
         function () {
             headerModalWishlist.removeClass(headerBagWishlist);
+            domBody.toggleClass(openWindow);
         }
     );
 
     $('.header-wishlist').click(
         function () {
             headerModalWishlist.toggleClass(headerBagWishlist);
+            domBody.toggleClass(openWindow);
         }
     );
 
