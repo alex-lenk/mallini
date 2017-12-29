@@ -901,8 +901,8 @@ footer {
   position: relative;
   cursor: pointer; }
   .wishlist-active .hearth-full {
-    width: 41px;
-    height: 41px;
+    width: 43px;
+    height: 44px;
     top: -9px;
     left: -8px;
     opacity: 0;
@@ -2412,7 +2412,7 @@ footer {
     top: 0;
     border-top: 4px solid #2A2928; }
   .checkout-content::after {
-    width: 122px;
+    width: 228px;
     height: 40px;
     bottom: 30px;
     border-left-color: #F3F0EE;
@@ -2461,9 +2461,11 @@ footer {
 
 .checkout-form-title {
   width: 100%;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  font-size: 1.5625rem; }
 
 .customer-shipping-address {
+  padding-right: 85px;
   margin-bottom: 47px; }
 
 .checkout-form-fields .form-horizontal {
@@ -2485,6 +2487,7 @@ footer {
   padding: 0; }
 
 .checkout-form-total {
+  padding-left: 155px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -2587,7 +2590,7 @@ footer {
     min-width: 190px; }
 
 .contacts-form-title {
-  padding: 0 10px;
+  padding: 0 30px 0 25px;
   margin-bottom: 53px;
   line-height: 1;
   font-weight: 400;
@@ -2599,7 +2602,7 @@ footer {
   pointer-events: auto; }
 
 .contacts-form-close {
-  top: 1px;
+  top: 21px;
   right: 11px; }
 
 .product-page-top {
@@ -2710,21 +2713,24 @@ footer {
   font-size: 1.5625rem; }
 
 .product-page-char .radio {
-  margin-top: 8px;
+  margin-top: 2px;
   float: left;
-  color: #868583;
-  border-bottom: 1px solid;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1.25rem; }
   .product-page-char .radio:not(:last-of-type) {
     margin-right: 39px; }
-  .product-page-char .radio:not(.active):hover {
-    border-bottom-color: transparent; }
   .product-page-char .radio label {
     margin: 0;
     cursor: inherit; }
+  .product-page-char .radio span {
+    color: #868583;
+    border-bottom: 1px solid;
+    display: inline-block;
+    transition: all 0.3s ease; }
+    .product-page-char .radio span:hover {
+      border-bottom-color: transparent; }
 
 .product-page-char input {
   visibility: hidden;
@@ -2884,3 +2890,12 @@ footer {
   font-weight: 400;
   color: #939190;
   font-size: 1.5625rem; }
+
+.product-page-info .radio input:checked + span {
+  color: #0b0b0b; }
+
+.checkout-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }

@@ -40,7 +40,7 @@
     border-top: 4px solid $colorDark;
   }
   &::after {
-    width: 122px;
+    width: 228px;
     height: 40px;
     bottom: 30px;
     border-left-color: #F3F0EE;
@@ -104,9 +104,11 @@
 .checkout-form-title {
   width: 100%;
   margin-bottom: 50px;
+  @include font-size(25px)
 }
 
 .customer-shipping-address {
+  padding-right: 85px;
   margin-bottom: 47px;
 }
 
@@ -133,6 +135,7 @@
 }
 
 .checkout-form-total {
+  padding-left: 155px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1939,6 +1939,8 @@
     height: 277px; } }
 
 @media (min-width: 1340px) and (max-width: 1599px) {
+  .simplecheckout-block-content {
+    padding-right: 50px; }
   .about-company-content {
     padding-left: 389px; }
   .news-inner-head {

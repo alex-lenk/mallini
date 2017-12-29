@@ -112,10 +112,8 @@
     @include font-size(25px);
   }
   .radio {
-    margin-top: 8px;
+    margin-top: 2px;
     float: left;
-    color: #868583;
-    border-bottom: 1px solid;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -123,12 +121,18 @@
     &:not(:last-of-type) {
       margin-right: 39px;
     }
-    &:not(.active):hover {
-      border-bottom-color: transparent;
-    }
     label {
       margin: 0;
       cursor: inherit;
+    }
+    span {
+      color: #868583;
+      border-bottom: 1px solid;
+      display: inline-block;
+      transition: all 0.3s ease;
+      &:hover {
+        border-bottom-color: transparent;
+      }
     }
   }
   input {

@@ -67,7 +67,7 @@
             border-bottom-color: $colorGray;
         }
     }
-    
+
     &:hover {
         color: $colorDark;
         .arrow-right {
@@ -94,4 +94,13 @@
     font-weight: 400;
     color: $colorGray;
     @include font-size(25px)
+}
+
+.product-page-info .radio input:checked + span {
+  color: #0b0b0b;
+}
+
+.checkout-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
