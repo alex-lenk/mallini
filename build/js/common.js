@@ -104,12 +104,14 @@ $(document).ready(function () {
     $('.header-catalog-close').click(
         function () {
             headerCatalog.removeClass(headerCatalogOpen);
+            domBody.toggleClass(openWindow);
         }
     );
 
     $('.menu-catalog').click(
         function () {
             headerCatalog.toggleClass(headerCatalogOpen);
+            domBody.toggleClass(openWindow);
         }
     );
 
@@ -265,6 +267,7 @@ $(document).ready(function () {
     $('.tailored-btn').click(
         function () {
             tailoredOrder.toggleClass(tailoredOrderOpened);
+            $(this).toggleClass('btn-gray-full');
         }
     );
 
@@ -307,4 +310,13 @@ $(document).ready(function () {
 
         });
     })(jQuery);
+
+
+    $(".form-control, .ui-field").change(function () {
+        if ($(this).val().trim().length) {
+            $(this).parent().addClass("field-filled");
+        } else {
+            $(this).parent().removeClass("field-filled");
+        }
+    });
 });

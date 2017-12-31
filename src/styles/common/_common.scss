@@ -256,18 +256,3 @@ header {
     background-size: 830px 730px;
 }
 
-.close {
-    padding: 10px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-    .cancel {
-        width: 15px;
-        height: 15px;
-        fill: #5A5A5A;
-        transition: all 0.3s ease;
-    }
-    &:hover .cancel {
-        fill: $colorDark;
-    }
-}

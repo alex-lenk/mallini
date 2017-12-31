@@ -45,18 +45,33 @@
     }
 }
 
+.field-filled {
+    .ui-field, .form-control {
+        border-bottom: 1px solid $colorDark;
+    }
+}
+
 .required-star {
-    color: #cc0000;
+    color: #FF5353;
 }
 
 .ui-error .ui-field {
-    border-bottom-color: #cc0000;
+    border-bottom-color: #FF5353;
+    background-color: #fff;
+    @include hidePlaceholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 }
 
 .ui-error-text {
     padding-top: 5px;
-    color: #cc0000;
+    color: #FF5353;
     text-align: left;
     line-height: 1;
-    @include font-size(16px)
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    font-weight: 100;
+    @include font-size(18px)
 }

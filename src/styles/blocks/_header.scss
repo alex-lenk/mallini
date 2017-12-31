@@ -120,15 +120,9 @@
         width: 22px;
         height: 22px;
     }
-    .search:hover {
-        transform: scale(1.1);
+    .icon-hearth {
+        margin-top: -1px;
     }
-    .hearth:hover {
-        transform: scale(1.1);
-    }
-  .icon-hearth {
-    margin-top: -1px;
-  }
 }
 
 .icon-search {
@@ -136,21 +130,21 @@
 }
 
 .icon-hearth {
-    cursor: pointer;
     margin-left: 46px;
+    &::before {
+        bottom: 3px;
+    }
 }
 
-.icon-basket {
-    margin-left: 26px;
-    position: relative;
+.icon-hearth, .icon-basket {
     cursor: pointer;
+    position: relative;
     &::before {
         content: attr(data-count);
         width: 17px;
         height: 17px;
         border-radius: 50%;
         background-color: $colorDark;
-        bottom: 2px;
         left: -5px;
         position: absolute;
         font-weight: 600;
@@ -158,6 +152,13 @@
         line-height: 16px;
         transition: all 0.3s ease;
         @include font-size(11px);
+    }
+}
+
+.icon-basket {
+    margin-left: 26px;
+    &::before {
+        bottom: 2px;
     }
 }
 
@@ -221,21 +222,6 @@
     }
     &.inactive {
         color: $colorGray;
-    }
-}
-
-.header-cancel {
-    padding-top: 7px;
-    cursor: pointer;
-    align-self: flex-start;
-    .cancel {
-        width: 18px;
-        height: 18px;
-        fill: $colorGray;
-        transition: all 0.3s ease;
-    }
-    &:hover .cancel {
-        fill: $colorDark;
     }
 }
 
@@ -320,23 +306,6 @@
     @include font-size(52px)
 }
 
-.header-modal-cancel {
-    top: 56px;
-    right: 30px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-    .cancel {
-        width: 18px;
-        height: 18px;
-        fill: $colorGray;
-        transition: all 0.3s ease;
-    }
-    &:hover .cancel {
-        fill: $colorDark;
-    }
-}
-
 .header-product-list {
     margin-bottom: 21px;
     padding-left: 0;
@@ -362,7 +331,7 @@
         top: -9px;
         left: -8px;
         opacity: 0;
-      fill: $colorDark;
+        fill: $colorDark;
     }
     .hearth {
         width: 23px;
@@ -371,7 +340,7 @@
         left: 0;
     }
     &:hover .icon-wishlist {
-      fill: $colorDark;
+        fill: $colorDark;
     }
 }
 
@@ -460,28 +429,6 @@
     color: #A6A6A6;
     font-weight: 600;
     @include font-size(20px);
-}
-
-.header-product-close {
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    top: -1px;
-    right: 20px;
-    position: absolute;
-    cursor: pointer;
-    .cancel {
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        width: 15px;
-        height: 15px;
-        fill: $colorGray;
-        transition: all 0.3s ease;
-    }
-  &:hover .cancel {
-    fill: $colorDark;
-  }
 }
 
 .header-modal-bottom {
@@ -616,24 +563,6 @@
     }
 }
 
-.header-catalog-close {
-    padding-top: 7px;
-    cursor: pointer;
-    right: 0;
-    top: 0;
-    position: absolute;
-    &:hover .cancel {
-        fill: $colorDark;
-        transform: scale(1.1);
-    }
-    .cancel {
-        width: 18px;
-        height: 18px;
-        fill: #5A5A5A;
-        transition: all 0.3s ease;
-    }
-}
-
 .header-catalog-open {
     opacity: 1;
     transform: translateY(0);
@@ -662,4 +591,9 @@
             fill: $colorGray;
         }
     }
+}
+
+.header-page .icon-hearth::before {
+    background-color: #ffffff;
+    color: $colorDark;
 }
