@@ -437,14 +437,8 @@
         position: absolute;
         opacity: 0;
         transition: all 0.3s ease;
-    }
-    .sales-left {
         background-size: 307px;
         background-position: 1% 0;
-    }
-    .sales-right {
-        background-size: 210px;
-        background-position: 15% 0;
     }
     .sales-active {
         opacity: 1;
@@ -763,10 +757,6 @@
         left: 0;
     }
     
-    .icon-hearth::before, .icon-basket::before {
-        background-color: #fff;
-    }
-    
     .catalog-item-cost-old {
         margin-left: auto;
     }
@@ -849,8 +839,13 @@
         float: none;
     }
     
-    .catalog .icon-basket::before {
-        background-color: $colorDark;
+    .catalog {
+        padding-top: 0;
+        .icon-hearth, .icon-basket {
+            &::before {
+                background-color: $colorDark;
+            }
+        }
     }
     .catalog-item-media {
         height: 307px;
@@ -959,7 +954,7 @@
     .icon-search {
         display: none;
     }
-    .icon-basket {
+    .icon-basket, .icon-hearth {
         &::before {
             color: $colorDark;
             background-color: $colorWhite;
@@ -1756,18 +1751,17 @@
     .sales-left, .sales-right {
         max-width: 50%;
         padding-top: 55px;
+        background-size: contain;
         flex: 1 1 50%;
     }
     .sales-left {
         padding-left: 200px;
         padding-right: 18px;
-        background-size: 307px;
         background-position: -53px 0;
     }
     .sales-right {
         padding-left: 35px;
         padding-right: 180px;
-        background-size: 210px;
         background-position: 105% 0;
     }
     .sales-control-left,
@@ -1991,18 +1985,20 @@
     .home-sales {
         height: 365px;
     }
+    
+    .sales-left, .sales-right {
+        background-size: contain;
+    }
     .sales-left {
         padding-top: 81px;
         padding-left: 260px;
         padding-right: 60px;
-        background-size: 365px;
         background-position: -61px 0;
     }
     .sales-right {
         padding-top: 81px;
         padding-left: 55px;
         padding-right: 19%;
-        background-size: 250px;
         background-position: 105% 0;
     }
     
@@ -2156,16 +2152,18 @@
     .sales-all span:not(.sales-all-text) {
         display: none;
     }
+    .sales-left, .sales-right {
+        background-size: auto;
+    }
     .sales-left {
         padding-left: 310px;
         padding-right: 85px;
-        background-size: auto;
         background-position: 0 0;
     }
     .sales-right {
         padding-left: 139px;
         padding-right: 300px;
-        background-position: 89% 0;
+        background-position: 99% 0;
     }
     
     .view-catalog-arrow {

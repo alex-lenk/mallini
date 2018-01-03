@@ -2,8 +2,10 @@
     height: 100%;
     padding-top: 0;
     display: flex;
-    .icon-basket::before {
-        color: #fff;
+    .icon-basket, .icon-hearth {
+        &::before {
+            color: #fff;
+        }
     }
 }
 

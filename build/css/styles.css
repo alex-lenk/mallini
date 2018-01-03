@@ -1169,19 +1169,7 @@ footer {
 
 .sales-right {
   background-color: #E9E9E9;
-  position: relative;
-  background-size: 0 !important; }
-  .sales-right::before {
-    width: 38%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    background-image: inherit;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    content: ''; }
+  position: relative; }
 
 .sales-title {
   margin-bottom: 25px;
@@ -1760,7 +1748,7 @@ footer {
   padding-top: 0;
   display: -ms-flexbox;
   display: flex; }
-  .catalog .icon-basket::before {
+  .catalog .icon-basket::before, .catalog .icon-hearth::before {
     color: #fff; }
 
 .catalog-header {
@@ -2288,7 +2276,7 @@ footer {
   transition: all 0.3s ease; }
 
 .arrow-left {
-  width: 90px;
+  width: calc(100% + 20px);
   padding: 10px;
   cursor: pointer;
   position: relative;
@@ -2693,6 +2681,8 @@ footer {
 .tailored-btn {
   margin-top: 53px;
   display: none; }
+  .tailored-btn.btn-gray-full {
+    pointer-events: none; }
 
 .product-page-tailored {
   position: relative; }
@@ -2926,3 +2916,50 @@ div[id*="input-"] {
   clear: both;
   color: #FF5353;
   font-size: 15px; }
+
+.thumbnails {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.slider .image-additional {
+  width: 207px;
+  height: 260px;
+  margin-bottom: 30px;
+  background-color: #F2F2F2; }
+
+.zoom {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: #F2F2F2;
+  background-image: url(../img/catalog-item-decor.png);
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  background-size: 200px 254px;
+  transition: all 0.3s ease; }
+  .zoom:after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 55; }
+  .zoom img:first-of-type {
+    background-color: transparent !important; }
+  .zoom img:last-of-type {
+    background-color: #F2F2F2 !important; }
+  .zoom:hover {
+    background-position-y: -89px;
+    background-size: 354px 449px; }
+
+.original {
+  display: inline-block;
+  position: relative; }
+  .original .wishlist-active {
+    top: 15px;
+    right: 5px;
+    position: absolute;
+    z-index: 60; }

@@ -197,3 +197,62 @@ div[id*="input-"] {
     color: #FF5353;
     font-size: 15px;
 }
+
+.thumbnails {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.slider .image-additional {
+    width: 207px;
+    height: 260px;
+    margin-bottom: 30px;
+    background-color: #F2F2F2;
+}
+
+.zoom {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: #F2F2F2;
+    background-image: url(../img/catalog-item-decor.png);
+    background-repeat: no-repeat;
+    background-position: center 8px;
+    background-size: 200px 254px;
+    transition: all 0.3s ease;
+    
+    &:after {
+        content: '';
+        display: block;
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 55;
+    }
+    img {
+        &:first-of-type {
+            background-color: transparent !important;
+        }
+        &:last-of-type {
+            background-color: #F2F2F2 !important;
+        }
+    }
+    &:hover {
+        background-position-y: -89px;
+        background-size: 354px 449px;
+    }
+}
+
+.original {
+    display: inline-block;
+    position: relative;
+    .wishlist-active {
+        top: 15px;
+        right: 5px;
+        position: absolute;
+        z-index: 60;
+    }
+}

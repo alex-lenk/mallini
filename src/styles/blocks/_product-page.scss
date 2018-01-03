@@ -155,6 +155,9 @@
 .tailored-btn {
   margin-top: 53px;
   display: none;
+  &.btn-gray-full {
+    pointer-events: none;
+  }
 }
 
 .product-page-tailored {
