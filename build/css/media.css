@@ -14,7 +14,7 @@
 @media (max-width: 1599px) {
   .catalog-item-option::before,
   .catalog-item-option::after {
-    right: 35px; }
+    right: 19px; }
   .contacts-map .pin {
     width: 30px;
     height: 30px; }
@@ -550,6 +550,8 @@
       left: -18px; } }
 
 @media (max-width: 567px) {
+  .menu-item {
+    font-size: 1.1875rem; }
   .wrapper {
     padding-top: 70px; }
   .contacts-wrap {
@@ -586,10 +588,12 @@
     .catalog-item-bottom::before {
       display: none; }
   .contacts-map {
+    margin: 4px auto;
     width: 600px;
-    margin-left: -150px;
     min-height: 380px;
-    margin-top: 4px; }
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .contacts-block {
     width: calc(100% - 15px);
     margin-left: 15px;
@@ -622,7 +626,7 @@
     float: none; }
   .catalog {
     padding-top: 0; }
-    .catalog .icon-hearth::before, .catalog .icon-basket::before {
+    .catalog .icon-hearth .count-products, .catalog .icon-basket .count-products {
       background-color: #2A2928; }
   .catalog-item-media {
     height: 307px;
@@ -682,16 +686,14 @@
     flex: 0;
     margin-left: auto; }
   .nav-wrap {
-    width: 100vw;
-    padding-top: 130px;
-    left: -15px; }
+    padding-top: 130px; }
   .nav-pages {
     padding-top: 23px;
     padding-left: 15px; }
   .nav-products {
     height: 373px;
     padding-top: 23px;
-    padding-left: 33px; }
+    padding-left: 25px; }
   .nav-title {
     margin-bottom: 45px; }
   .header-catalog-icons {
@@ -704,10 +706,10 @@
       fill: #ffffff; }
   .icon-search {
     display: none; }
-  .icon-basket::before, .icon-hearth::before {
+  .icon-basket .count-products, .icon-hearth .count-products {
     color: #2A2928;
     background-color: #FFFFFF; }
-  .icon-basket:hover::before, .icon-hearth:hover::before {
+  .icon-basket:hover .count-products, .icon-hearth:hover .count-products {
     box-shadow: 0 0 0 3px #ffffff; }
   .header-media-first {
     width: 230px;
@@ -1346,6 +1348,8 @@
     display: none; } }
 
 @media (min-width: 1340px) {
+  .menu-item {
+    letter-spacing: 0.42px; }
   .checkout-content::after {
     width: 228px; }
   .checkout-form-total {
@@ -1928,6 +1932,8 @@
     left: -5%; } }
 
 @media (min-width: 1100px) and (max-width: 1270px) {
+  .catalog-sidebar-fixed {
+    position: relative; }
   .catalog-head {
     padding-left: 51px; }
   .filter-icon-wrap {

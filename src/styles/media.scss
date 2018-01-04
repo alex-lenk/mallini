@@ -26,7 +26,7 @@
 @media (max-width: 1599px) {
     .catalog-item-option::before,
     .catalog-item-option::after {
-        right: 35px;
+        right: 19px;
     }
     
     .contacts-map .pin {
@@ -741,6 +741,10 @@
 }
 
 @media (max-width: 567px) {
+    .menu-item {
+        @include font-size(19px);
+    }
+    
     .wrapper {
         padding-top: 70px;
     }
@@ -792,10 +796,11 @@
     }
     
     .contacts-map {
+        margin: 4px auto;
         width: 600px;
-        margin-left: -150px;
         min-height: 380px;
-        margin-top: 4px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .contacts-block {
         width: calc(100% - 15px);
@@ -842,7 +847,7 @@
     .catalog {
         padding-top: 0;
         .icon-hearth, .icon-basket {
-            &::before {
+            .count-products {
                 background-color: $colorDark;
             }
         }
@@ -924,9 +929,7 @@
         margin-left: auto;
     }
     .nav-wrap {
-        width: 100vw;
         padding-top: 130px;
-        left: -15px;
     }
     .nav-pages {
         padding-top: 23px;
@@ -935,7 +938,7 @@
     .nav-products {
         height: 373px;
         padding-top: 23px;
-        padding-left: 33px;
+        padding-left: 25px;
     }
     .nav-title {
         margin-bottom: 45px;
@@ -955,11 +958,11 @@
         display: none;
     }
     .icon-basket, .icon-hearth {
-        &::before {
+        .count-products {
             color: $colorDark;
             background-color: $colorWhite;
         }
-        &:hover::before {
+        &:hover .count-products {
             box-shadow: 0 0 0 3px #ffffff;
         }
     }
@@ -1879,6 +1882,10 @@
 }
 
 @media (min-width: 1340px) {
+    .menu-item {
+        letter-spacing: 0.42px;
+    }
+    
     .checkout-content::after {
         width: 228px;
     }
@@ -2714,6 +2721,10 @@
 }
 
 @media (min-width: 1100px) and (max-width: 1270px) {
+    .catalog-sidebar-fixed {
+        position: relative;
+    }
+    
     .catalog-head {
         padding-left: 51px;
     }
