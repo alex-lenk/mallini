@@ -895,6 +895,8 @@ footer {
     left: 0; }
   .wishlist-active:hover .icon-wishlist {
     fill: #2A2928; }
+  .wishlist-active:focus {
+    outline: none; }
 
 .icon-wishlist {
   position: absolute;
@@ -960,6 +962,8 @@ footer {
   display: flex;
   -ms-flex-align: center;
   align-items: center; }
+  .header-product-price:focus {
+    outline: none; }
 
 .header-product-price-cost {
   color: #2A2928;
@@ -2933,7 +2937,8 @@ div[id*="input-"] {
 .thumbnails {
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
 
 .slider .image-additional {
   width: 207px;
@@ -2948,8 +2953,8 @@ div[id*="input-"] {
   background-color: #F2F2F2;
   background-image: url(../img/catalog-item-decor.png);
   background-repeat: no-repeat;
-  background-position: center 8px;
-  background-size: 200px 254px;
+  background-position: center 10px;
+  background-size: 250px 383px;
   transition: all 0.3s ease; }
   .zoom:after {
     content: '';
@@ -2966,11 +2971,13 @@ div[id*="input-"] {
     background-color: #F2F2F2 !important; }
   .zoom:hover {
     background-position-y: -89px;
-    background-size: 354px 449px; }
+    background-size: 454px 749px; }
 
 .original {
+  max-height: 600px;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .original .wishlist-active {
     top: 15px;
     right: 5px;

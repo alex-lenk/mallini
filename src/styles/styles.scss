@@ -202,6 +202,7 @@ div[id*="input-"] {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    overflow: hidden;
 }
 
 .slider .image-additional {
@@ -218,8 +219,8 @@ div[id*="input-"] {
     background-color: #F2F2F2;
     background-image: url(../img/catalog-item-decor.png);
     background-repeat: no-repeat;
-    background-position: center 8px;
-    background-size: 200px 254px;
+    background-position: center 10px;
+    background-size: 250px 383px;
     transition: all 0.3s ease;
     
     &:after {
@@ -242,13 +243,15 @@ div[id*="input-"] {
     }
     &:hover {
         background-position-y: -89px;
-        background-size: 354px 449px;
+        background-size: 454px 749px;
     }
 }
 
 .original {
+    max-height: 600px;
     display: inline-block;
     position: relative;
+    overflow: hidden;
     .wishlist-active {
         top: 15px;
         right: 5px;

@@ -293,7 +293,7 @@ $(document).ready(function () {
 
     $('.popular-items-basket').click(
         function () {
-            $(this).parent().next(catalogItemOption).toggleClass(catalogItemOptionOpened);
+            $(this).parent().next().toggleClass(catalogItemOptionOpened);
             $(this).toggleClass('btn-black-full');
         }
     );

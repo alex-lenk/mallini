@@ -343,6 +343,9 @@
     &:hover .icon-wishlist {
         fill: $colorDark;
     }
+    &:focus {
+        outline: none;
+    }
 }
 
 .icon-wishlist {
@@ -417,6 +420,9 @@
     line-height: 1;
     display: flex;
     align-items: center;
+    &:focus {
+        outline: none;
+    }
 }
 
 .header-product-price-cost {
