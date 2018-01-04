@@ -66,6 +66,8 @@
     background-color: #2A2928;
     color: #FFFFFF;
     border-color: #2A2928; }
+    .btn-black-full .basket {
+      fill: #fff; }
     .btn-black-full:hover {
       color: #2A2928;
       background-color: #FFFFFF;
@@ -700,6 +702,7 @@ footer {
   width: 17px;
   height: 17px;
   border-radius: 50%;
+  color: #fff;
   background-color: #2A2928;
   left: -5px;
   position: absolute;
@@ -1108,7 +1111,7 @@ footer {
     .header-product-add:hover .basket {
       fill: #939190; }
 
-.header-page .icon-hearth::before {
+.header-page .count-products {
   background-color: #ffffff;
   color: #2A2928; }
 
@@ -1552,6 +1555,14 @@ footer {
     background: #E9E9E9;
     content: '';
     z-index: 3; }
+
+.popular-items-content .catalog-item-option {
+  right: auto;
+  left: 96px;
+  bottom: 4px; }
+  .popular-items-content .catalog-item-option::before, .popular-items-content .catalog-item-option::after {
+    right: auto;
+    left: 210px; }
 
 .popular-items-media {
   width: 358px;

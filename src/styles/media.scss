@@ -846,10 +846,16 @@
     
     .catalog {
         padding-top: 0;
-        .icon-hearth, .icon-basket {
+        .icon-hearth,
+        .icon-basket {
             .count-products {
+                color: #fff;
                 background-color: $colorDark;
             }
+        }
+        .nav-wrap {
+            max-width: 100%;
+            left: 0;
         }
     }
     .catalog-item-media {
@@ -897,10 +903,6 @@
     .catalog-item {
         width: 100%;
         margin-bottom: 60px;
-    }
-    .catalog .nav-wrap {
-        max-width: 100%;
-        left: 0;
     }
     
     .hidden-sx {

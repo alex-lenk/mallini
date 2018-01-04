@@ -35,6 +35,9 @@
         background-color: $colorDark;
         color: $colorWhite;
         border-color: $colorDark;
+        .basket {
+            fill: #fff;
+        }
         &:hover {
             color: $colorDark;
             background-color: $colorWhite;

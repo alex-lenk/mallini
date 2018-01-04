@@ -132,6 +132,7 @@
     width: 17px;
     height: 17px;
     border-radius: 50%;
+    color: #fff;
     background-color: $colorDark;
     left: -5px;
     position: absolute;
@@ -593,7 +594,7 @@
     }
 }
 
-.header-page .icon-hearth::before {
+.header-page .count-products {
     background-color: #ffffff;
     color: $colorDark;
 }

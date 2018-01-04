@@ -282,9 +282,19 @@ $(document).ready(function () {
 
     /* BEGIN: всплывающий блок для вскрытия выбора размера */
 
+    var catalogItemOption = $('.catalog-item-option'),
+        catalogItemOptionOpened = 'catalog-item-option-opened';
+
     $('.catalog-item-order-basket').click(
         function () {
-            $('.catalog-item-option').toggleClass('catalog-item-option-opened');
+            catalogItemOption.toggleClass(catalogItemOptionOpened);
+        }
+    );
+
+    $('.popular-items-basket').click(
+        function () {
+            $(this).parent().next(catalogItemOption).toggleClass(catalogItemOptionOpened);
+            $(this).toggleClass('btn-black-full');
         }
     );
 

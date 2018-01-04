@@ -626,8 +626,13 @@
     float: none; }
   .catalog {
     padding-top: 0; }
-    .catalog .icon-hearth .count-products, .catalog .icon-basket .count-products {
+    .catalog .icon-hearth .count-products,
+    .catalog .icon-basket .count-products {
+      color: #fff;
       background-color: #2A2928; }
+    .catalog .nav-wrap {
+      max-width: 100%;
+      left: 0; }
   .catalog-item-media {
     height: 307px;
     margin-bottom: 13px; }
@@ -663,9 +668,6 @@
   .catalog-item {
     width: 100%;
     margin-bottom: 60px; }
-  .catalog .nav-wrap {
-    max-width: 100%;
-    left: 0; }
   .hidden-sx {
     display: none; }
   .header-home {

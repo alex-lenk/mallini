@@ -26,6 +26,16 @@
     }
 }
 
+.popular-items-content .catalog-item-option {
+    right: auto;
+    left: 96px;
+    bottom: 4px;
+    &::before, &::after {
+        right: auto;
+        left: 210px;
+    }
+}
+
 .popular-items-media {
     width: 358px;
     margin-left: 50px;
