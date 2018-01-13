@@ -99,7 +99,11 @@
 .popular-items-price {
     margin-bottom: 29px;
     font-weight: 600;
-    @include font-size(40px)
+    @include font-size(40px);
+    .rub {
+        margin-right: 3px;
+        @include font-size(29px);
+    }
 }
 
 .popular-items-bottom {

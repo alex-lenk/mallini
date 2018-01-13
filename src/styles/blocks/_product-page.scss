@@ -14,13 +14,22 @@
 .product-page-cost {
   font-weight: 600;
   @include font-size(40px);
+  .rub {
+    margin-right: 5px;
+      @include font-size(36px);
+  }
 }
 
 .product-page-old {
-  margin-left: 10px;
-  color: #A6A6A6;
-  font-weight: 600;
-  @include font-size(24px);
+    margin-left: 10px;
+    color: #A6A6A6;
+    font-weight: 600;
+    .rub {
+        font-size: 22px;
+        margin-right: 5px;
+        @include font-size(22px);
+        
+    }
 }
 
 .product-page-status {

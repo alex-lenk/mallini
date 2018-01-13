@@ -315,18 +315,26 @@ $(document).ready(function () {
 
     (function($) {
         $(function() {
-
             $('select').styler();
-
         });
     })(jQuery);
 
 
-    $(".form-control, .ui-field").change(function () {
+
+    var uiField = $(".form-control, .ui-field"),
+        fieldFilled = "field-filled";
+
+    uiField.change(function () {
         if ($(this).val().trim().length) {
-            $(this).parent().addClass("field-filled");
+            $(this).parent().addClass(fieldFilled);
         } else {
-            $(this).parent().removeClass("field-filled");
+            $(this).parent().removeClass(fieldFilled);
+        }
+    });
+
+    uiField.each(function () {
+        if (this.value !== "") {
+            $(this).parent().addClass(fieldFilled);
         }
     });
 });

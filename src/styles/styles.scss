@@ -210,9 +210,12 @@ div[id*="input-"] {
     height: 260px;
     margin-bottom: 30px;
     background-color: #F2F2F2;
+    overflow: hidden;
+    text-align: center;
 }
 
 .zoom {
+    width: 100%;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -234,6 +237,7 @@ div[id*="input-"] {
         z-index: 55;
     }
     img {
+        margin: 0 auto;
         &:first-of-type {
             background-color: transparent !important;
         }
@@ -248,7 +252,11 @@ div[id*="input-"] {
 }
 
 .original {
-    max-height: 600px;
+    width: 100%;
+    max-width: 511px;
+    max-height: 645px;
+    text-align: center;
+    background-color: #f2f2f2;
     display: inline-block;
     position: relative;
     overflow: hidden;
