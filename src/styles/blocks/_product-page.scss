@@ -115,6 +115,7 @@
     }
   }
   .control-label {
+    margin-bottom: 0;
     margin-right: 36px;
     float: left;
     text-transform: uppercase;
@@ -158,6 +159,10 @@
     color: #2A2928;
     text-transform: uppercase;
     @include font-size(15px)
+  }
+  
+  hr {
+    display: none;
   }
 }
 
@@ -252,7 +257,6 @@
 }
 
 .product-page-head {
-  padding-left: 193px;
   position: relative;
   .link-back {
     bottom: -23px;
