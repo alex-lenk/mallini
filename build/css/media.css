@@ -68,7 +68,8 @@
     -ms-flex-preferred-size: 494px;
     flex-basis: 494px; }
     .catalog-sidebar::before {
-      background: #FFFFFF url(../img/bg/bg-catalog-sidebar-sm@2x.jpg) no-repeat top center; }
+      background: #fcfcfc url(../img/bg/bg-catalog-sidebar-sm@2x.jpg) no-repeat top left;
+      background-size: cover; }
   .catalog-sidebar-head {
     margin-bottom: 55px;
     line-height: 1;
@@ -1679,13 +1680,10 @@
   .header-home-logo {
     margin-right: 293px; }
   .header-media-first {
-    width: 400px;
     margin: 0 auto 0 241px; }
     .header-media-first::before {
       width: 350px;
       top: 21%; }
-  .header-media-second {
-    width: 330px; }
   .header-home-title {
     margin-top: -20px; }
   .header-search-area {
@@ -1707,6 +1705,12 @@
     margin-bottom: 18px; }
   .fashion-news {
     margin-bottom: 174px; } }
+
+@media (min-width: 1921px) {
+  .header-media-first {
+    width: 455px; }
+  .header-media-second {
+    width: 365px; } }
 
 @media (min-width: 461px) and (max-width: 667px) {
   .news-list-row {
