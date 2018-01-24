@@ -768,6 +768,8 @@ footer {
     height: 20px;
     fill: #2A2928;
     transition: all 0.3s ease; }
+  .header-search-btn.inactive {
+    color: #939190; }
 
 .header-cancel {
   padding-top: 7px;
