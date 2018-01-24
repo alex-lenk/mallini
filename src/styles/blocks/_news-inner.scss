@@ -1,5 +1,6 @@
 .news-inner {
     position: relative;
+    @include clearfix;
 }
 
 .news-inner-head {
@@ -46,7 +47,7 @@
 }
 
 .arrow-left {
-    width: 90px;
+    width: calc(100% + 20px);
     padding: 10px;
     cursor: pointer;
     position: relative;
@@ -78,7 +79,6 @@
 
 .img-hover {
     position: relative;
-    cursor: pointer;
     &::before {
         width: calc(100% - 55px);
         height: calc(100% - 55px);
@@ -89,8 +89,5 @@
         pointer-events: none;
         transition: all 0.3s ease;
         content: '';
-    }
-    &:hover::before {
-        background-color: rgba(255, 255, 255, 0.7);
     }
 }

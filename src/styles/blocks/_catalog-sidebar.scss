@@ -88,7 +88,7 @@
         border: 0;
         border-bottom: 1px solid #3F3F3F;
         color: #fff;
-        font-weight: 400;
+        font-weight: 300;
         transition: all 0.3s ease;
         @include font-size(16px);
         
@@ -96,7 +96,7 @@
             opacity: 1;
             color: $colorGray;
             transition: opacity 0.3s ease;
-            font-weight: 400;
+            font-weight: 300;
             @include font-size(18px);
         }
         &:focus {
@@ -135,6 +135,10 @@
     border-bottom: 1px solid transparent;
     cursor: pointer;
     @include font-size(18px);
+    transition: all 0.3s ease;
+    &:hover {
+        color: #939190;
+    }
 }
 
 .mfilter-input-active label.mfilter-tb-as-td {

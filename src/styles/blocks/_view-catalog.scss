@@ -7,15 +7,6 @@
     display: flex;
 }
 
-.view-catalog-item a:hover {
-    .arrow-right {
-        width: 108px;
-    }
-    .view-catalog-media::before {
-        background-size: 154% 128%;
-    }
-}
-
 .view-catalog-media {
     height: 504px;
     margin-bottom: 21px;

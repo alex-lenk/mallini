@@ -13,6 +13,7 @@
 
 .sales-right {
     background-color: #E9E9E9;
+    position: relative;
 }
 
 .sales-title {
@@ -39,8 +40,12 @@
     margin-right: 10px;
     display: inline-block;
     color: #2A2928;
-    font-weight: 700;
+    font-weight: 600;
     @include font-size(40px);
+    .rub {
+        margin-right: 3px;
+        @include font-size(29px);
+    }
 }
 
 .sales-price-old {
@@ -57,7 +62,7 @@
     text-decoration: none;
     @include font-size(17px);
     &:hover {
-        color: $colorLight;
+        color: #868583;
         .arrow-right {
             &::before {
                 background-color: $colorGray;
